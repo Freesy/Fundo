@@ -129,7 +129,7 @@ public class AboutActivity extends AppCompatActivity  {
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            if (null != dialog) {
+            if (null != dialog && syncStartTime!=0) {
                 if (System.currentTimeMillis() - syncStartTime > 30 * 1000) {
                     Message msg = myHandler.obtainMessage(6);
                     myHandler.sendMessage(msg);
