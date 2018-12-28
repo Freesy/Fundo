@@ -129,13 +129,15 @@ public class AboutActivity extends AppCompatActivity  {
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            if (null != dialog && syncStartTime!=0) {
+            if (syncStartTime > 30) {
                 if (System.currentTimeMillis() - syncStartTime > 30 * 1000) {
                     Message msg = myHandler.obtainMessage(6);
                     myHandler.sendMessage(msg);
                     return ;
                 }
+                Toast.makeText(AboutActivity.this, getString(R.string.checking_new_version_fail), Toast.LENGTH_SHORT).show();
             }else{
+                Toast.makeText(AboutActivity.this, getString(R.string.checking_new_version_fail), Toast.LENGTH_SHORT).show();
                 return ;
             }
         }
@@ -168,7 +170,11 @@ public class AboutActivity extends AppCompatActivity  {
 		}
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        mBluetoothAdapter1 = BluetoothAdapter.getDefaultAdapter();
+        if(SharedPreUtil.readPre(this, SharedPreUtil.USER, SharedPreUtil.THEME_WHITE).equals("0")){
+            setTheme(R.style.KCTStyleWhite);
+        }else{
+            setTheme(R.style.KCTStyleBlack);
+        }
         // The About UI will enable "LogCatcher" button after you clicked the "Version"
         // TextView 5 times quickly.
         // The "LogCatcher" feature only work in the WearableManager "Connected" state.
