@@ -160,9 +160,8 @@ public class AboutActivity extends AppCompatActivity  {
 		context = this;
 		if(SharedPreUtil.readPre(this, SharedPreUtil.USER, SharedPreUtil.THEME_WHITE).equals("0")){
 			setTheme(R.style.KCTStyleWhite);
-		}else{
-			setTheme(R.style.KCTStyleBlack);
 		}
+        initControls();
         setContentView(R.layout.about);
         initControls();
       //状态栏与标题栏一体
