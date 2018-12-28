@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="ShareSDK-Facebook-3.0.2">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/funDo/libs/ShareSDK-Facebook-3.0.2.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

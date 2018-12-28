@@ -170,11 +170,6 @@ public class AboutActivity extends AppCompatActivity  {
 		}
 
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        if(SharedPreUtil.readPre(this, SharedPreUtil.USER, SharedPreUtil.THEME_WHITE).equals("0")){
-            setTheme(R.style.KCTStyleWhite);
-        }else{
-            setTheme(R.style.KCTStyleBlack);
-        }
         // The About UI will enable "LogCatcher" button after you clicked the "Version"
         // TextView 5 times quickly.
         // The "LogCatcher" feature only work in the WearableManager "Connected" state.
