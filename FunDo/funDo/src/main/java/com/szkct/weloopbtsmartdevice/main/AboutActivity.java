@@ -136,6 +136,7 @@ public class AboutActivity extends AppCompatActivity  {
                     return ;
                 }
                 Toast.makeText(AboutActivity.this, getString(R.string.checking_new_version_fail), Toast.LENGTH_SHORT).show();
+		    Toast.makeText(AboutActivity.this, getString(R.string.checking_new_version_fail), Toast.LENGTH_SHORT).show();
             }else{
                 Toast.makeText(AboutActivity.this, getString(R.string.checking_new_version_fail), Toast.LENGTH_SHORT).show();
                 return ;
