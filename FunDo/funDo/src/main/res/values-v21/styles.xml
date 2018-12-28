@@ -1,0 +1,29 @@
+<resources>
+
+    <!--
+        Base application theme for API 21+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v21/styles.xml on API 21+ devices.
+    -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+    <item name="android:windowNoTitle">true</item>
+    <!--  toolbar（actionbar）颜色 -->
+  	<item name="colorPrimary">@color/app_theme_colors</item>
+  	<!--Status bar color 无效果-->
+  	<item name="colorPrimaryDark">@color/statusbar_bg</item>
+    <item name="colorAccent">@color/accent</item>
+  	<!--Window color-->
+  	<item name="android:windowBackground">@color/allbg</item>
+  	<!-- 溢出菜单图标颜色-->
+    <item name="colorControlNormal">@android:color/white</item>
+  	<!--返回键样式-->
+    <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+    
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+
+</resources>

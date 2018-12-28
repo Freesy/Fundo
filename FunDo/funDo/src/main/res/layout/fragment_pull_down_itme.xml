@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_homefragment"
+    android:background="@color/hometil_bg"
+    tools:context="com.szkct.weloopbtsmartdevice.view.HomeFragment">
+
+    <!--主页面顶部标题栏  标题栏切换页面-->
+    <include
+        android:id="@+id/navigation_head"
+        layout="@layout/fragment_home_navigation_head" />
+
+    <com.szkct.weloopbtsmartdevice.util.PullToRefreshScrollView
+        android:id="@+id/prsv_home_refresh_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigation_head"
+        android:background="@color/hometil_bg"></com.szkct.weloopbtsmartdevice.util.PullToRefreshScrollView>
+		 <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <ImageView
+            android:id="@+id/iv_guanggao"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            />
+
+        <FrameLayout
+            android:id="@+id/fl_guanggao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/t"
+            android:clickable="true"
+            android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_center"
+                    android:layout_width="230dp"
+                    android:layout_height="288dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pop_img_default"
+                    android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/iv_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/pop_icon_shut"
+                android:visibility="visible"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

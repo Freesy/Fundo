@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title"
+    android:background="?attr/global_background"
+    android:gravity="center_vertical">
+    <!--主页面顶部标题栏-->
+    <!--分享按钮-->
+    <ImageButton
+        android:id="@+id/ib_navigation_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:src="?attr/home_fragment_head_button_share" />
+    <!--同步按钮-->
+    <TextView
+        android:id="@+id/tv_navigation_synchronization"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="?attr/home_fragment_head_button_synchronization"
+        android:gravity="center" />
+    <ImageView
+        android:id="@+id/iv_back"
+        android:clickable="true"
+        android:visibility="invisible"
+        android:src="?attr/global_title_return_back"
+        android:layout_centerVertical="true"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerInside"
+        />
+
+
+
+    <!--运动模式-->
+    <TextView
+        android:id="@+id/tv_sport_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:background="?attr/home_fragment_head_button_sportmode"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/navigation_head_ll"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <!--运动模式-->
+        <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/cb_navigation_heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:text="@string/sport_text"
+            android:textSize="@dimen/global_small_text_size"
+            />
+        <!--计步-->
+        <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/cb_navigation_sport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?attr/home_fragment_head_bg"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/steps_text"
+            android:textColor="?attr/home_fragment_head_nor_text_color"
+            android:textSize="@dimen/home_title_text_s"
+            />
+        <!--睡眠-->
+        <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/cb_navigation_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/data_sleep"
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:textSize="@dimen/global_small_text_size"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_alignBottom="@id/navigation_head_ll"
+        android:background="?attr/health_reports_head_line_color" />
+
+    <include
+        android:id="@+id/weather_linerlayout"
+        layout="@layout/weather"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- 更多-->
+    <TextView
+        android:id="@+id/tv_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/weather_grey"
+        android:visibility="invisible"
+        android:text="@string/more"
+        android:gravity="center" />
+
+</RelativeLayout>

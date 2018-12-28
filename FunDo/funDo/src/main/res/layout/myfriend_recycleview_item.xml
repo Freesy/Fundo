@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearby_friend_item_rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+        
+        <ImageView 
+            android:id="@+id/nearby_friends_icon" 
+            android:layout_width="50.0dip" 
+            android:layout_height="50.0dip"
+            android:paddingStart="10dp"
+            android:paddingEnd="0dp"
+            android:contentDescription="@string/app_name"
+            android:clickable="false"           
+            android:src="@drawable/ic_launcher"/>
+        <LinearLayout 
+            android:orientation="vertical"             
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:layout_toEndOf="@id/nearby_friends_icon" >
+            <TextView 
+                android:id="@+id/myfriends_name" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:clickable="false"
+                android:singleLine="true"
+                android:layout_weight="1" 
+                android:text="@string/friends_name"
+                android:textSize="16sp"
+                
+                />
+            <TextView 
+            	android:id="@+id/myfirends_level"
+            	android:layout_width="wrap_content"
+            	android:layout_marginLeft="5dp"
+            	android:layout_marginStart="5dp"
+            	android:layout_marginTop="5dp"
+            	android:layout_height="20dp"
+            	android:textSize="12sp"
+            	android:singleLine="true" 
+                android:layout_weight="1"
+                android:text="@string/friends_level"
+                android:textColor="#CFCFCF"
+            />
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/frienditem_markview"
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"/>
+                
+        
+        
+        <ImageView
+            android:id="@+id/friend_item_gonextIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_right"
+            android:padding="15dp"
+            android:layout_toStartOf="@id/frienditem_markview"
+            android:contentDescription="@string/app_name"/>
+        
+        <ImageView
+            android:id="@+id/friend_item_meIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_data_me"                        
+            android:layout_toStartOf="@id/frienditem_markview"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"
+            />
+        
+        <TextView
+            android:id="@+id/friend_rank_tv" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:layout_toStartOf="@id/frienditem_markview"
+            android:padding="15dp"
+            android:text="@string/friends_age"
+           	android:visibility="gone"
+            />
+        
+        </RelativeLayout>
+       <!-- </LinearLayout> -->
+       <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#CFCFCF" />
+    
+
+</LinearLayout>

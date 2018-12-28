@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/li_myData"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/global_background_content"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+    <!--android:background="?attr/global_background_content"
+    android:background="@drawable/rectangle"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+        <!--android:background="?attr/global_background"-->
+        <!--标题栏标题-&#45;&#45;个人信息-->
+
+        <!--android:textColor="?attr/global_text_color"：这里设置为黑色-->
+
+        <ImageView
+            android:id="@+id/img_bluetooth_sesarch"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconfont_jiazai"
+            android:visibility="gone"/>
+        <!--返回按钮-->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back"/>
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="@string/button_save"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"
+            />
+
+        <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+            android:id="@+id/tv_title_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toStartOf="@+id/tv_save"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusableInTouchMode="true"
+            android:clickable="false"
+            android:singleLine="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="?attr/global_background">
+                <!--头像图片-->
+                <ImageView
+                    android:id="@+id/iv_my_headphoto"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/head_Photo"
+                    android:padding="15dp"
+
+                    android:src="@drawable/head_men"/>
+                <!--android:scaleType="centerInside"-->
+
+                <!--测试用-->
+                <ImageView
+                    android:id="@+id/iv_my_headphoto_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100dp"
+                    android:contentDescription="@string/head_Photo"
+
+                    android:padding="15dp"
+                    android:src="@drawable/head_men"
+                    android:visibility="gone"/>
+                <!--android:scaleType="centerInside"-->
+
+                <!--头像-->
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/iv_my_headphoto"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/head_Photo"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginBottom="20dp"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <!--//////////////////////////////////////////////////////////////////////////////////////////-->
+            <LinearLayout
+                android:id="@+id/re_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--昵称-->
+                <TextView
+                    android:id="@+id/lanTingBoldBlackTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/nickname"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingEnd="10dp">
+                    <TextView
+                        android:id="@+id/tv_my_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/small_menu"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|end"
+                        android:maxLines="1"
+                        android:text="@string/not_set_info"
+                        android:textColor="@color/hot_blue"
+                        android:textSize="@dimen/small_menu_size"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <LinearLayout
+                android:id="@+id/re_sex"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--性别-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/my_sex"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingEnd="10dp">
+                    <TextView
+                        android:id="@+id/iv_sex_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/small_menu"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/my_man"
+                        android:textColor="@color/hot_blue"
+                        android:textSize="@dimen/small_menu_size"/>
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <LinearLayout
+                android:id="@+id/re_height"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--身高-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/my_stature"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="10dp">
+                    <TextView
+                        android:id="@+id/tv_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/small_menu"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/hot_blue"
+                        android:textSize="@dimen/small_menu_size"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <LinearLayout
+                android:id="@+id/re_weight"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--体重-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/my_weight"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|end"
+                    android:maxLines="1"
+                    android:paddingEnd="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/small_menu"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/hot_blue"
+                        android:textSize="@dimen/small_menu_size"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <LinearLayout
+                android:id="@+id/re_birth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!--生日-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/my_birthday"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:gravity="center_vertical|end"
+                    android:paddingEnd="10dp">
+                    <TextView
+                        android:id="@+id/tv_birth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/small_menu"
+                        android:gravity="center_vertical|right"
+                        android:textColor="@color/hot_blue"
+                        android:textSize="@dimen/small_menu_size"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"/>
+
+            <TextView
+                android:id="@+id/new_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:text="@string/logout"
+                android:textColor="@color/hot_blue"
+                android:textSize="@dimen/small_menu_size"/>
+
+            <LinearLayout
+                android:id="@+id/re_Metric"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!--度量单位-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/metric"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"/>
+
+                <TextView
+                    android:id="@+id/tv_Metric"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingEnd="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/hot_blue"
+                    android:textSize="@dimen/small_menu_size"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/re_changepassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!--修改密码-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="20dp"
+                    android:text="@string/changepw"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_changep"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/hot_blue"
+                    android:textSize="@dimen/small_menu_size"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/re_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_marginTop="20dp"
+                android:background="?attr/global_background"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <!--退出登录-->
+                <TextView
+                    android:id="@+id/tv_button_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingStart="20dp"
+                    android:text="@string/logout"
+                    android:textColor="@color/hot_blue"
+                    android:textSize="@dimen/small_menu_size"
+                    android:visibility="gone"/>
+
+                <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView
+                     android:id="@+id/tv_out"
+                     android:layout_width="0dp"
+                     android:layout_height="@dimen/small_menu"
+                     android:layout_weight="1"
+                     android:gravity="center_vertical|right"
+                     android:paddingEnd="10dp"
+                     android:textColor="@color/hot_blue"
+                     android:textSize="@dimen/small_menu_size"
+                     android:visibility="invisible"/>-->
+
+                <!-- <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:contentDescription="@null"
+                     android:paddingEnd="20dp"
+                     android:scaleType="centerInside"
+                     android:src="@drawable/arrow_right" />-->
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/goalstep_set_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/box_shape"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////-->
+
+</LinearLayout>

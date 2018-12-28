@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app ="http://schemas.android.com/apk/res-auto">
+    
+
+        <Preference
+            android:key="temperature_units"
+            android:title="@string/temp_unit">
+        </Preference>
+
+                
+    
+
+        <Preference
+            android:title="@string/city"
+            android:key="city">
+
+
+        </Preference>
+        
+    
+
+</PreferenceScreen>

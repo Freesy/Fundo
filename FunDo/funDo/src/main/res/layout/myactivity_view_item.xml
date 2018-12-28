@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+        <LinearLayout
+        android:id="@+id/activity_item_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/box_shape">
+        
+        <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/activity_name_tv" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:textSize="15sp" 
+            android:text="@string/activity_name_is"/>
+        
+        <TextView 
+            android:id="@+id/activity_starttime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_name_tv"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:textSize="12sp"
+            android:text="@string/activity_start_time"/>
+        
+        <ImageView
+            android:id="@+id/myactivity_picture_iv" 
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="5dp" 
+            android:layout_below="@id/activity_starttime_tv"/>
+        
+        <TextView
+            android:id="@+id/myactivity_intrduction_tv" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:layout_below="@id/myactivity_picture_iv"
+            android:textSize="12sp"
+            android:text="@string/activity_detail"/>
+        
+        <View
+            android:id="@+id/myactivity_line_view" 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/myactivity_intrduction_tv"
+            android:background="@color/grey"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:layout_below="@id/myactivity_line_view"
+            android:textSize="15sp" 
+            android:text="@string/activity_detail"
+            android:padding="5dp"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myactivity_line_view"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/arrow_right"
+            android:padding="5dp"/>
+        
+        </RelativeLayout>
+    </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

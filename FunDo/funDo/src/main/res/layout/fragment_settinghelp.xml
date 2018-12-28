@@ -1,0 +1,323 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/re_setting_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.main.SettingHelpActivity">
+
+    <include
+        layout="@layout/main_toolbar_global"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/action_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/home_title_text_s" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+    <!--
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@color/allbg"
+            android:layout_height="match_parent" >
+     -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <!-- 加入Android 5.0 特效 -->
+
+        <LinearLayout
+            android:id="@+id/scr_rel_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginTop="30dp"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <LinearLayout
+                android:id="@+id/user_settings_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_user_settings_icon" />
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/user_settings"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/contacts_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_user_contacts" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/contacts"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <LinearLayout
+                android:id="@+id/switchSkinll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/switchskinllico" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/switchskin"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+
+                android:background="?attr/health_reports_head_line_color" />
+
+            <LinearLayout
+                android:id="@+id/soscall_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dialing" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/soscall"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <LinearLayout
+                android:id="@+id/function_userhelp_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/userhelp_function" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/function_userhelp"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <LinearLayout
+                android:id="@+id/function_about_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/about_function" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:text="@string/about"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:contentDescription="@null"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

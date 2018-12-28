@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="104dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_gravity="center"
+   >
+    <!--   android:background="@drawable/alertdialog_background"
+     #ffffff   alert_bg    alertdialog_background
+    android:background="@drawable/alert_dialog_backgroud-->
+
+  <!--  <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"/>-->
+
+    <!--android:src="@drawable/alert_dialog_yellow"-->
+
+    <!--com.kct.funcare.view.LanTingBoldBlackTextView-->
+    <TextView
+        android:id="@+id/tv_alert_content"
+        android:layout_width="match_parent"
+        android:layout_height="60.5dp"
+        android:text="sljkldsjkljfkldjsfkljds"
+        android:textColor="#030303"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+       />
+
+       <!-- <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#ff8b8b8b"
+            />-->
+    <!--android:background="@drawable/alert_dialog_line"-->
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@anim/load_animation" android:visibility="visible"/>
+
+
+    <Button
+        android:id="@+id/btn_fence_pop_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="43.5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@null"
+        android:text="OK"
+        android:textSize="17sp"
+        android:textColor="#0076FF"
+        android:visibility="gone"
+        />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43.5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_fence_pop_confirm"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="OK"
+            android:textSize="17sp"
+            android:textColor="#0076FF"
+             />
+    </LinearLayout>-->
+
+</LinearLayout>

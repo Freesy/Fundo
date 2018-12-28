@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:orientation="vertical" >
+
+   <!-- 左右箭头+日期按钮-->
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        layout="@layout/up_and_down" />
+
+    <ListView
+        android:id="@+id/timeline_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:scrollbars="@null" />
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:layout_marginBottom="65dp"-->
+
+</LinearLayout>

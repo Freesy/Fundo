@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <!--协助输入标题-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/assist_input"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <!--返回按钮-->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center">
+
+        <!--协助输入的文本框-->
+        <EditText
+            android:id="@+id/et_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="?attr/edit_bleinput_bg"
+            android:maxLength="60"
+            android:singleLine="true"
+            android:lines="4"
+            android:textColor="?attr/bleinput_edit_color" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/length_tv"
+        android:text="字符串长度：0/60,超出无法输入"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/bleinput_edit_color"
+        android:layout_below="@+id/et_send"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        />
+    <!--发送按钮-->
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="?attr/btn_bleinput_bg"
+        android:text="@string/str_send"
+        android:textColor="?attr/global_background_content" />
+
+    <!--发送到粘贴板-->
+    <Button
+        android:id="@+id/bt_sendtocopy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="?attr/edit_bleinput_bg"
+        android:text="@string/str_sendtocopy"
+        android:textColor="?attr/home_fragment_mileage_text_color"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/assist_input_tv"
+        android:textColor="?attr/global_text_color" />
+
+</LinearLayout>

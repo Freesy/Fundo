@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0000" >
+
+
+<LinearLayout
+    android:id="@+id/ietem_LinearLayoutone"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+<View
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="-30dp"
+        android:id="@+id/ietem_one"
+        android:background="?attr/global_background"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignBaseline="@+id/item_imageone"
+            android:src="@drawable/ram"/>
+        <ImageView
+            android:id="@+id/item_imageone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right"  />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_toStartOf="@+id/item_imageone"
+            android:layout_toEndOf="@+id/ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/text_size_medium"
+            android:paddingStart="5dp"
+            android:layout_centerVertical="true"
+            android:text="@string/Memory_Optimizer"
+            />
+
+
+
+    </RelativeLayout>
+</LinearLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_marginLeft="-30dp"
+            android:id="@+id/ietem_two"
+            android:background="?attr/global_background"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_alignParentTop="true"
+                android:background="?attr/health_reports_head_line_color"
+                android:id="@+id/view2" />
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignBaseline="@+id/item_imagetwo"
+                android:src="@drawable/permission"/>
+            <ImageView
+                android:id="@+id/item_imagetwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/arrow_right"  />
+
+            <TextView
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/global_text_color"
+                android:textSize="@dimen/text_size_medium"
+                android:paddingStart="5dp"
+                android:text="@string/application_authority"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/item_imagetwo"
+                android:layout_toEndOf="@+id/permission"
+                 />
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+
+</LinearLayout>

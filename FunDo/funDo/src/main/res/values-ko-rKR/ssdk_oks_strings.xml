@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">나누다</string>
+    <string name="ssdk_oks_sharing">공유 작업 지금 무대 진행…</string>
+    <string name="ssdk_oks_share_failed">공유 실패</string>
+    <string name="ssdk_oks_share_completed">공유 성공</string>
+    <string name="ssdk_oks_share_canceled">공유 취소</string>
+    <string name="ssdk_oks_cancel">취소</string>
+    <string name="ssdk_oks_multi_share">그림 문자 나누다</string>
+    <string name="ssdk_oks_confirm">확정</string>
+    <string name="ssdk_oks_contacts">연락처</string>
+    <string name="ssdk_oks_pull_to_refresh">드롭다운 새로 고침</string>
+	<string name="ssdk_oks_release_to_refresh">느슨한 새로 고침</string>
+	<string name="ssdk_oks_refreshing">새로 고침 중…</string>
+</resources>

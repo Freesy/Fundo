@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+   <!-- android:layout_width="match_parent"
+    android:layout_height="match_parent"-->
+
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="308dp"
+        android:orientation="vertical"
+        android:background="@drawable/pop_img_praise_bg"
+        android:layout_marginTop="160dp"
+
+      >
+        <!--
+        android:layout_marginTop="180dp"
+        android:layout_gravity="center"
+          android:gravity="center"
+        163dp-->
+        <TextView
+            android:id="@+id/tv_comment1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="163dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_comment_1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detailed_bottomtvsize"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_comment_2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detailed_bottomtvsize"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center_horizontal"
+            android:text="@string/user_comment_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detailed_bottomtvsize"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/makesure_btn"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/pop_btn_praise_bg"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/user_comment_4"
+            android:textColor="@color/bleinput_btn_color"
+            android:textSize="@dimen/detailed_bottomtvsize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cancel_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/pop_icon_praise_shut"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="98dp"
+        android:textColor="@color/bleinput_btn_color"
+        android:textSize="@dimen/detailed_bottomtvsize" />
+
+    <!--android:layout_marginTop="118dp"-->
+
+
+</LinearLayout>

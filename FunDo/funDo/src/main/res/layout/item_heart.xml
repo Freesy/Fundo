@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="?attr/global_background"
+    android:id="@+id/rl_heart_check"
+    android:layout_below="@id/rl_sms_notify"
+    android:layout_height="@dimen/small_menu"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:clickable="false"
+        android:focusable="false"
+        android:id="@+id/iv_heart_check"
+        android:layout_height="@dimen/small_menu"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/heart_check" />
+
+    <TextView
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/small_menu"
+        android:layout_toEndOf="@id/iv_heart_check"
+        android:layout_width="wrap_content"
+        android:paddingEnd="10sp"
+        android:paddingStart="10dp"
+        android:text="@string/heart_check"
+        android:textColor="?attr/global_text_color"
+        android:textSize="@dimen/small_menu_size" />
+
+    <ImageView
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingEnd="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_right" />
+
+    <View
+        android:background="?attr/health_reports_head_line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/line"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

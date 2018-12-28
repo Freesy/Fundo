@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:layout_gravity="center"
+            android:background="?attr/global_background">
+
+            <TextView
+                android:id="@+id/title_three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="微信运动"
+                android:textColor="?attr/global_text_color"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:scaleType="centerInside"
+                android:src="?attr/global_title_return_back" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/health_reports_head_line_color" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="你可以让FunDo和微信\n运动排行榜同步"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_wx_authorization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/wx_movement_1" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="App支持数据共享到微信运动排行榜应用"
+            android:textColor="?attr/global_text_color"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.用户需手动打开微信，点击“添加朋友->公众号”，搜索“分动健康” 并关注为好友，\n进入公众号点击右下角“更多”选择“绑定设备”，\n填写绑定设备MAC地址。"
+            android:textColor="?attr/global_text_color"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.如何查看MAC地址：进入手表设置 > 系统 > 关于，点击 型号会显示MAC地址。"
+            android:textColor="?attr/global_text_color"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.关注时，请您认准分动logo。"
+            android:textColor="?attr/global_text_color"
+            android:textSize="15sp"
+            android:layout_marginLeft="30dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_edit_shuiyin"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shareall_tone"
+        android:layout_width="match_parent"
+        android:background="@color/background_content"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/im_photo"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_height="300dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_newphoto"
+            android:layout_centerInParent="true"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_height="match_parent">
+
+            <!--<RelativeLayout
+                android:id="@+id/share_infome_show"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shareactivity_head"
+                android:orientation="horizontal"
+                android:layout_width="162dp"
+                android:layout_height="30dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/share_my_headphoto"
+                    android:layout_width="26dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/head_Photo"
+                    android:src="@drawable/head_men" />
+                <TextView
+                    android:id="@+id/share_name"
+                    android:layout_toEndOf="@+id/share_my_headphoto"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="嘛嘛嘛嘛3"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:maxEms="6"
+                    android:textColor="#ffffff"
+                    android:textSize="9dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/share_data"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="嘛嘛嘛嘛3"
+                    android:textSize="9dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>  99999-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/tv_key1"
+                    android:layout_alignParentEnd="true"
+                    android:text="总公里"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_value1"
+                    android:layout_below="@id/tv_key1"
+                    android:text="11.5"
+                    android:includeFontPadding="false"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout_two"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_above="@+id/RelativeLayout_there"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_key2"
+                    android:layout_above="@+id/tv_value2"
+                    android:layout_alignParentStart="true"
+                    android:text="浅睡时间"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_value2"
+                    android:text="5h20m"
+                    android:includeFontPadding="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout_there"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_above="@+id/RelativeLayout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <TextView
+                    android:id="@+id/tv_key3"
+                    android:layout_above="@+id/tv_value3"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:text="深睡时间"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_value3"
+                    android:text="95/77"
+                    android:includeFontPadding="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+                <TextView
+                    android:id="@+id/tv_key4"
+                    android:layout_above="@+id/tv_value4"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:text="时长"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_value4"
+                    android:text="00:00:00"
+                    android:includeFontPadding="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+                <TextView
+                    android:id="@+id/tv_key5"
+                    android:layout_alignBaseline="@+id/tv_key4"
+                    android:layout_alignParentEnd="true"
+                    android:text="消耗"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_value5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_value4"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="000"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout_bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/share_logo"
+                    android:layout_width="44dp"
+                    android:layout_height="17dp" />
+
+
+                <!--<ImageView
+                    android:visibility="gone"
+                    android:layout_toStartOf="@+id/share_location"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/fill"
+                    android:layout_width="9dp"
+                    android:layout_height="10dp" />-->
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/share_location"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="深圳市，南山区"
+                    android:textColor="#ffffff"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+           <!-- <com.szkct.weloopbtsmartdevice.view.MyTrajectoryFitView
+                android:id="@+id/myTrajectoryFitView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="77dp"
+                android:layout_height="77dp" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_photo"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_gravity="center_vertical"
+        android:background="#AA444444"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/watermark_cancel_selector"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+        <!--android:text="@string/cancel"-->
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/watermark_share_selector"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+        <!--android:text="@string/share"-->
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/watermark_save_selector"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+        <!--android:text="@string/button_save"-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_tishi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_share"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginRight="5dp"
+            android:layout_toStartOf="@+id/shareall_shareto"
+            android:background="@drawable/separator_l" />
+
+        <TextView
+            android:id="@+id/shareall_shareto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:text="@string/newWater_share"
+            android:textColor="#ffffff"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="38dp"
+            android:layout_toRightOf="@+id/shareall_shareto"
+            android:background="@drawable/separator_r" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_share"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.szkct.weloopbtsmartdevice.view.CustomerViewPager
+            android:id="@+id/share_test_vpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+  </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,18 @@
+<deviceinfo>
+<lcdsize width = '240' length = '240'/>
+<g_sensor>BMI055</g_sensor>
+<magnetic_sensor>YAS530</magnetic_sensor>
+<gyro_sensor>BMI055</gyro_sensor>
+<heart_rate_sensor>none</heart_rate_sensor>
+<temperature_sensor>none</temperature_sensor>
+<humidity_sensor>none</humidity_sensor>
+<max_memory>102400</max_memory>
+<mre_version>4.0</mre_version>
+<gsm>none</gsm>
+<gps>none</gps>
+<brand>MTK</brand>
+<model>TEST</model>
+<version>MAUI.WEARv1_DEV.W14.20</version>
+</deviceinfo>
+
+

@@ -1,0 +1,12 @@
+<appconfig>
+<category>local</category>
+<appname>Black Clock</appname>
+<recevier_id>blackclock</recevier_id>
+<vxp num = '1'>
+	<vxpname platform = 'install'>default_black.vxp</vxpname>
+</vxp>
+<package>null</package>
+<iconname>digitclock3</iconname>
+<download_url>null</download_url>
+<version>00005</version>
+</appconfig>

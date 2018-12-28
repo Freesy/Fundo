@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="lineColor">#FD730E</color>//折现颜色(#FF0000红色)
+    <color name="lineColorhuang">#Fefb28</color>//很黄很暴力
+    <color name="lineColorlan">#24bfff</color>//蓝色
+    <color name="lineColorxieyang">#F90287</color>//血氧的颜色
+
+<color name="textcolor">#ffffffff</color>
+<color name="red">#ffff0000</color>
+<color name="blue">#ff0080ff</color>
+<color name="black">#ff000000</color>
+<!--chendalin add  --> 
+ <color name="item_gray">#F8F8FF</color>
+    <color name="item_font">#8B8682</color>
+    <color name="item_background">#F5FFFA</color>
+    <color name="login_box_colors">#cccccc</color>
+    <color name="hui_se">#F0EFEF</color>
+    <color name="grey">#C1BCBC</color>
+    <color name="theme_colour">#18A2ED</color>
+    <color name="theme_colour_thin">#55B8EA</color>
+    <color name="dialog_bt">#7AC2BB</color>
+<color name="hot_blue">#37EEEA</color>
+<color name="bottomtext_blakc">#4f4f52</color>
+<color name="lines_grey">#dfe2e2</color>
+<color name="title_black">#6d6d70</color>
+<color name="weather_grey">#adadad</color>
+<color name="active_time_yellow">#f6b629</color>
+<color name="todaystep_black">#cacacd</color>
+<color name="light_black">#57565c</color>
+<color name="calories_red">#ee3d00</color>
+<color name="kilometer_blue">#0075fe</color>
+<color name="step_blue">#007cff</color>
+ <color name="target_grey">#d3d5da</color>
+ <color name="complete_black">#57565c</color>
+
+    <!-- 全局灰白色字体 -->
+    <color name="mywhite">#dddddd</color>
+    <color name="update_text_bg_selete">#DCDCDC</color>
+	<color name="update_text_bg">#00000000</color> 
+	<color name="statusbar_bg">#339999</color>
+	<!-- 百分比数的颜色值 -->
+	<color name="yuanhuan_baifeibi_se">#639e32</color> 
+	<!-- 日历文本颜色 -->
+	<color name="canlendar_text_color">#8F9091</color>
+    <!--<color name="canlendar_text_color">#ffffff</color>-->
+	<!-- app  toolbar主色 -->
+    <color name="app_theme_colors">#149da2</color>
+    <!--laiqinglin add  --> 
+    <color name="white">#ffffff</color>
+    <color name="my_wonderful_blue_color">#4cb5ab</color>
+    <color name="primary_dark">#0097A7</color>
+ 
+    <!--测速仪相关  --> 
+   	<color name="inside_progress">#abd4d6</color>	<!-- 进度条的颜色值 -->
+	<color name="external_progress">#8bc516</color>	<!-- 进度条进度颜色值 -->
+	<color name="bottom_velocimeter">#e515171d</color>
+	<color name="internal_velocimeter">#ffb4b4b4</color>
+	<color name="needle">#ff68a6</color> 	<!-- 针的颜色值 -->
+	<color name="digital_number">#ffdcefff</color>
+	
+	<color name="spots_dialog_color">@android:color/holo_blue_dark</color>
+	<!--轨迹导航相关-->
+	<color name="orange">#FFA500</color> <!-- 橙色 -->
+	<color name="main_tab_bottom_notsel">#149da2</color>
+    <color name="whitesmoke">#F5F5F5</color> <!-- 烟白色 -->
+    <color name="lock">#1574d2</color>
+    <color name="blue3">#ff00CCff</color>
+    
+    
+    <color name="primaryDark">#00796b</color>
+    <color name="accent">#00796b</color>
+    <color name="primaryLight">#7DD4B7</color>
+    <color name="gray">#AAAAAA</color>
+    
+     <color name="bule_bg">#3286FE</color>
+   
+    <color name="edit_text_hint">#d4d7d9</color>
+    
+    <color name="page_background">#f5f5f5</color>
+    <color name="circle_background_grey">#eaeded</color>
+    <color name="circle_complete_black">#5e5d63</color>
+    <color name="circle_lsat_blue">#3791db</color>
+ 
+    <color name="login_title_black">#3a3b46</color>
+    <color name="nor_black">#6e6e71</color>
+
+    <!-- 健康页面部分底色 -->
+    <color name="body_blue">#3791db</color>
+    <color name="result_title">#F7B52D</color>
+    <color name="body_overweight_text">#EC3214</color>
+    <color name="body_state_text">#F9B42E</color>
+    <color name="text_white">#FFFFFF</color>
+    
+    
+     <color name="discover_text">#707070</color>
+       <color name="stay_tuned">#D92626</color>
+         
+         <color name="hometil_bg">#292C30</color>
+         
+          <!-- 二维码 -->
+          <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="push_edit_okbgc">#1EC08E</color>
+   <color name="push_edit_notextc">#CAC9CE</color>
+  
+  <!-- Added by wuzhiyi begin -->
+    <!-- Global -->
+   
+    <color name="global_twenty_white_color">#32ffffff</color>
+    
+  	<!-- Big data fragment-->
+  	<color name="fragment_big_data_main_background_color">#ff292c30</color>
+ 
+  
+    <color name="allbg">#212427</color>
+    
+      <color name="pushdial_list_item_bg">#1B1C20</color>
+       <color name="pushdial_list_item2_bg">#3BEAE8</color>
+        <color name="ble_sec">#8f8f8f</color>
+
+
+         <color name="beatme_step_tv">#13aeeb</color>
+         <color name="beatme_distance_tv">#fb9934</color>
+         <color name="beatme_kal_tv">#f55555</color>
+         <color name="my_viewpager">#232629</color>
+         <color name="data_up">#0cc645</color>
+         
+          <color name="my_qiandao_color">#23E9E6</color>
+          
+           <color name="push_itme_bg_white">#e0e0e0</color>
+          
+          
+          <color name="bleinput_btn_color">#37eeea</color>
+          <color name="bleinput_btn_color_white">#3b92d7</color>
+          <color name="bleinput_btn_hot_color">#31d4d1</color>
+          <color name="bleinput_edit_color_white">#323232</color>
+
+          
+          
+            <!-- 黑色风格 -->
+    <color name="text_home_down">#37eeea</color>
+    <color name="global_text">#ffffffff</color>
+    <color name="background">#2e3135</color>
+    <color name="background_content">#292C30</color>
+    <color name="body_green">#6be72e</color>
+    <color name="global_white_color">#ffffffff</color>
+    <color name="global_gray_color">#ff8b8b8b</color>
+    <color name="analysis_number_color">#ff37eeea</color>
+    <color name="trajectory_bg">#292C30</color>
+    <color name="health_sports_bg">#212427</color>
+    <color name="main_bottom_icon_text_hot">#ff37eeea</color>
+    <color name="main_bottom_icon_text_normal">#ffffffff</color>
+    <color name="home_fragment_calorie_text_color">#ffeb582a</color>
+    <color name="home_fragment_active_time_text_color">#ff82ac31</color>
+    <color name="home_fragment_mileage_text_color">#ff3692da</color>
+    <color name="health_reports_details_text_color">#ff000000</color>
+    <color name="analysis_fragment_y_text_color">#ffffffff</color>
+    <color name="analysis_fragment_line_color">#ff4c5157</color>
+    <color name="analysis_fragment_x_text_color">#ff878f98</color>
+    
+    
+    <color name="home_head_text_hot">#696a6c</color>
+    <color name="home_head_text_normal">#ffffff</color>
+
+    <color name="popu_sportmode">#d9000000</color>
+    
+    <color name="home_cent_text_normal">#1bc5d2</color>
+    <!-- 白色风格 -->
+    <color name="global_white">#ffffffff</color>
+    <color name="global_background_white">#ffffffff</color>
+    <color name="global_text_white">#ff6d6d70</color>
+    <color name="background_content_white">#f5f5f5</color>
+    <color name="main_bottom_icon_text_hot_white">#ff3090df</color>
+    <color name="main_bottom_icon_text_normal_white">#ff6d6d70</color>
+    <color name="home_head_text_hot_white">#87B5E3</color>
+    <color name="home_head_text_normal_white">#3A90D6</color>
+    <color name="home_fragment_calorie_text_color_white">#ffeb582a</color>
+    <color name="home_fragment_active_time_text_color_white">#ff82ac31</color>
+    <color name="home_fragment_mileage_text_color_white">#ff3692da</color>
+    <color name="health_sports_fragment_persional_info_title_color_white">#ff9e9f9f</color>
+    <color name="health_sports_fragment_persional_info_text_color_white">#ff6d6d72</color>
+    <color name="health_reports_head_line_color_white">#33000000</color>
+    <color name="health_reports_title_background_color_white">#fff4b13a</color>
+    <color name="health_reports_details_text_color_white">#ff5d5d5d</color>
+    <color name="health_reports_details_body_normal_color_white">#fff6b629</color>
+    <color name="health_reports_details_body_over_color_whtie">#ffe50012</color>
+    <color name="health_reports_details_score_color_white">#ff62d4fb</color>    
+    <color name="health_reports_details_body_year_color_white">#ff6be72e</color>    
+    <color name="health_reports_complete_color_white">#ff00beff</color>
+    <color name="analysis_fragment_y_text_color_white">#ff6d6d70</color>
+    <color name="analysis_fragment_line_color_white">#33000000</color>
+    <color name="analysis_fragment_x_text_color_white">#ff6d6d70</color>
+  
+     <color name="home_cent_text_normal_white">#3a90d6</color>
+    <color name="popu_sportmode_white">#d9ffffff</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="guiji">#e8901e</color>
+    <color name="lujin">#00c31c</color>
+    <color name="trans">#00000000</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+
+    <color name="huibai">#abacad</color>
+
+    <color name="detailed_item_text_top">#94979c</color>
+
+
+    <color name="runtext_color_white">#323232</color>
+
+    <color name="sportsHistory_mian_bg_white">#F2F2F2</color>
+    <color name="sportsHistory_mian_bg">#212427</color>
+
+    <color name="sports_line_color">#d9d9d9</color>
+
+    <color name="speedfragment_chart_text_clort">#717171</color>
+    <color name="float_menu">#2a3441</color>
+	    <color name="timeline_text_grey">#909293</color>
+    <color name="timeline_white_step">#E97D1B</color>
+    <color name="timeline_white_sleep">#915DFF</color>
+    <color name="timeline_white_stationary">#4891FF</color>
+    <color name="timeline_white_unknown">#db322d</color>
+
+    <color name="t">#80000000</color>
+    <color name="login_blue">#35a4e7</color>
+    <color name="light_grey">#DCDCDC</color>
+    <color name="color_76eae8">#76eae8</color>
+    <color name="color_777777">#777777</color>
+
+    <color name="ic_launcher_background">#333232</color>
+</resources>

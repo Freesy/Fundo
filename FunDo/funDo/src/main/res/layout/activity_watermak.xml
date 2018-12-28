@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/im_photo"
+            android:layout_width="match_parent"
+            android:layout_height="450dp" />
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_photo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:background="#AA444444"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"/>
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/watermark_cancel_selector"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+         />
+        <!--android:text="@string/cancel"-->
+
+        <Button
+            android:id="@+id/bt_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/watermark_share_selector"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+           />
+        <!--android:text="@string/share"-->
+
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/watermark_save_selector"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+          />
+        <!--android:text="@string/button_save"-->
+
+    </RelativeLayout>
+</LinearLayout>

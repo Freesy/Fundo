@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_privacy"
+    android:fitsSystemWindows="true"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true">
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/about_privacy_policy"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/img_bluetooth_sesarch"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconfont_jiazai"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/write_off"
+            android:paddingEnd="10dp"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+    
+   <!--  <WebView 
+        android:id="@+id/webwiew"
+        android:scrollbars="none" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/allbg"
+      android:layerType="software"
+        />
+ -->
+ 
+    <WebView
+        android:id="@+id/webwiew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

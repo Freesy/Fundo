@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relay_enter_check"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:orientation="vertical"
+    android:paddingBottom="60dp"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.HeartEnterCheckActivity">
+
+    <LinearLayout
+        android:id="@+id/liner_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_alignParentTop="true"
+        android:background="?attr/global_background">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ecg_check"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_history" />
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/iv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/liner_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/heart_check_guide" />
+    <com.szkct.weloopbtsmartdevice.view.EcgView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:id="@+id/ecg"
+        android:layout_below="@id/liner_title"
+        android:layout_marginTop="100dp"
+        />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_ecgview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/liner_title"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/heart_check_guide" />
+
+    <LinearLayout
+        android:id="@+id/liner_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/heart_check_state_one"
+        android:textColor="?global_text_color"
+        android:textSize="15sp" />
+    <LinearLayout
+        android:id="@+id/liner_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_repeat_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heart_check_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="@string/repeat_check"
+            android:textColor="#999999"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heart_check_bg"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/heart_check_result"
+            android:textColor="#76eae8"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

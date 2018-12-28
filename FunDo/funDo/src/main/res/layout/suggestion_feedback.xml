@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" 
+    android:clipToPadding="true"
+    android:id="@+id/re_suggestion">
+	<include 
+        layout="@layout/main_toolbar_global"
+        />
+    <EditText
+        android:id="@+id/feedback_editText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" 
+        android:gravity="top"              
+        android:background="@drawable/feedback_selectbar_bg"
+        android:layout_below="@id/toolbar"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1"
+        android:textSize="12sp"
+        android:hint="@string/feekback_contexthint">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/feedback_touchText"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"                       
+        android:background="@drawable/feedback_selectbar_bg"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:maxLength="25"
+        android:layout_below="@id/feedback_editText"
+        android:hint="@string/feekback_touchhint">
+    </EditText>
+
+    <Button
+        android:id="@+id/submit_feedback_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/feedback_touchText"
+        android:background="@drawable/actionbar_background"     
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"/>
+
+    <!-- <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="@string/FundoQQ_group" / -->>
+    
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">Teilen</string>
+    <string name="ssdk_oks_sharing">Im hintergrund an der Operation…</string>
+    <string name="ssdk_oks_share_failed">Teilen gescheitert</string>
+    <string name="ssdk_oks_share_completed">An den Erfolg</string>
+    <string name="ssdk_oks_share_canceled">Teilen abgesagt</string>
+    <string name="ssdk_oks_cancel">Abgesagt</string>
+    <string name="ssdk_oks_multi_share">Foto-sharing</string>
+    <string name="ssdk_oks_confirm">Sicher</string>
+    <string name="ssdk_oks_contacts">Ansprechpartner</string>
+    <string name="ssdk_oks_pull_to_refresh">Drop-down-aktualisieren</string>
+	<string name="ssdk_oks_release_to_refresh">Release aktualisieren</string>
+	<string name="ssdk_oks_refreshing">Aktualisieren…</string>
+</resources>

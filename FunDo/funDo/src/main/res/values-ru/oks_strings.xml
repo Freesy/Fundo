@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">полный</string>
+    <string name="sharing">Поделиться операция фон ...</string>
+    <string name="share_to">доля</string>
+	<string name="multi_share">Photo Sharing</string>
+	<string name="share_completed">Доля Успех</string>
+	<string name="share_canceled">Доля была отменена </string>
+	<string name="select_one_plat_at_least">Пожалуйста, выберите целевую платформу</string>
+	<string name="list_friends">% S друзья</string>
+	<string name="share_failed">Поделиться удалось</string>
+	<string name="pull_to_refresh">Потяните вниз обновления</string>
+	<string name="release_to_refresh">Ослабить Обновить</string>
+	<string name="refreshing">Обновить ...</string>
+	<string name="shake2share">Встряхивания телефона!</string>
+	<string name="select_a_friend">Пожалуйста, выберите друга</string>
+</resources>

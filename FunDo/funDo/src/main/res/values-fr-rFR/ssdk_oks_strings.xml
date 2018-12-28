@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">Partager</string>
+    <string name="ssdk_oks_sharing">Fonctionnement en arrière-plan de partage est effectué…</string>
+    <string name="ssdk_oks_share_failed">Pas de partage</string>
+    <string name="ssdk_oks_share_completed">Partage de succès</string>
+    <string name="ssdk_oks_share_canceled">Partager a été annulé</string>
+    <string name="ssdk_oks_cancel">Annuler</string>
+    <string name="ssdk_oks_multi_share">Partage de photos</string>
+    <string name="ssdk_oks_confirm">Déterminer</string>
+    <string name="ssdk_oks_contacts">Personne de contact</string>
+    <string name="ssdk_oks_pull_to_refresh">Rafraîchissement D excursion bass</string>
+	<string name="ssdk_oks_release_to_refresh">Desserrer de rafraîchissement</string>
+	<string name="ssdk_oks_refreshing">Rafraîchir…</string>
+</resources>

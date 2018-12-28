@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  >
+
+    <string name="finish">Bitti</string>
+    <string name="sharing">Paylaşım işlemi arka planda çalışılıyor ...</string>
+    <string name="share_to">Şöyle paylaş </string>
+	<string name="multi_share">Fotoğraf Paylaşımı</string>
+	<string name="share_completed">İşlem Başarılı</string>
+	<string name="share_canceled">İşlem Başarısız</string>
+	<string name="select_one_plat_at_least">Lütfen hedef platformu seçin</string>
+	<string name="list_friends">Şuradaki arkadaşlar %s</string>
+	<string name="share_failed">İşlem Başarısız</string>
+	<string name="pull_to_refresh">Yenilemek için aşağı çekin</string>
+	<string name="release_to_refresh">Yenilemek için bırakın</string>
+	<string name="refreshing">Yenileniyor…</string>
+	<string name="shake2share">Telefonunu salla!</string>
+	<string name="select_a_friend">Lütfen bir arkadaş seçin</string>
+</resources>

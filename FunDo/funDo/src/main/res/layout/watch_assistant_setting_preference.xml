@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_alertset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/main_toolbar_global"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical">
+        <!--手表助手-->
+
+        <!--  <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+        <TextView
+            android:id="@+id/watch_help_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/home_fragment_head_bg"
+            android:gravity="center"
+            android:text="@string/more"
+            android:textColor="?attr/home_fragment_head_nor_text_color"
+            android:textSize="@dimen/home_title_text_s" />
+
+        <!--表盘推送-->
+        <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+        <TextView
+            android:id="@+id/pushdial_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/watch_help_ti"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingStart="10dp"
+            android:text="@string/pushdial"
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:textSize="@dimen/home_title_text_n"
+            android:visibility="gone" />
+
+        <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+        <ImageView
+            android:id="@+id/instructions_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:src="@drawable/why_icon"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/helper_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lin_alertsetfirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+            <TextView
+                android:id="@+id/com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="10dp"
+                android:text="@string/device"
+                android:textColor="?attr/global_text_color" />
+
+
+            <LinearLayout
+                android:id="@+id/resysy_ItemRemoveRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView1"
+                android:layout_marginBottom="30dp"
+                android:background="?attr/global_background"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <com.szkct.weloopbtsmartdevice.view.CustomerSwipeMenuListView
+                    android:id="@+id/listView_ble_connect"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:paddingEnd="10dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </LinearLayout>
+
+            <!--应用推送-->
+            <RelativeLayout
+                android:id="@+id/notifications_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/resysy_ItemRemoveRecyclerView"
+                android:background="?attr/global_background">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <ImageView
+                    android:id="@+id/notifications_switchone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_push" />
+
+                <!--  <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:id="@+id/notifications_switchone_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/notifications_switchone_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/notifications"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--切换皮肤-->
+            <RelativeLayout
+                android:id="@+id/switchSkinll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/notifications_layout"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/switchSkin_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/switchskinllico" />
+
+                <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/switchSkin_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/switchskin"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--来电通知-->
+            <RelativeLayout
+                android:id="@+id/rl_call_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/switchSkinll"
+                android:background="?attr/global_background">
+
+                <ImageView
+                    android:id="@+id/iv_call_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/call_notify" />
+
+                <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:id="@+id/telephone_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_call_notify"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/call_notify"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ToggleButton
+                    android:id="@+id/tb_call_notify"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--短信通知-->
+            <RelativeLayout
+                android:id="@+id/rl_sms_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_call_notify"
+                android:layout_marginBottom="30dp"
+                android:background="?attr/global_background">
+
+                <ImageView
+                    android:id="@+id/iv_sms_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sms_notify" />
+
+                <!--   <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:id="@+id/information_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_sms_notify"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/sms_notify"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ToggleButton
+                    android:id="@+id/tb_sms_notify"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <include layout="@layout/item_heart" />
+            <include layout="@layout/item_ecg" />
+            <include layout="@layout/item_temperature" />
+
+            <!--微信运动-->
+            <RelativeLayout
+                android:id="@+id/rl_wxsport_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_temp_check"
+                android:layout_marginBottom="30dp"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <ImageView
+                    android:id="@+id/iv_wxsport_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/wx_movement" />
+
+                <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_wxsport_notify"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="微信运动"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+
+            <!--拍照    -->
+            <RelativeLayout
+                android:id="@+id/camera_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_wxsport_notify"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentTop="true"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <ImageView
+                    android:id="@+id/camera_switchone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/imv_helper_photo" />
+
+                <!--<com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:id="@+id/camera_switchone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@+id/camera_switchone_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/camera"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ToggleButton
+                    android:id="@+id/camera_switchone"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/camera_switchone_txt"
+                    android:layout_alignBottom="@+id/camera_switchone_txt"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn=""
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--查找手机   -->
+            <RelativeLayout
+                android:id="@+id/find_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera_layout"
+                android:layout_marginBottom="30dp"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <!--找手机-->
+                <ImageView
+                    android:id="@+id/find_telephone_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/imv_helper_phone" />
+
+                <!--  <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:id="@+id/find_telephone_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@+id/find_telephone_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/alert_setting_find_phone"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ToggleButton
+                    android:id="@+id/find_telephone_switchone"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/find_telephone_txt"
+                    android:layout_alignBottom="@+id/find_telephone_txt"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--蓝牙通话-->
+            <RelativeLayout
+                android:id="@+id/assist_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/find_telephone"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/assist_input_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bluetooth_call" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@+id/assist_input_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/bluetooth_call"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+
+            <!--电子发票  1-->
+            <RelativeLayout
+                android:id="@+id/rl_elektronik_fatura"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/assist_input"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+                <!-- android:visibility="gone"-->
+
+                <ImageView
+                    android:id="@+id/fapiao_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/fapiao" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/fapiao_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/elektronik_fatura"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/fapiao_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <!-- <TextView
+                     android:id="@+id/assist_input_number"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toStartOf="@id/fapiao_rightIv"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="5dp"
+                     android:textColor="?attr/global_text_color"
+                     android:textSize="@dimen/menu_my_item_small" />-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--电子发票  2-->
+            <!--
+                        <RelativeLayout
+                            android:id="@+id/rl_elektronik_fatura"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/global_background"
+                            >
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/line"
+                                android:layout_alignParentTop="true"
+                                android:background="?attr/health_reports_head_line_color" />
+
+                            <TextView
+                                android:id="@+id/tv_elektronik_fatura"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:gravity="center_vertical"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="10sp"
+                                android:text="@string/elektronik_fatura"
+                                android:textColor="?attr/global_text_color"
+                                android:textSize="16sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/line"
+                                android:layout_alignParentBottom="true"
+                                android:background="?attr/health_reports_head_line_color" />
+                        </RelativeLayout>
+            -->
+
+            <!--收款二维码 1-->
+            <RelativeLayout
+                android:id="@+id/rl_receiving_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_elektronik_fatura"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+                <!--  android:visibility="gone"-->
+
+                <ImageView
+                    android:id="@+id/skewm_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shoukuanerweima" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/skewm_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/receiving_code"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/skewm_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <!-- <TextView
+                     android:id="@+id/assist_input_number"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toStartOf="@id/fapiao_rightIv"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="5dp"
+                     android:textColor="?attr/global_text_color"
+                     android:textSize="@dimen/menu_my_item_small" />-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--收款二维码 2-->
+            <!-- <RelativeLayout
+                 android:id="@+id/rl_receiving_code"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="10dp"
+                 android:background="?attr/global_background"
+                 >
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/line"
+                     android:layout_alignParentTop="true"
+                     android:background="?attr/health_reports_head_line_color" />
+
+                 <TextView
+                     android:id="@+id/tv_receiving_code"
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:clickable="false"
+                     android:focusable="false"
+                     android:gravity="center_vertical"
+                     android:paddingStart="16dp"
+                     android:paddingEnd="10sp"
+                     android:text="@string/receiving_code"
+                     android:textColor="?attr/global_text_color"
+                     android:textSize="16sp" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/line"
+                     android:layout_alignParentBottom="true"
+                     android:background="?attr/health_reports_head_line_color" />
+             </RelativeLayout>-->
+
+            <!--找手表  所有平台都有，不要隐藏-->
+            <RelativeLayout
+                android:id="@+id/get_watches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_receiving_code"
+                android:background="?attr/global_background">
+                <!-- android:layout_below="@+id/assist_input"-->
+
+                <ImageView
+                    android:id="@+id/get_watches_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/find_device" />
+
+                <TextView
+
+                    android:id="@+id/get_watches_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@+id/get_watches_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/setting_lookfor"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:id="@+id/img_watch_sesarch"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/iconfont_jiazai"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--手表WiFi-->
+            <RelativeLayout
+                android:id="@+id/set_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/get_watches"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="?attr/health_reports_head_line_color" />
+
+
+                <ImageView
+                    android:id="@+id/set_wifi_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/imv_helper_wifi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@+id/set_wifi_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/wifi_settings"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+            </RelativeLayout>
+            <!--联系人-->
+            <RelativeLayout
+                android:id="@+id/contacts_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/set_wifi"
+                android:layout_marginTop="30dp"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <ImageView
+                    android:id="@+id/contacts_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/app_user_contacts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/contacts_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/contacts"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--SOS呼叫-->
+            <RelativeLayout
+                android:id="@+id/soscall_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/contacts_tv"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/soscall_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/dialing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/soscall_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/soscall"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--久坐提醒-->
+            <RelativeLayout
+                android:id="@+id/rl_sit_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/soscall_tv"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_sit_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sit_notify" />
+
+                <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_sit_notify"
+                    android:clickable="false"
+                    android:ellipsize="marquee"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:singleLine="true"
+                    android:text="@string/sit_notify"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <!-- android:textSize="@dimen/small_menu_size"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--喝水提醒-->
+            <RelativeLayout
+                android:id="@+id/rl_drink_notify"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_sit_notify"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_drink_notify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drink_notify" />
+
+                <!--  <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_drink_notify"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/drink_notify"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--提醒模式-->
+            <RelativeLayout
+                android:id="@+id/rl_notify_mode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_drink_notify"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_notify_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/notify_mode" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_notify_mode"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/notify_mode"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--闹钟提醒-->
+            <RelativeLayout
+                android:id="@+id/rl_notify_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_notify_mode"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_notify_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/notify_alarm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_notify_alarm"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/notify_alarm"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--手势智控-->
+            <RelativeLayout
+                android:id="@+id/rl_gesture_control"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_notify_alarm"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_gesture_control"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/gesture_control" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_gesture_control"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10sp"
+                    android:text="@string/gesture_control"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />-->
+
+                <!--  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:paddingEnd="20dp"
+                      android:scaleType="centerInside"
+                      android:src="@drawable/arrow_right" />-->
+
+                <!--  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="@dimen/small_menu"
+                      android:id="@+id/telephone_description"
+                      android:layout_toEndOf="@id/iv_call_notify"
+                      android:clickable="false"
+                      android:focusable="false"
+                      android:gravity="center_vertical"
+                      android:paddingStart="10dp"
+                      android:paddingEnd="10sp"
+                      android:text="@string/call_notify"
+                      android:textColor="?attr/global_text_color"
+                      android:textSize="@dimen/text_size_medium" />
+
+                  <ToggleButton
+                      android:id="@+id/tb_call_notify"
+                      android:layout_width="50dp"
+                      android:layout_height="25dp"
+                      android:layout_alignParentEnd="true"
+                      android:layout_centerVertical="true"
+                      android:layout_marginRight="10dp"
+                      android:background="@drawable/alertsetting_box_selector"
+                      android:clickable="true"
+                      android:focusable="true"
+                      android:textOff=""
+                      android:textOn="" />-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_gesture_control"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/raise_bright"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ToggleButton
+                    android:id="@+id/tb_raise_bright"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--心率检测-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_gesture_control"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_heart_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/heart_check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_heart_check"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/heart_check"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+
+            <!--指针校准-->
+            <RelativeLayout
+                android:id="@+id/rl_pointer_calibration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_gesture_control"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_pointer_calibration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pointer_calibration" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_pointer_calibration"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/point_calibraion"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--勿扰模式-->
+            <RelativeLayout
+                android:id="@+id/rl_not_disturb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_pointer_calibration"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_not_disturb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/not_disturb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/iv_not_disturb"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/not_disturb"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--固件升级-->
+            <RelativeLayout
+                android:id="@+id/firmeware_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/rl_not_disturb"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/firmeware_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/firmware_upgrade" />
+
+                <!--android:src="@drawable/firmware_upgrade"-->
+
+                <TextView
+                    android:id="@+id/item_gujianshengji_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/firmeware_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/hardware_upgrade"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/firmeware_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    android:id="@+id/firmeware_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@id/firmeware_rightIv"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/menu_my_item_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--单位设置-->
+            <RelativeLayout
+                android:id="@+id/unit_setting_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/firmeware_rel"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/unit_setting_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/unit_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/unit_setting_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/unit_setting"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/unit_setting_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    android:id="@+id/unit_setting_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@id/unit_setting_rightIv"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/menu_my_item_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+
+            <!--表盘推送-->
+            <RelativeLayout
+                android:id="@+id/watch_push_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/unit_setting_rel"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/watch_push_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/watch_push" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/watch_push_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/pushdial"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/watch_push_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    android:id="@+id/watch_push_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@id/watch_push_rightIv"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/menu_my_item_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--协助输入-->
+            <RelativeLayout
+                android:id="@+id/assist_input_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/watch_push_rel"
+                android:background="?attr/global_background"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/assist_inputs_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/imv_helper_input" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/assist_inputs_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/assist_input"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <ImageView
+                    android:id="@+id/assist_input_rightIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <TextView
+                    android:id="@+id/assist_input_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toStartOf="@id/assist_input_rightIv"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/menu_my_item_small" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--用户帮助-->
+            <RelativeLayout
+                android:id="@+id/function_userhelp_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/assist_input_rel"
+                android:layout_marginTop="30dp"
+                android:background="?attr/global_background">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:background="?attr/health_reports_head_line_color" />
+
+                <ImageView
+                    android:id="@+id/function_userhelp_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/userhelp_function" />
+
+                <TextView
+                    android:id="@+id/user_guide_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/function_userhelp_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/function_userhelp"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <!--加入我们-->
+            <RelativeLayout
+                android:id="@+id/Join_us_rl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/function_userhelp_tv"
+                android:background="?attr/global_background">
+
+                <ImageView
+                    android:id="@+id/Join_us_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/join_icon" />
+
+                <TextView
+                    android:id="@+id/Join_us_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/Join_us_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/join_str"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+            <!--关于-->
+            <RelativeLayout
+                android:id="@+id/function_about_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/small_menu"
+                android:layout_below="@id/Join_us_rl"
+                android:background="?attr/global_background">
+
+                <ImageView
+                    android:id="@+id/function_about_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_marginLeft="15dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/about_function" />
+
+                <TextView
+                    android:id="@+id/mydevice_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/small_menu"
+                    android:layout_toEndOf="@id/function_about_iv"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10dp"
+                    android:text="@string/about"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line"
+                    android:layout_alignParentBottom="true"
+                    android:background="?attr/health_reports_head_line_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/function_about_tv" />
+            <!-- 王产品要求隐藏20160823 -->
+            <RelativeLayout
+                android:id="@+id/ble_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/global_background"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_menu"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="15dp"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="20dp"
+                    android:text="@string/select_data_device"
+                    android:textColor="?attr/global_text_color"
+                    android:textSize="@dimen/small_menu_size" />
+
+                <TextView
+                    android:id="@+id/ble_selecttext"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/small_menu"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="35dp"
+                    android:text="@string/the_last_connected_device"
+                    android:textColor="@color/ble_sec"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingEnd="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/arrow_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:background="?attr/health_reports_head_line_color"
+                android:visibility="gone" />
+            <!-- 王产品要求隐藏20160823 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginTop="30dp"
+                android:background="?attr/health_reports_head_line_color"
+                android:visibility="gone" />
+            <!-- 王产品要求隐藏20160823 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ble_select"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_find"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:layout_gravity="bottom"
+        android:background="?attr/health_reports_head_line_color" />
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImagePreference">
+        <attr name="image" format="reference" />
+    </declare-styleable>
+    <!-- chendalin add 自定义的圆环控件的属性设置 -->
+    <declare-styleable name="homepage_ProgressWheel">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLength" format="dimension" />
+        <attr name="contourColor" format="color" />
+        <attr name="contourSize" format="dimension" />
+    </declare-styleable>
+    <!-- laiqinglin add 新圆环控件的属性设置 -->
+    <declare-styleable name="WheelIndicatorView">
+        <attr name="itemsLineWidth" format="dimension" />
+        <attr name="filledPercent" format="integer" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+    <!-- 滑动选择目标步数的控件属性设置 -->
+    <declare-styleable name="SetGoalStepProgressView">
+        <attr name="color_start" format="color" />
+        <attr name="color_end" format="color" />
+        <attr name="circleDimensionRate" format="dimension" />
+        <attr name="triangleDimensionRate" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+
+
+    <!-- 主题切换 -->
+    <attr name="home_fragment_head_nor_text_color" format="color" />
+    <attr name="home_fragment_head_hot_text_color" format="color" />
+
+    <attr name="global_background" format="color" />
+    <attr name="global_bottom_background" format="color" />
+    <attr name="global_text_color" format="color" />
+    <attr name="global_background_content" format="color" />
+    <attr name="main_bottom_text_color" format="color" />
+    <attr name="home_fragment_head_text_color" format="color" />
+    <attr name="home_fragment_select_time_text_color" format="color" />
+    <attr name="home_fragment_info_text_color" format="color" />
+    <attr name="home_fragment_calorie_text_color" format="color" />
+    <attr name="home_fragment_active_time_text_color" format="color" />
+    <attr name="home_fragment_mileage_text_color" format="color" />
+    <attr name="health_reports_fragment_background_color" format="color" />
+    <attr name="health_reports_fragment_persional_info_title_color" format="color" />
+    <attr name="health_reports_fragment_persional_info_text_color" format="color" />
+    <attr name="health_reports_head_line_color" format="color" />
+    <attr name="health_reports_title_text_color" format="color" />
+    <attr name="health_reports_details_text_color" format="color" />
+    <attr name="health_reports_details_score_color" format="color" />
+    <attr name="health_reports_details_body_normal_color" format="color" />
+    <attr name="health_reports_details_body_over_color" format="color" />
+    <attr name="health_reports_details_body_year_color" format="color" />
+    <attr name="analysis_fragment_y_text_color" format="color" />
+    <attr name="analysis_fragment_line_color" format="color" />
+    <attr name="analysis_fragment_x_text_color" format="color" />
+    <attr name="health_reports_complete_color" format="color" />
+    <attr name="analysis_fragment_alldata_date_text_color" format="color" />
+    <attr name="alldata_text_color" format="color" />
+    <attr name="alldata_data_text_color" format="color" />
+    <attr name="push_item_background" format="color" />
+    <attr name="bleinput_edit_color" format="color" />
+    <attr name="home_cent_text_color" format="color" />
+    <attr name="runtext_color" format="color" />
+    <attr name="runtext_gray_color" format="color" />
+    <attr name="sportsHistory_mian_bg" format="color" />
+    <attr name="popu_sportmode_color" format="color" />
+
+    <attr name="firmware_success_background" format="color" />
+    <attr name="firmware_update_background" format="color" />
+    <attr name="firmware_upload_background" format="color" />
+    <attr name="firmware_progress_color" format="color" />
+
+    <attr name="main_bottom_icon_analysis" format="reference" />
+    <attr name="main_bottom_icon_trajectory" format="reference" />
+    <attr name="main_bottom_icon_home" format="reference" />
+    <attr name="main_bottom_icon_health" format="reference" />
+    <attr name="main_bottom_icon_setting" format="reference" />
+    <attr name="home_fragment_head_button_share" format="reference" />
+    <attr name="home_fragment_head_button_synchronization" format="reference" />
+
+
+    <attr name="home_fragment_head_button_sportmode" format="reference" />
+    <attr name="home_fragment_head_button_quanma" format="reference" />
+    <attr name="home_fragment_head_button_banma" format="reference" />
+    <attr name="home_fragment_head_button_shineipao" format="reference" />
+    <attr name="home_fragment_head_button_yuyepao" format="reference" />
+    <attr name="home_fragment_head_button_dengshanpao" format="reference" />
+    <attr name="home_fragment_head_button_huwaipao" format="reference" />
+    <attr name="home_fragment_head_button_jianzou" format="reference" />
+
+
+    <attr name="analysis_fragment_button_background" format="reference" />
+    <attr name="health_reports_title_background" format="reference" />
+    <attr name="home_fragment_button_target" format="reference" />
+    <attr name="home_fragment_icon_left" format="reference" />
+    <attr name="home_fragment_icon_right" format="reference" />
+    <attr name="home_fragment_head_bg" format="reference" />
+    <attr name="my_fragment_item_bg" format="reference" />
+    <attr name="my_fragment_viewpager_bg" format="reference" />
+    <attr name="global_title_return_back" format="reference" />
+    <attr name="global_title_finish" format="reference" />
+    <attr name="global_title_add" format="reference" />
+    <attr name="global_title_history" format="reference" />
+    <attr name="global_title_share" format="reference" />
+    <attr name="btn_bleinput_bg" format="reference" />
+    <attr name="edit_bleinput_bg" format="reference" />
+    <attr name="im_head_men" format="reference" />
+    <attr name="im_head_women" format="reference" />
+    <attr name="im_sos_itembg" format="reference" />
+    <attr name="analysis_fragment_alldata_background" format="reference" />
+    <attr name="analysis_fragment_alldata_data_background" format="reference" />
+    <attr name="analysis_fragment_alldata_date_background" format="reference" />
+    <attr name="analysis_fragment_alldata_selector_background" format="reference" />
+    <attr name="analysis_fragment_alldata_fullscreen_selector_background" format="reference" />
+    <attr name="notice_rigiht_bg" format="reference" />
+    <attr name="my_fragment_viewpager_line" format="reference" />
+
+    <attr name="wifi_riss_iv1" format="reference" />
+    <attr name="wifi_riss_iv2" format="reference" />
+    <attr name="wifi_riss_iv3" format="reference" />
+    <attr name="wifi_riss_iv4" format="reference" />
+
+    <attr name="wifi_risslock_iv1" format="reference" />
+    <attr name="wifi_risslock_iv2" format="reference" />
+    <attr name="wifi_risslock_iv3" format="reference" />
+    <attr name="wifi_risslock_iv4" format="reference" />
+
+    <attr name="healt_finish_iv" format="reference" />
+    <attr name="fragment_my_setting_iv" format="reference" />
+    <attr name="home_run_bg" format="reference" />
+    <attr name="fragment_home_run_start_bt" format="reference" />
+    <attr name="fragment_home_history_record__bt" format="reference" />
+    <attr name="fragment_home_settings__bt" format="reference" />
+    <attr name="activity_outdoorrun_bg" format="reference" />
+    <attr name="activity_outdoorrun_continue" format="reference" />
+    <attr name="activity_outdoorrun_lockscreen" format="reference" />
+    <attr name="activity_outdoorrun_suspend" format="reference" />
+    <attr name="activity_outdoorrun_end" format="reference" />
+    <attr name="activity_outdoorrun_setting" format="reference" />
+    <attr name="activity_outdoorrun_mapmode" format="reference" />
+    <attr name="lockscreen" format="reference" />
+    <attr name="speedhead_bg" format="reference" />
+    <attr name="speedhead_logo_bg" format="reference" />
+    <attr name="speedfragment_details" format="reference" />
+    <attr name="rili" format="reference" />
+    <attr name="sportshistory_banma" format="reference" />
+    <attr name="sportshistory_dengshan" format="reference" />
+    <attr name="sportshistory_huwaipao" format="reference" />
+    <attr name="sportshistory_jianzou" format="reference" />
+    <attr name="sportshistory_quanma" format="reference" />
+    <attr name="sportshistory_shineipao" format="reference" />
+    <attr name="sportshistory_yueyepao" format="reference" />
+
+    <attr name="runsetting_voice_selector" format="reference" />
+    <attr name="runsetting_screen_selector" format="reference" />
+    <attr name="runsetting_autopause_selector" format="reference" />
+    <attr name="runsetting_autostop_selector" format="reference" />
+    <attr name="sportshistory_sync" format="reference" />
+    <attr name="sport_share_background" format="reference" />
+    <attr name="sport_photo_background" format="reference" />
+
+    <!-- circleImageView属性设置 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ChartView">
+        <attr name="maxValue" format="integer"></attr>
+        <attr name="dividerCount" format="integer"></attr>
+        <attr name="lineColor" format="color"></attr>
+        <attr name="textColor"></attr>
+        <attr name="pathStartColor" format="color"></attr>
+        <attr name="pathMidColor" format="color"></attr>
+        <attr name="pathEndColor" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color"/>
+        <attr name="fab_colorDisabled" format="color"/>
+        <attr name="fab_colorNormal" format="color"/>
+        <attr name="fab_icon" format="reference"/>
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_title" format="string"/>
+        <attr name="fab_stroke_visible" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color"/>
+        <attr name="fab_addButtonColorNormal" format="color"/>
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color"/>
+        <attr name="fab_addButtonStrokeVisible" format="boolean"/>
+        <attr name="fab_labelStyle" format="reference"/>
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0"/>
+            <enum name="down" value="1"/>
+            <enum name="left" value="2"/>
+            <enum name="right" value="3"/>
+        </attr>
+    </declare-styleable>
+</resources>  

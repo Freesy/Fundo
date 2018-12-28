@@ -1,0 +1,154 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From FunFit:
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\gradle.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\runConfigurations.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* Android.mk
+* gradlew
+* gradlew.bat
+* ic_launcher-web.png
+From design:
+* build.gradle
+* build.gradle.bak
+From hellocharts-library:
+* build.gradle
+* gradle.properties
+* pom.xml
+* proguard-project.txt
+From velocimeterlibrary:
+* build.gradle
+* build.gradle.bak
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:21.0.3
+joda-time-2.3.jar => joda-time:joda-time:2.3
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+joda-time-2.3.jar => version 2.3 in joda-time:joda-time:2.3
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:21.0.3]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In design:
+* AndroidManifest.xml => design\src\main\AndroidManifest.xml
+* res\ => design\src\main\res\
+* src\ => design\src\main\java
+* src\.readme => design\src\main\resources\.readme
+In hellocharts-library:
+* AndroidManifest.xml => hellochartslibrary\src\main\AndroidManifest.xml
+* res\ => hellochartslibrary\src\main\res\
+* src\ => hellochartslibrary\src\main\java\
+In velocimeterlibrary:
+* AndroidManifest.xml => velocimeterlibrary\src\main\AndroidManifest.xml
+* res\ => velocimeterlibrary\src\main\res\
+* src\ => velocimeterlibrary\src\main\java\
+In FunFit:
+* AndroidManifest.xml => funFit\src\main\AndroidManifest.xml
+* assets\ => funFit\src\main\assets\
+* libs\achartengine-1.1.0.jar => funFit\libs\achartengine-1.1.0.jar
+* libs\AMap2DMap_2.8.1_AMapLocation_2.4.1_20160425.jar => funFit\libs\AMap2DMap_2.8.1_AMapLocation_2.4.1_20160425.jar
+* libs\armeabi\libBaiduMapSDK_v3_3_0_15.so => funFit\src\main\jniLibs\armeabi\libBaiduMapSDK_v3_3_0_15.so
+* libs\armeabi\libCommand.so => funFit\src\main\jniLibs\armeabi\libCommand.so
+* libs\armeabi\libgdinamapv4sdk752.so => funFit\src\main\jniLibs\armeabi\libgdinamapv4sdk752.so
+* libs\armeabi\libgdinamapv4sdk752ex.so => funFit\src\main\jniLibs\armeabi\libgdinamapv4sdk752ex.so
+* libs\armeabi\liblocSDK5.so => funFit\src\main\jniLibs\armeabi\liblocSDK5.so
+* libs\armeabi\libsmm.so => funFit\src\main\jniLibs\armeabi\libsmm.so
+* libs\commons-codec-1.5.jar => funFit\libs\commons-codec-1.5.jar
+* libs\core-3.0.0.jar => funFit\libs\core-3.0.0.jar
+* libs\fastjson-1.1.33-sources.jar => funFit\libs\fastjson-1.1.33-sources.jar
+* libs\fastjson-1.1.33.jar => funFit\libs\fastjson-1.1.33.jar
+* libs\greendao-1.3.7.jar => funFit\libs\greendao-1.3.7.jar
+* libs\MobCommons-2016.1102.1128.jar => funFit\libs\MobCommons-2016.1102.1128.jar
+* libs\MobTools-2016.1102.1128.jar => funFit\libs\MobTools-2016.1102.1128.jar
+* libs\open_sdk_r4889_lite.jar => funFit\libs\open_sdk_r4889_lite.jar
+* libs\ShareSDK-Core-2.7.9.jar => funFit\libs\ShareSDK-Core-2.7.9.jar
+* libs\ShareSDK-FacebookMessenger-2.7.9.jar => funFit\libs\ShareSDK-FacebookMessenger-2.7.9.jar
+* libs\ShareSDK-Linkedin-2.7.9.jar => funFit\libs\ShareSDK-Linkedin-2.7.9.jar
+* libs\ShareSDK-QQ-2.7.9.jar => funFit\libs\ShareSDK-QQ-2.7.9.jar
+* libs\ShareSDK-QZone-2.7.9.jar => funFit\libs\ShareSDK-QZone-2.7.9.jar
+* libs\ShareSDK-Wechat-2.7.9.jar => funFit\libs\ShareSDK-Wechat-2.7.9.jar
+* libs\ShareSDK-Wechat-Core-2.7.9.jar => funFit\libs\ShareSDK-Wechat-Core-2.7.9.jar
+* libs\ShareSDK-Wechat-Moments-2.7.9.jar => funFit\libs\ShareSDK-Wechat-Moments-2.7.9.jar
+* libs\ShareSDK-WhatsApp-2.7.9.jar => funFit\libs\ShareSDK-WhatsApp-2.7.9.jar
+* libs\volley.jar => funFit\libs\volley.jar
+* libs\wearable.jar => funFit\libs\wearable.jar
+* lint.xml => funFit\lint.xml
+* res\ => funFit\src\main\res\
+* src\ => funFit\src\main\java\
+* src\.define => funFit\src\main\resources\.define
+* src\android\telephony\NeighboringCellInfo.aidl => funFit\src\main\aidl\android\telephony\NeighboringCellInfo.aidl
+* src\com\android\internal\telephony\ITelephony.aidl => funFit\src\main\aidl\com\android\internal\telephony\ITelephony.aidl
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

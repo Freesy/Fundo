@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">완전한</string>
+    <string name="sharing">공유 동작이 배경 인 ...</string>
+    <string name="share_to">몫</string>
+	<string name="multi_share">사진 공유</string>
+	<string name="share_completed">공유 성공</string>
+	<string name="share_canceled">공유 취소되었습니다</string>
+	<string name="select_one_plat_at_least">대상 플랫폼을 선택하세요</string>
+	<string name="list_friends">%s친구</string>
+	<string name="share_failed">공유 실패</string>
+	<string name="pull_to_refresh">풀다운 새로 고침</string>
+	<string name="release_to_refresh">풀어 새로 고침</string>
+	<string name="refreshing">새로 고침 ...</string>
+	<string name="shake2share">전화를 흔들어!</string>
+	<string name="select_a_friend">친구를 선택하세요</string>
+</resources>

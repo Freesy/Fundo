@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.NewRegisterCodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="填写验证码及密码"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="135 8374 5573"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verification_code_sent"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl_password"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp">
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+
+        <EditText
+            android:id="@+id/et_yzm"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/et_password"
+            android:layout_marginBottom="11dp"
+            android:background="@drawable/login_input_2_n"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="输入验证码"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="14sp" />
+        <!-- login_input_s
+        android:layout_gravity="center"-->
+
+        <Button
+            android:id="@+id/btn_getverificationcode"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/et_yzm"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/button_getcode"
+            android:gravity="center"
+            android:text="@string/obtain"
+            android:textColor="#004F4D"
+            android:textSize="14sp" />
+        <!--android:layout_gravity="center"-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:maxLength="20"
+            android:textIsSelectable="false"
+            android:longClickable="false"
+            android:hint="输入6~20位密码"
+            android:textColorHint="#66ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_input_n"/>
+
+        <ToggleButton
+            android:id="@+id/btn_login_password_show_hide"
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:background="@drawable/logon_icon_hide"
+            android:textOn=" "
+            android:textOff=" "
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/et_password"
+            android:layout_marginRight="13.5dp"
+            />
+        <!--android:layout_width="18dp"
+            android:layout_height="12dp"
+        -->
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_marginTop="10dp"
+         >
+         <EditText
+             android:id="@+id/et_password_confirm"
+             android:layout_width="300dp"
+             android:layout_height="50dp"
+             android:gravity="center"
+             android:textSize="14sp"
+             android:hint="再次输入6-20位密码"
+             android:textColorHint="#66ffffff"
+             android:textColor="#99ffffff"
+             android:background="@drawable/login_input_2_n"/>
+
+         <Button
+             android:layout_width="30dp"
+             android:layout_height="15dp"
+             android:background="@drawable/display"
+             android:gravity="center"
+             android:layout_centerInParent="true"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:layout_alignRight="@+id/et_password_confirm"
+             android:layout_marginRight="30dp"
+             />
+     </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_marginTop="22dp">
+        <TextView
+            android:id="@+id/tv_serviceagreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="服务协议"
+            android:textColor="#5CEEEA"
+            android:textSize="14sp"
+            android:layout_marginLeft="110dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+        <!--android:layout_marginLeft="120dp : 计算需要120"-->
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:background="#6A6A6A"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_privacypolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_privacy_policy"
+            android:textSize="14sp"
+            android:textColor="#5CEEEA"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="110dp"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/done"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/button_confirm"/>
+
+</LinearLayout>

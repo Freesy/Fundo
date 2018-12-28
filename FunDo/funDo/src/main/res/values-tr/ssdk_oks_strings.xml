@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">Paylaş</string>
+    <string name="ssdk_oks_sharing">Paylaşım işlemi arka planda olduğunu…</string>
+    <string name="ssdk_oks_share_failed">Paylaşımı başarısız oldu</string>
+    <string name="ssdk_oks_share_completed">Başarı paylaşımı</string>
+    <string name="ssdk_oks_share_canceled">Paylaşım iptal edildi</string>
+    <string name="ssdk_oks_cancel">İptal</string>
+    <string name="ssdk_oks_multi_share">Fotoğraf paylaşımı</string>
+    <string name="ssdk_oks_confirm">Emin misiniz</string>
+    <string name="ssdk_oks_contacts">İlgili kişi</string>
+    <string name="ssdk_oks_pull_to_refresh">Açılan yenileme</string>
+	<string name="ssdk_oks_release_to_refresh">Yayın Yenile</string>
+	<string name="ssdk_oks_refreshing">Yenileme…</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weibo_oauth_regiseter">autorizzazione</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="weibo_upload_content">Condividi immagini</string>
+    <string name="wechat_client_inavailable">La versione attuale del micro-channel micro-channel è troppo bassa o non installato, è necessario installare per utilizzare il micro-channel</string>
+    <string name="google_plus_client_inavailable">Versione Google+ è troppo basso o non installato, è necessario aggiornare o installare per poter utilizzare Google+!</string>
+    <string name="qq_client_inavailable">QQ versione è troppo basso o non installato, è necessario aggiornare o installare QQ per usare!</string>
+    <string name="pinterest_client_inavailable">Versione Pinterest è troppo basso o non installato, è necessario aggiornare o installare per poter utilizzare Pinterest!</string>
+    <string name="instagram_client_inavailable">Versione Instagram è troppo basso o non installato, è necessario aggiornare o installare Instagram da usare!</string>
+    <string name="yixin_client_inavailable">Attualmente ricordano la vostra versione è troppo basso o non è installato, è necessario installare e facile da usare lettera</string>
+    <string name="line_client_inavailable">Allineare la versione corrente è troppo bassa o non è installato, è necessario installare per poter utilizzare la linea</string>
+    <string name="kakaotalk_client_inavailable">Versione KakaoTalk attualmente troppo basso o l\'installazione, è necessario installare per poter usare KakaoTalk</string>
+    <string name="kakaostory_client_inavailable">Attualmente la versione KakaoStory bassa o non installato, è necessario installare per poter usare KakaoStory</string>
+    <string name="whatsapp_client_inavailable">WhatsApp ora la tua versione è troppo basso o non è installato, è necessario installare per utilizzare WhatsApp</string>
+    <string name="baidutieba_client_inavailable">Attualmente Baidu Messaggio Bar è la tua versione è troppo basso o non è installato, è necessario installare per poter usare Baidu Post Bar</string>
+    <string name="laiwang_client_inavailable">Attualmente contattare la versione è troppo basso o non è installato, è necessario installare per poter utilizzare i contatti</string>
+
+	<string name="ssdk_facebookmessenger_client_inavailable">facebookmessenger cliente non esiste o la versione è troppo basso</string>
+    
+	<string name="sinaweibo">Sina Weibo</string>
+	<string name="tencentweibo">Microblogging Tencent</string>
+	<string name="qzone">QQ spazio</string>
+	<string name="wechat">wechat Amici</string>
+	<string name="wechatmoments">Cerchio wechat di amici</string>
+	<string name="wechatfavorite">wechat Preferiti</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">Renren</string>
+	<string name="kaixin">Kaixin</string>
+	<string name="email">posta</string>
+	<string name="shortmessage">informazioni</string>
+	<string name="sohumicroblog">Sohu Weibo</string>
+	<string name="sohusuishenkan">Sohu carry sguardo</string>
+	<string name="neteasemicroblog">NetEase Weibo</string>
+	<string name="douban">crescione</string>
+	<string name="youdao">Note youdao cloud</string>
+	<string name="evernote">Evernote</string>
+	<string name="linkedin">LinkedIn</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">credulità</string>
+	<string name="yixinmoments">Cerchio Easecredit di amici</string>
+	<string name="mingdao">Ming</string>
+	<string name="kakaotalk">KakaoTalk</string>
+	<string name="kakaostory">KakaoStory</string>
+	<string name="line">Line</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="whatsapp">WhatsApp</string>
+	<string name="pocket">Pocket</string>
+	<string name="instapaper">Instapaper</string>
+	<string name="instapaper_email">cassetta della posta</string>
+	<string name="instapaper_pwd">password</string>
+	<string name="instapaper_login">accesso</string>
+	<string name="instapaper_logining">Entra in ...</string>
+	<string name="instapager_email_or_password_incorrect">E-mail o password non sono corretti</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="baidutieba">Baidu Messaggio Bar</string>
+    <string name="laiwang">contatto</string>
+    <string name="laiwangmoments">e dal dinamico</string>
+
+	<string name="share_to_baidutieba">Condividi Baidu Bar post</string>
+	<string name="share_to_qzone">Condividi QQ spazio</string>
+	<string name="share_to_qq">Condividi QQ</string>
+	<string name="mingdao_share_content">condivisione pagina web</string>
+	<string name="share_to_mingdao">Condividi Ming</string>
+	<string name="share_to_qzone_default">Share da% s</string>
+	<string name="use_login_button">Si prega di utilizzare il pulsante "Login"</string>
+</resources>

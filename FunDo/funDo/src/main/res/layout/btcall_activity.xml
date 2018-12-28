@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/bluetooth_call_setting"
+            android:textColor="?attr/global_text_color"
+            android:textSize="16sp"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/img_bluetooth_sesarch"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconfont_jiazai"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="@string/write_off"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_call_about1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_call_about2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textColor="#ffffff"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/userhelp_view_pager"
+        android:layout_width="240dp"
+        android:layout_height="285dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+    </android.support.v4.view.ViewPager>
+
+   <!-- <LinearLayout
+        android:id="@+id/userhelp_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:orientation="horizontal" >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dip"
+            android:src="@drawable/guide_round" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dip"
+            android:src="@drawable/guide_round" />
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:padding="5dip"
+            android:src="@drawable/guide_round" />
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_vp_explain"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/bluetooth_call_guide1"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_ok_set"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/bluetooth_call_about3"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_confirm_loginpage"
+        />
+
+<TextView
+    android:id="@+id/tv_set_later"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/bluetooth_call_about4"
+    android:textSize="@dimen/text_size_medium"
+    android:textColor="#37EEEA"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="15dp"/>
+
+
+</LinearLayout>
+
+</ScrollView>

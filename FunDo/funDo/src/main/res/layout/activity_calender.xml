@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="com.szkct.weloopbtsmartdevice.main.CalendarAcitity"
+    android:clipToPadding="true"
+    android:id="@+id/calender_li"
+
+      android:background="#90000000"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:id="@+id/calen_ll"
+    	>
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="@dimen/title"
+    	android:orientation="horizontal"
+    	android:gravity="center_vertical"
+    	android:background="@color/allbg"
+    	>
+
+        <ImageView
+            android:id="@+id/btnPreMonth"
+            android:layout_width="@dimen/title"
+            android:layout_height="@dimen/title"
+            android:layout_marginEnd="35dip"
+            android:layout_marginRight="35dip"
+            android:src="@drawable/data_left" 
+            android:scaleType="centerInside"
+            android:contentDescription="@string/choose_date"/>
+		<TextView
+            android:id="@+id/tvCurrentMonth"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+        	android:singleLine="true"
+        	android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/btnNextMonth"
+            android:layout_width="@dimen/title"
+            android:layout_height="@dimen/title"
+            android:layout_marginLeft="35dip"
+            android:layout_marginStart="35dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/data_right" 
+            android:contentDescription="@string/choose_date"/>
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:background="@color/allbg"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/sunday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/monday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/thesday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/wednesday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/thursday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/friday"
+            android:textColor="@color/canlendar_text_color" />
+
+        <TextView
+            style="@style/dateStyle"
+            android:text="@string/saturday"
+            android:textColor="@color/canlendar_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/textl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    
+       android:background="@color/allbg"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           
+            android:layout_gravity="center" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLayout>

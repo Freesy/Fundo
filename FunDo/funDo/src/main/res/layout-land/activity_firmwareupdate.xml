@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/hardware_upgrade"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/img_bluetooth_sesarch"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconfont_jiazai"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="@string/write_off"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/firmware_success_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/firmware_success_background" />
+
+        <ImageView
+            android:id="@+id/firmware_upload_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/firmware_upload_background"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/firmware_update_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/firmware_update_background"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/firmware_pb_progressbar"
+        style="@style/StyleProgressBarMini"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_progressbar_bg"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/firmeware_progressTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="?attr/firmware_progress_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firmeware_newVersionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/firmeware_normalVersionTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="18sp" />
+</LinearLayout>

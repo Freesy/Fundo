@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.kct.fundo.btnotification"
+          android:versionCode="1287"
+          android:versionName="V1.4.2">
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="26"/>
+
+
+    <!-- BTNotifation -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- <uses-permission android:name="android.permission.READ_CALL_LOG" /> -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />   开机启动权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MANAGE_USERS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+
+    <!-- 地理位置的一些访问权限&#45;&#45;xiaodai -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> <!-- 允许应用访问范围(如WIFI)性的定位 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+
+    <!-- 广告 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 计步传感器 -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.screen.landscape"
+        android:required="false"/>
+
+    <!-- 关于分享功能配置权限 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="com.tencent.mm.permission.MM_MESSAGE"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.HARDWARE_TEST"/>
+    <uses-permission android:name="android.permission.FACTORY_TEST"/>
+    <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+
+    <uses-permission-sdk-23 android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+
+    <!-- 空中升级 -->
+    <uses-permission android:name="no.nordicsemi.android.LOG"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <application
+        android:name="com.szkct.weloopbtsmartdevice.main.BTNotificationApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <!--
+            <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="f3491a12e1" />  abcd1234
+        -->
+        <!-- 渠道商编号 -->
+        <!--
+            <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="Baidu Market" />
+        -->
+
+
+        <!-- 是否开启错误日志统计，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_EXCEPTION_LOG"
+            android:value="true"/>
+        <!-- 日志发送策略，可选值：APP_START、ONCE_A_DAY、SET_TIME_INTERVAL，默认为APP_START -->
+        <meta-data
+            android:name="BaiduMobAd_SEND_STRATEGY"
+            android:value="APP_START"/>
+        <!-- 日志发送策略 为SET_TIME_INTERVAL时，需设定时间间隔(取消下行注释)。取值为1-24的整数，默认为1 -->
+        <!-- <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="2" /> -->
+        <!-- 日志仅在wifi网络下发送，默认为false -->
+        <meta-data
+            android:name="BaiduMobAd_ONLY_WIFI"
+            android:value="false"/>
+        <!-- 是否获取基站位置信息 ,默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_CELL_LOCATION"
+            android:value="true"/>
+        <!-- 是否获取GPS位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_GPS_LOCATION"
+            android:value="true"/>
+        <!-- 是否获取WIFI位置信息，默认为true -->
+        <meta-data
+            android:name="BaiduMobAd_WIFI_LOCATION"
+            android:value="true"/>
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1"/>
+        <!-- 谷歌地图KEY -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC6nuQD5nry8hcde9cwtACIMLOlRTXS6go"/>
+        <!-- AIzaSyCisWTinP49oBU0YCPZHD7S6KIzRdaq1Bc -->
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d6636b5779d2e7d9e69c4792468d4481"/>
+        <!-- 706e841149a5dd35328e64d947d78dfb -->
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id"
+            tools:ignore="ManifestResource"/>
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden|navigation"
+            android:label="@string/home_page"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED"/>
+
+                <data android:mimeType="application/com.mtk.btnotification"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mtk.app.remotecamera.RemoteCamera"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="Camera Preview"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.AboutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.VersionDetail"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.mtk.app.notification.NotificationAppListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/notifications"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.szkct.weloopbtsmartdevice.main.MainService"/>
+        <service android:name="com.mediatek.camera.service.MtkCameraAPService"/>
+        <service android:name="com.mtk.app.notification.NotificationCollectorMonitorService"/>
+
+        <service android:name="com.szkct.weloopbtsmartdevice.util.DownloadService" />
+
+        <!-- //辅助服务 -->
+        <service
+            android:name="com.mtk.app.notification.NeNotificationService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibilityservice"/>
+        </service>
+
+        <!--
+           <receiver android:name="com.szkct.weloopbtsmartdevice.main.BootReceiver" >
+               <intent-filter android:priority="1000" >
+                   <action android:name="android.intent.action.BOOT_COMPLETED" />   20160831  360不许开机启动
+               </intent-filter>
+           </receiver>
+        -->
+        <!-- //通知栏服务 -->
+        <service
+            android:name="com.mtk.app.notification.NotificationReceiver19"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.DeviceScanActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+
+        <!-- chendalin add  begin -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.SinglePixelActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/SingleActivityStyle"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.RegisterOneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.RegisterTwoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+
+        <service
+            android:name="com.mtk.app.ipc.IPCControllerService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.mediatek.wearable.aster.ipc.IPCControllerService"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MyRegisterDataActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MyDataActivityRun"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.FindPasswordOneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.FindPasswordTwoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+
+        <!-- 用户帮助 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.UserHelpActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+
+        <!-- 注册协议查看 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.RegisterDealDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/dealdetail"/>
+        <!-- 发现模块 -->
+
+
+        <!-- 我的好友 -->
+        <!-- 附近的人 -->
+        <!-- 附近的人细节 -->
+        <!-- 好友位置 -->
+
+
+        <!-- 活动地点 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SelectLocationMapActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/activity_location"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.LinkBleAcitivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/trajectory_navigation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.DisconbleActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/trajectory_navigation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SoscallActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/trajectory_navigation"
+            android:screenOrientation="portrait"/>
+        <!-- 运动轨迹历史记录 -->
+
+
+        <!-- 个人资料 Activity -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MyDataActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/my_data"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.ChangePasswordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/my_data"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.EmailVerifiCodeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/my_data"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.AddPersonaldataActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="填写个人资料"
+            android:screenOrientation="portrait"/>
+        <!-- android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" -->
+
+
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SuggestionFeedBackActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about_feedback"/>
+
+        <!-- 闹钟提醒 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.AlarmClockActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/notify_alarm"
+            android:launchMode="singleTask"/>
+
+        <!-- 提醒模式 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.AlarmModeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/notify_mode"
+            android:launchMode="singleTask"/>
+
+        <!-- 手势智控 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.GestureControlActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/gesture_control"
+            android:launchMode="singleTask"/>
+
+        <!-- 心率检测 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.HeartAutoCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/heart_check"
+            android:launchMode="singleTask"/>
+
+        <!-- 勿扰模式 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NoFazeModeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/not_disturb"
+            android:launchMode="singleTask"/>
+
+        <!-- 久坐提醒 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.SedentaryReminderActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/sit_notify"
+            android:launchMode="singleTask"/>
+
+        <!-- 喝水提醒 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.WaterClockActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/drink_notify"
+            android:launchMode="singleTask"/>
+
+        <!-- 新建闹钟 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewAlarmActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/add_clock"
+            android:launchMode="singleTask"/>
+
+        <!-- 蓝牙通话 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.BTcallActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"/>
+
+        <!-- 隐私政策 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.PrivacyPolicyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about_privacy_policy"
+            android:screenOrientation="portrait"/>
+        <!-- 日历 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.CalendarAcitity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/choose_date"
+            android:theme="@style/android:Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.AllDataActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/about"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.Wifiactivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.BtInputActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.OutdoorRunActitivy"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MotionSettingActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.MotionGoalActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.FirmWareUpdateActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.WatchPushActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.WatchPushActivityNew"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <!-- QQ登陆 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data android:scheme="1104853004"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent1106047577"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <!-- 微信登陆回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <!-- 运动开始倒计时 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SportsTheCountdownActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity
+            android:name="com.kct.fundo.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <service android:name="com.szkct.bluetoothservice.RingService"/>
+        <!-- 设备管理器 -->
+        <activity android:name="com.szkct.weloopbtsmartdevice.view.MyDevicePolicyManager"/>
+
+        <receiver
+            android:name="com.szkct.lock.LockReceiver"
+            android:description="@string/app_name"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock_screen"/>
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 高德地图服务 -->
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.szkct.bluetoothservice.WakLockService"/>
+
+        <!-- //时间及日期监听  TODO 8.0以上不支持静态广播 -->
+<!--        <receiver android:name="com.szkct.receiver.DataAndTimeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>-->
+
+        <!-- ********************************************************GooleMap部分 *************************************************************** -->
+        <!-- 实时路径 -->
+        <activity
+            android:name="com.szkct.map.RealTimeMapActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <!-- 记录轨迹查看 -->
+        <activity
+            android:name="com.szkct.map.TrajectoryMapFragment"
+            android:screenOrientation="portrait"/>
+        <!-- 运动历史 -->
+        <activity
+            android:name="com.szkct.map.SportsHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <!-- 运动历史 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.SportHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
+        <!-- 水印相机 -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.main.WaterMakActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewWaterMakActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"/>
+
+        <!-- 位置服务GPS -->
+        <service android:name="com.szkct.map.service.SportService">
+            <intent-filter>
+                <action android:name="com.szkct.map.service.SportService"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.WXMovementActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.LinkBleActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.UnitSettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.CalibrationActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.mtk.app.remotecamera.CameraActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.szkct.weloopbtsmartdevice.main.DfuService"
+            android:exported="true"
+            android:label="@string/dfu_service_title">
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.action.DFU_UPLOAD"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.szkct.weloopbtsmartdevice.main.DfuNotificationActivity"/>
+
+        <receiver android:name="com.szkct.weloopbtsmartdevice.util.LocalChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <activity android:name="com.szkct.weloopbtsmartdevice.main.PresentationActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.main.FirmWareUpdateActivityForBK"/>
+
+        <service
+            android:name="com.szkct.weloopbtsmartdevice.main.BluetoothLeService"
+            android:enabled="true"/>
+        <service
+            android:name="com.szkct.weloopbtsmartdevice.util.AliveJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <!-- 腾讯广告联盟 -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.ReceivingCodeActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.NewElectronicInvoiceActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.NewSaveElectronicInvoiceActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.NewElectronicInvoiceCodeActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.NewCropperActivity"/>
+
+        <receiver
+            android:name="com.szkct.receiver.JPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+
+                <category android:name="com.kct.fundo.btnotification"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="lecho.lib.hellocharts.UpdateActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_activity"/>
+
+        <!--
+        <service android:name="cn.jpush.android.service.PushService"
+            android:exported="false"
+            tools:node="replace">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+        -->
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewRegisterCodeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewLoginPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewSelectCityListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <!--
+            <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewLoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop" />
+        -->
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewRegisterPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.NewForgetPhoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/scan_pre"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.login.WxGuildeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.SportHistoryActivityForMtkYouyong"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+        </activity>
+
+        <activity android:name="com.server.base.YdH5Activity" />
+        <service
+            android:name="com.server.download.DownloadService"
+            android:exported="false" />
+
+        <provider
+            android:name="com.server.download.UpdateApkFileProvider"
+            android:authorities="${applicationId}.update.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/update_apk_paths" />
+
+        </provider>
+        android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.HeartEnterCheckActivity"  android:screenOrientation="portrait"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.TemperatureActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.HeartCheckDetailActivity"/>
+        <activity android:name="com.szkct.weloopbtsmartdevice.activity.HeartCheckHistoryActivity"/>
+        <activity
+            android:name="com.szkct.weloopbtsmartdevice.activity.FDwebviewActivity"
+            android:label="@string/title_activity_fdwebview"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name="com.thefinestartist.finestwebview.FinestWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor"
+            android:theme="@style/FinestWebViewTheme.Light" />
+
+    </application>
+
+</manifest>

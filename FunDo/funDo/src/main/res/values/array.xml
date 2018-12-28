@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.Android.com/tools" tools:ignore="MissingTranslation">
+
+   <!-- <string-array name="entries_list_preference">
+        <item>Pedometer</item>
+        <item>Yahoo</item>
+        <item>Facebook</item>
+    </string-array>
+
+    &lt;!&ndash; Used in app/menu examples &ndash;&gt;
+    <string-array name="entryvalues_list_preference">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>-->
+
+   <declare-styleable name="ShowPercentView">
+        <attr name="percent" format="integer"></attr>
+        <attr name="allLineColor" format="color" />
+        <attr name="percentLineColorLow" format="color" />
+        <attr name="percentLineColorHight" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SlideView">
+        <attr name="maskText" format="string" />
+        <attr name="maskTextSize" format="dimension" />
+        <attr name="maskTextMarginLeft" format="dimension" />
+        <attr name="maskTextMarginTop" format="dimension" />
+        <attr name="slider" format="reference" />
+        <attr name="sliderMarginLeft" format="dimension" />
+        <attr name="sliderMarginTop" format="dimension" />
+        <attr name="slidableLength" format="dimension" />
+        <attr name="effectiveLength" format="dimension" />
+        <attr name="effectiveVelocity" format="dimension" />
+    </declare-styleable>
+</resources>

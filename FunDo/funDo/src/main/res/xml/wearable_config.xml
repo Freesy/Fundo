@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<wearable_config version="1">
+
+    <!-- Aster Watch PDMS_notify_interval, such as 1s ~ 60s.
+         Aster Watch Pedometer VXP will notify step_count/calorie/distance data
+         every 10 seconds if the parameter sets 10.
+    -->
+    <int name="PDMS_notify_interval">10</int>
+
+    <!--
+         SmartDevice APK DOGP send data max size in Write Characteristic setValue method,
+         such as 20 ~ 512 byte.
+         Aster Watch GATT MTU is 515 byte, APK could increase DOGP transfer rate if APK set larger gatt_value_size.
+         But the feature only is supported by a small part of Android Smart Phone,
+         and there will be GATT exception in some Android SPs when set larger gatt_value_size.
+    -->
+    <!--<int name="gatt_value_size">20</int>-->
+    <int name="gatt_value_size_for_LMN">400</int>
+
+
+    <!-- These SPs in RequestMTU Black List cannot request MTU -->
+    <!-- Such as Mi-4c,SP-One,SP-two -->
+    <string name="GATT_RequestMTU_BlackList">Mi-4c,X900+,ONE A2001,P680D,P680L,D6653,E6553</string>
+
+    <!-- APK DOGP WriteCharacter write type.
+        true = WRITE_TYPE_NO_RESPONSE (ATT Write Command), we could not ensure that all SP could support this type perfectly.
+        false or other_string = WRITE_TYPE_DEFAULT (Write request, need ATT Write response).
+        https://developer.android.com/reference/android/bluetooth/BluetoothGattCharacteristic.html#setwritetype
+    -->
+    <bool name="gatt_write_no_response">false</bool>
+
+
+    <!-- Aster Watch BT Noti Src SPP UUID -->
+    <string name="spp_uuid">00001101-0000-1000-8000-00805F9B34FB</string>
+
+    <!-- Aster Watch BT Noti Src DOGP UUID -->
+    <string name="dogp_uuid">000018A0-0000-1000-8000-00805F9B34FB</string>
+    <string name="dogp_read_uuid">00002AA0-0000-1000-8000-00805F9B34FB</string>
+    <string name="dogp_write_uuid">00002AA1-0000-1000-8000-00805F9B34FB</string>
+
+    <!-- SmartDevice APK GATT reconnect scan max time, such as 30s ~ 60 * 60s.
+         APK will scan the last connected LE device and connect it
+         after GATT disconnected suddenly (not user operation).
+         The APK will scan 60 seconds util scaned the LE device or timeout.
+         KCT: 60*60*6
+    -->
+    <!--<int name="gatt_reconnect_time">3600</int>-->
+
+    <!-- 1~10 -->
+    <!--<int name="gatt_try_connect_time">3</int>
+
+    &lt;!&ndash; BluetoothGatt connectGatt auto-connect parameter &ndash;&gt;
+    <bool name="bluetoothgatt_auto_connect">false</bool>
+
+    <string name="Device_Manufacturer">KCT</string>
+
+    <string name="Device_Manufacturer"/>-->
+    <bool name="notification_icon_in_gatt">false</bool>
+
+    <bool name="bluetoothgatt_auto_connect">false</bool>
+
+    <string name="Device_Manufacturer"></string>
+
+    <bool name="enable_gatt_profile_in_spp_mode">false</bool>
+</wearable_config>

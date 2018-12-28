@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ProgressWheel="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="?attr/global_background_content">
+
+    <include
+        android:id="@+id/date_linerlayout"
+        layout="@layout/up_and_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp" />
+
+    <include
+        android:id="@+id/weather_linerlayout"
+        layout="@layout/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <!--  android:background="#2A3035" -->
+    <RelativeLayout
+        android:id="@+id/sport_fragment"
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="15dp">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/homesport_spot"
+
+            />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/homesport_spot" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="208dp"
+            android:background="@drawable/homesport_spot" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="208dp"
+            android:background="@drawable/homesport_spot" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/test_progress"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="#8b8b8b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/test_progress"
+            android:layout_centerHorizontal="true"
+            android:text="50%"
+            android:textColor="#8b8b8b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/test_progress"
+            android:text="75%"
+            android:textColor="#8b8b8b" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/test_progress"
+            android:text="25%"
+            android:textColor="#8b8b8b" />
+        <!--    <com.szkct.weloopbtsmartdevice.view.HomepageCircleView
+               android:id="@+id/sport_process_circle"
+               android:layout_width="225dp"
+               android:layout_height="225dp" /> -->
+        <!--
+             <TextView
+                    android:id="@+id/todaystep_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/steps_to_complete_degree"
+                    android:textColor="@color/todaystep_black"
+                    android:textSize="15sp" /> -->
+
+
+        <TextView
+            android:id="@+id/setgoalstep_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sport_step_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-5dp"
+            android:text="@string/target_bushu"
+            android:textColor="#6a7179"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/sport_step_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:text="0"
+            android:textColor="?attr/home_cent_text_color"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/complete_percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sport_step_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-5dp"
+            android:text="@string/complete_percent"
+            android:textColor="#8b8b8b"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/sport_step_tv"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/sport_step_tv"
+            android:text="%"
+            android:textColor="#6a7179"
+            android:textSize="22sp"
+            android:visibility="invisible" />
+
+        <com.szkct.weloopbtsmartdevice.view.TestProgressView
+            android:id="@+id/test_progress"
+            android:layout_width="210dp"
+            android:layout_height="210dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lineryout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sport_fragment"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/calorie_tv_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/calories"
+                android:textColor="?attr/home_fragment_info_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/calorie_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="?attr/home_fragment_calorie_text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/active_time_tv_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/active_time"
+                android:textColor="?attr/home_fragment_info_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/active_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/active_time_cunts"
+                android:textColor="?attr/home_fragment_active_time_text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mileage_tv_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/kilometer"
+                android:textColor="?attr/home_fragment_info_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mileage_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="?attr/home_fragment_mileage_text_color"
+                android:textSize="35sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageButton
+        android:id="@+id/sport_settarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+	
+	 android:layout_alignParentRight="true"
+	
+        android:layout_marginTop="100dp"
+        android:background="?attr/home_fragment_button_target" />-->
+</LinearLayout>

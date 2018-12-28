@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.NewRegisterPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/forget_password_true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="61dp"
+        android:layout_height="40dp">
+
+        <View
+            android:id="@+id/v_quhao"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_input_n"/>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:text="国家/地区 中国(＋86)"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/arrow_right"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:src="@drawable/arrow_right" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:inputType="number"
+        android:hint="@string/input_phone_code"
+        android:textColorHint="#66ffffff"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_input_n"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl_password"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+
+        <EditText
+            android:id="@+id/et_yzm"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/et_password"
+            android:background="@drawable/login_input_2_n"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint="@string/input_check_code"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textColorHint="#66ffffff"
+            android:textSize="14sp" />
+        <!-- login_input_s
+        android:layout_gravity="center"-->
+
+        <Button
+            android:id="@+id/btn_getverificationcode"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignRight="@+id/et_yzm"
+            android:layout_marginLeft="9dp"
+            android:background="@drawable/button_getcode"
+            android:gravity="center"
+            android:text="@string/obtain"
+            android:textColor="#004F4D"
+            android:textAllCaps="false"
+            android:textSize="@dimen/register_get_sec_14sp" />
+        <!--android:layout_gravity="center"-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:maxLength="20"
+            android:textIsSelectable="false"
+            android:longClickable="false"
+            android:hint="@string/passwd_lenth_tip"
+            android:textColorHint="#66ffffff"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_input_n"/>
+
+        <ToggleButton
+            android:id="@+id/btn_login_password_show_hide"
+            android:visibility="invisible"
+            android:layout_width="30dp"
+            android:layout_height="16dp"
+            android:background="@drawable/logon_icon_hide"
+            android:textOn=" "
+            android:textOff=" "
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/et_password"
+            android:layout_marginRight="13.5dp"
+            />
+        <!--android:layout_width="18dp"
+            android:layout_height="12dp"
+        -->
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/newlogin_bg_login1"
+        android:text="@string/changepw"/>
+
+</LinearLayout>

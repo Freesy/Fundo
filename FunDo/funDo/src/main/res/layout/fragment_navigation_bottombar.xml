@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="63dp"
+    android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="?attr/global_bottom_background"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/iv_personal_settinghelp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottom_icon_setting"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/tv_my"
+                android:textColor="?attr/main_bottom_text_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/iv_personal_bigdata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="?attr/main_bottom_icon_analysis"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/analysis"
+                android:textColor="?attr/main_bottom_text_color"
+                android:textSize="12sp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:singleLine="true"></FrameLayout>
+
+            <RadioButton
+                android:id="@+id/iv_personal_health"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottom_icon_health"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/report"
+                android:textColor="?attr/main_bottom_text_color"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/iv_personal_bleservice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:button="@null"
+                android:drawableTop="?attr/main_bottom_icon_trajectory"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/more"
+                android:textColor="?attr/main_bottom_text_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.0">
+
+        <RadioButton
+            android:id="@+id/iv_personal_homepage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/main_bottom_icon_home"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center" />
+    </FrameLayout>
+
+</FrameLayout>

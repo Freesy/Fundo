@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="limit">極限</string>
+    <string name="fall_asleep_time">入睡時間</string>
+    <string name="waking_time">醒來時間</string>
+    <string name="awake_time">清醒時間</string>
+    <string name="anaerobic">無氧</string>
+    <string name="heart_lung">心肺</string>
+    <string name="aerobic">有氧</string>
+    <string name="warm_up">熱身</string>
+    <string name="resting">靜息</string>
+    <string name="fat_burning">燃脂</string>
+    <string name="all_sleep">全天睡眠</string>
+	<string name="take_photo_ok">拍照成功</string>
+
+    <string name="ischeck_firmver">正在檢測固件版本</string>  <!-- // 数据同步中-->
+    <string name="firmwareupdate_notice_forbk">註意：升級過程中請勿關閉APP，使手環與手機保持在有效的藍牙距離內，如果升級失敗請重新連接設備，再次升級</string>
+
+    <string name="dialpush_fail">表盤推送失敗了</string>
+    <string name="dialpush_success">表盤推送成功了</string>
+    <string name="dialpush_ing">表盤推送中</string>
+    <string name="dialpush_ed">該表盤已推送成功了</string>
+        <string name="sportshistory_fanhang">返航</string>
+
+    <string name="update_remind">更新堤惺</string>
+    <string name="to_update">立即更新</string>
+    <string name="The_version_is_too_low_to_be_updated_to_the_latest_version">檢測到版本更新了立即升級體驗吧</string>
+    <string name="notification_tip_forupdate" formatted="false">正在爲您下載分動的最新版本</string>
+
+
+    <string name="activity_guide_wx">活動微信號</string>
+    <string name="fenmei">分妹</string>
+    <string name="wx_code">微信號：fundomei001</string>
+    <string name="input_phone_code">輸入手機號碼</string>
+    <string name="phone_login">註冊</string>
+    <string name="areadly_register">已註冊過分動?點此登錄</string>
+    <string name="ssdk_sms_dialog_error_desc_106">驗證碼發送頻繁</string>
+    <string name="verification_code_sent">發送成功</string>
+    <string name="obtain">獲取</string>
+    <string name="input_check_code">輸入驗證碼</string>
+    <string name="passwd_lenth_tip">輸入6～18位密碼</string>
+    <string name="area_selection">地區選擇</string>
+    <string name="forget_password_true">忘記密碼</string>
+    <string name="ssdk_sms_dialog_error_code">驗證碼錯誤</string>
+    <string name="please_fill_complete">用戶名或密碼不能為空</string>
+    <string name="not_login">登錄</string>
+    <string name="country_area">國家/地區</string>
+    <string name="user_already_register">"用戶已存在 "</string>
+  <string name="phone_is_error">手機號不合法</string>
+
+    <string name="qr_code_error">二維碼解析出錯了</string>
+    <string name="not_wc_qr_code">不是微信二維碼</string>
+    <string name="not_zfb_qr_code">不是支付寶二維碼</string>
+    
+       <string name="permision_alert_content">當前應用需要用到相應的權限，如取消，應用將會退出，請到手機系統設置裡開啟當前應用需求的權限</string>
+    <string name="permision_alert_title">權限設置提醒</string>
+
+    <string name="missed_callsble">未接來電</string>
+
+    <string name="youyong_zongtangshu">總趟數</string>
+    <string name="youyong_tang">趟</string>
+    <string name="youyong_ci">次</string>
+    <string name="youyong_zonghss">總劃水數</string>
+    <string name="youyong_yyhs">仰泳劃水</string>
+    <string name="youyong_wyhs">蛙泳劃水</string>
+    <string name="youyong_dyhs">蝶泳劃水</string>
+    <string name="youyong_zyyhs">自由泳劃水</string>
+    <string name="youyong_qtyzhs">其他泳姿劃水</string>
+
+    <string name="bk_oldbanben">舊固件版本</string>
+    <string name="bk_newbanben">新固件版本</string>
+
+    <string name="photo_success">拍照成功！</string>
+    <string name="temp_check">體溫檢測</string>
+    <string name="heart_check">心電檢測</string>
+    <string name="heart_check_state_one">打開穿戴設備功能列表中的心電檢測\n按上圖姿勢輕觸電極片\n就可以檢測您的心電圖</string>
+    <string name="heart_check_state_two">正在處理接收到的心電指令\n請稍等</string>
+    <string name="heart_check_state_three">檢測不到您的心電\n請按緊設備上的電極片</string>
+    <string name="heart_check_state_finish">檢測已結束</string>
+    <string name="heart_check_result">查看報表</string>
+    <string name="my_height">身高(cm)</string>
+    <string name="weight">體重(kg)</string>
+    <string name="heart">心率(bpm)</string>
+    <string name="speed">走速(mm/s)</string>
+    <string name="increase">增益(mm/mv)</string>
+    <string name="null_value">--</string>
+    <string name="heart_info">該檢測僅供參考,不能作為醫療診斷憑證</string>
+    <string name="heart_unit">BPM</string>
+    <string name="temp_info">當天多次測量以最後一次為準</string>
+    <string name="temp_test">點擊測量</string>
+    <string name="temp_info_tip">點擊穿戴設備中的體溫檢測功能\n保持以上動作5秒即可記錄你當前的體溫</string>
+    <string name="temperature_unit">℃</string>
+    <string name="temp_report">體溫報告℃</string>
+
+    <string name="click_to_skip">點擊跳過</string>
+
+    <string name="helphint_str">設備無法收到App的消息提醒？ \n
+請執行以下步驟：\n
+1.Fundo與設備要保持藍牙連接\n
+2.Fundo內，更多-應用推送-把分動開關關掉，再重新打開\n
+3.Fundo內，來電通知和短信通知開關關掉，再重新打開\n
+4.手機設置-更多設置-輔助功能（部分手機為無障礙）-Fundo-把Fundo的開關打開\n
+5.手機設置-權限管理-Fundo-把Fundo的權限全部設置為允許\n
+6.手機設置-通知欄與狀態欄-Fundo-把Fundo的通知開關全部打開\n
+Note：\n
+因安卓系統之間存在差異，具體路徑以實際手機為準</string>
+
+
+    <string name="text_leng1">字符串長度:</string>
+    <string name="text_leng2">/60,超出無法發送</string>
+
+    <string name="join_str">加入我們</string>
+</resources>

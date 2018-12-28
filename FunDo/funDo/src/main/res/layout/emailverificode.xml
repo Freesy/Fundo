@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="邮件已发送"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            />
+        <!--android:textColor="#99ffffff"-->
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back"
+            />
+        <!--android:src="@drawable/back_n"-->
+        <!-- android:layout_marginLeft="8.5dp"-->
+        <!--android:layout_width="12.5dp"-->
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="49dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/email_send_success"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮件已发送至您的注册邮箱"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tv_register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="35658932@qq.com"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请通过邮箱内的验证码修改密码"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="此验证码120秒内有效"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center" />
+
+   <!-- <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:hint="输入手机号码"
+        android:textColorHint="#ffffff"
+        android:textColor="#99ffffff"
+        android:layout_marginTop="61dp"
+        android:background="@drawable/login_input_n"/>-->
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_confirm"/>
+    <!--login_btn_n-->
+
+</LinearLayout>

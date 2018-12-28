@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="174dp"
+    android:background="@color/app_theme_colors"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+        >
+
+     <ImageView
+         android:id="@+id/iv_personal_data_head"
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:layout_centerHorizontal="true"         
+         android:src="@drawable/head_men"
+         android:elevation="4dp"
+         android:contentDescription="@string/slidingmenu_login_registered_title"/>
+
+     <TextView
+         android:id="@+id/tv_personal_data_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/iv_personal_data_head"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="16dp"
+         android:text="@string/slidingmenu_login_registered_title"
+         android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+     
+     <TextView
+        android:id="@+id/tv_personal_data_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="username@mymail.com"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+    </RelativeLayout>

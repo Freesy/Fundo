@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.mtk.app.remotecamera.CustomCameraView
+        android:id="@+id/cc_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.mtk.app.remotecamera.CustomCameraView>
+    <ImageButton
+        android:id="@+id/toggle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/selector_btn_camera_front"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/transparent"
+        />
+
+   <!-- android:visibility="gone"-->
+
+
+   <!-- <ImageButton
+        android:id="@+id/cameraSwap"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/camera_swap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        />-->
+</RelativeLayout>

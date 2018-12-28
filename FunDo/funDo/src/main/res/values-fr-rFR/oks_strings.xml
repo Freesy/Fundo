@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">complète</string>
+    <string name="sharing">Partager opération est l\'arrière-plan ...</string>
+    <string name="share_to">part</string>
+	<string name="multi_share">Partage de photos</string>
+	<string name="share_completed">Partager le succès</string>
+	<string name="share_canceled">Partager a été annulée</string>
+	<string name="select_one_plat_at_least">S\'il vous plaît sélectionner une plate-forme cible</string>
+	<string name="list_friends">% s amis</string>
+	<string name="share_failed">Partager Échec</string>
+	<string name="pull_to_refresh">rafraîchissement déroulant</string>
+	<string name="release_to_refresh">Desserrer Actualiser</string>
+	<string name="refreshing">Actualiser ...</string>
+	<string name="shake2share">Secouer le téléphone!</string>
+	<string name="select_a_friend">S\'il vous plaît sélectionner un ami</string>
+</resources>

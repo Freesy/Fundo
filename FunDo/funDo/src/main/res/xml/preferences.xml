@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+
+<!-- This is a primitive example showing the different types of preferences available. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <PreferenceCategory
+        android:key="connetion_status"
+        android:title="@string/device" 
+        android:dividerHeight="0px" >
+        <com.mtk.main.CustomPreference
+            android:key="app_info"
+            android:selectable="true" />
+        <com.mtk.main.FindMePreference
+            android:key="find_me" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="setting_base"
+        android:title="@string/smart_accessory_application" >
+        <Preference
+            android:key="applications"
+            android:title="@string/app_list" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.wifi.WifiSettings"
+                android:targetPackage="com.android.settings" />
+        </Preference>
+        <Preference
+            android:key="btnotification"
+            android:title="@string/notifications" >
+        </Preference>
+        <Preference
+            android:key="soscall"
+            android:title="@string/soscall" >
+        </Preference>
+        <com.mtk.main.PxpAlertSwitchPreference
+            android:key="alert_set_preference"
+            android:title="@string/alert_setting"
+            android:persistent="false" />
+        <!-- chendalin delete begin
+        <ListPreference android:key="selectmusic"
+            android:title="@string/music"
+            android:defaultValue="" 
+            />
+	  
+        <Preference
+            android:key="switchmode"
+            android:title="@string/switch_mode" >
+        </Preference>-->
+		<!--  chendalin delete end  -->
+        <Preference
+            android:key="scan"
+            android:title="@string/scan_pre" >
+        </Preference>
+        <!--  chendalin delete begin
+        <Preference
+            android:key="deviceinfo"
+            android:title="@string/device_info" >
+        </Preference> -->
+        <!--  chendalin delete begin-->
+        <Preference
+            android:key="changename"
+            android:title="@string/change_name_pre" >
+        </Preference>
+        <Preference
+            android:key="about"
+            android:title="@string/about" >
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

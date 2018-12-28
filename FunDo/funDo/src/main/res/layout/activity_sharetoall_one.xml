@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+        <ImageView
+            android:id="@+id/shareto_wenxin"
+            android:layout_weight="1"
+            android:src="@drawable/sharewenxin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/shareto_wenxinpyquan"
+            android:layout_weight="1"
+            android:src="@drawable/sharepengyou"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/shareto_qq"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shareqq"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--<ImageView
+            android:id="@+id/shareto_instgream"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shareinstegrem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />-->
+
+      <!--  <ImageView
+            android:id="@+id/shareto_msage"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharemeseger"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+        <ImageView
+            android:id="@+id/shareto_lingying"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharelingying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/shareto_facebook"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharefacebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/shaall_more"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharemore_hui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

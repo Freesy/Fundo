@@ -1,0 +1,717 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- 自定义Dialog wyl -->
+    <style name="Custom_Progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowBackground">@color/allbg</item>
+    </style>
+
+    <!-- Activity跳转黑屏处理-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--  toolbar（actionbar）颜色 -->
+        <item name="colorPrimary">@drawable/actionbar_background</item>
+        <item name="colorPrimaryDark">@color/statusbar_bg</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionModeBackground">@color/primaryLight</item>
+        <item name="windowActionModeOverlay">true</item>
+        <!--Window color
+        <item name="android:windowBackground">@color/background_floating_material_light</item>-->
+        <!-- 溢出菜单图标颜色-->
+        <item name="colorControlNormal">@android:color/white</item>
+        <!--返回键样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementsUseOverlay">false</item>
+    </style>
+
+
+    <style name="AnimActivityTheme" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+
+    </style>
+
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/in_from_top</item>
+
+        <item name="android:activityCloseExitAnimation">@anim/out_to_top</item>
+    </style>
+
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="MyData20sp">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyData18sp">
+        <item name="android:textColor">#040404</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Bluethoole">
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyDataSetName">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyDataTypeface">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="ShareDialogCancel">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:text">@string/cancel</item>
+    </style>
+
+    <style name="ShareDialogType" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/white</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+    </style>
+
+    <style name="dialogWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/move_up</item>
+        <item name="android:windowExitAnimation">@anim/move_down</item>
+    </style>
+
+    <style name="lookPhotoDialogWindowAnim">
+        <item name="android:windowEnterAnimation">@anim/move_right_down</item>
+        <item name="android:windowExitAnimation">@anim/move_left_up</item>
+    </style>
+    <!-- 日历时间样式 -->
+    <style name="dateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:src">@drawable/ic_add_black</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="pressedTranslationZ">8dp</item>
+        <item name="backgroundTint">#79BD4C</item>
+    </style>
+
+    <style name="FabStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:src">@drawable/slidingmenu_item_lookwatch_normal</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="pressedTranslationZ">8dp</item>
+        <item name="backgroundTint">#40c2ff</item>
+    </style>
+
+    <style name="FabStyle2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:src">@drawable/modify_divece_name</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="pressedTranslationZ">8dp</item>
+        <item name="backgroundTint">#b040ff</item>
+    </style>
+
+    <style name="FabStyle3">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_compat_margin</item>
+        <item name="android:src">@drawable/icon_setting_blt_off</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">4dp</item>
+        <item name="pressedTranslationZ">8dp</item>
+        <item name="backgroundTint">#FF4081</item>
+    </style>
+
+    <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotCount">5</item>
+    </style>
+
+    <!-- <style name="SpotsDialogDefault" parent="android:Theme.DeviceDefault.Light.Dialog">
+         <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+         <item name="DialogTitleText">Loading…</item>
+         <item name="DialogSpotCount">5</item>
+     </style>-->
+
+    <style name="HeartRateRangeNormal">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="HeartRateRangeLow">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#48A8A7</item>
+    </style>
+
+    <style name="HeartRateRangeHigh">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#FE7BA3</item>
+    </style>
+
+    <style name="MMListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingStart">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingEnd">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MMFontTitleInList">
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AddFriendDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@drawable/item_bk0</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 个人信息设置popupwindow动画 -->
+    <style name="infopopwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/popuphidden_anim</item>
+    </style>
+
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+
+    <style name="Widget_GifView"></style>
+
+    <!-- Added by wuzhiyi begin -->
+    <!-- Global style-->
+    <style name="global_normal_text_and_white_color">
+        <item name="android:textSize">@dimen/global_normal_text_size</item>
+        <item name="android:textColor">?attr/global_text_color</item>
+    </style>
+
+    <style name="global_small_text_style" parent="global_normal_text_and_white_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/global_small_text_size</item>
+    </style>
+
+    <style name="global_normal_text_style" parent="global_normal_text_and_white_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="global_middle_text_style" parent="global_normal_text_and_white_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/small_menu_size</item>
+    </style>
+
+    <style name="global_big_text_style" parent="global_normal_text_and_white_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/small_menu_size</item>
+    </style>
+
+    <style name="global_biger_text_style" parent="global_normal_text_and_white_color">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/global_biger_text_size</item>
+    </style>
+    <!-- Big data style  -->
+    <style name="analysis_title_style" parent="global_big_text_style">
+        <item name="android:layout_marginTop">@dimen/fragmen_big_data_title_margin_top</item>
+    </style>
+
+    <style name="analysis_sub_title_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/global_small_text_size</item>
+        <item name="android:textColor">@color/global_gray_color</item>
+        <item name="android:paddingTop">@dimen/fragmen_big_data_sub_title_margin_top</item>
+    </style>
+
+    <style name="analysis_number_style" parent="global_biger_text_style">
+        <item name="android:textColor">@color/analysis_number_color</item>
+    </style>
+
+    <!-- 主题切换 -->
+    <style name="KCTStyleBlack">
+
+        <item name="home_fragment_head_nor_text_color">@color/home_head_text_normal</item>
+        <item name="home_fragment_head_hot_text_color">@color/home_head_text_hot</item>
+        <item name="home_cent_text_color">@color/home_cent_text_normal</item>
+
+        <item name="global_background">@color/background</item>
+        <item name="global_bottom_background">@color/background</item>
+        <item name="global_text_color">@color/global_text</item>
+        <item name="global_background_content">@color/background_content</item>
+        <item name="main_bottom_text_color">@color/navigation_text</item>
+        <item name="home_fragment_head_text_color">@color/head_text</item>
+        <item name="home_fragment_select_time_text_color">@color/global_text</item>
+        <item name="home_fragment_info_text_color">@color/global_text</item>
+        <item name="home_fragment_calorie_text_color">@color/text_home_down</item>
+        <item name="home_fragment_active_time_text_color">@color/text_home_down</item>
+        <item name="home_fragment_mileage_text_color">@color/text_home_down</item>
+        <item name="health_reports_fragment_background_color">@color/health_sports_bg</item>
+        <item name="health_reports_fragment_persional_info_title_color">
+            @color/update_text_bg_selete
+        </item>
+        <item name="health_reports_fragment_persional_info_text_color">@color/global_text</item>
+        <item name="health_reports_head_line_color">@color/health_reports_details_text_color</item>
+        <item name="health_reports_title_text_color">@color/health_reports_details_text_color</item>
+        <item name="health_reports_details_text_color">@color/health_reports_details_text_color
+        </item>
+        <item name="health_reports_details_body_normal_color">@color/body_green</item>
+        <item name="health_reports_details_body_over_color">@color/body_overweight_text</item>
+        <item name="health_reports_details_score_color">@color/global_text</item>
+        <item name="health_reports_details_body_year_color">@color/global_text</item>
+        <item name="health_reports_complete_color">@color/global_text</item>
+        <item name="analysis_fragment_y_text_color">@color/analysis_fragment_y_text_color</item>
+        <item name="analysis_fragment_line_color">@color/analysis_fragment_line_color</item>
+        <item name="analysis_fragment_x_text_color">@color/analysis_fragment_x_text_color</item>
+        <item name="analysis_fragment_alldata_date_text_color">@color/alldata_date_text</item>
+        <item name="alldata_text_color">@color/white</item>
+        <item name="alldata_data_text_color">@color/white</item>
+        <item name="push_item_background">@color/background_content</item>
+        <item name="bleinput_edit_color">@color/bleinput_btn_color</item>
+        <item name="runtext_color">@color/white</item>
+        <item name="runtext_gray_color">@color/detailed_item_text_top</item>
+        <item name="sportsHistory_mian_bg">@color/sportsHistory_mian_bg</item>
+
+        <item name="popu_sportmode_color">@color/popu_sportmode</item>
+
+        <item name="main_bottom_icon_analysis">@drawable/navigation_bigdata</item>
+        <item name="main_bottom_icon_trajectory">@drawable/navigation_bleservice</item>
+        <item name="main_bottom_icon_home">@drawable/navigation_homepage</item>
+        <item name="main_bottom_icon_health">@drawable/navigation_health</item>
+        <item name="main_bottom_icon_setting">@drawable/navigation_setting</item>
+        <item name="home_fragment_head_button_synchronization">@drawable/button_synchronization
+        </item>
+
+        <item name="home_fragment_head_button_sportmode">@drawable/button_sportmode</item>
+        <item name="home_fragment_head_button_quanma">@drawable/button_quanma</item>
+        <item name="home_fragment_head_button_banma">@drawable/button_banma</item>
+        <item name="home_fragment_head_button_shineipao">@drawable/button_shineipao</item>
+        <item name="home_fragment_head_button_yuyepao">@drawable/button_yuyepao</item>
+        <item name="home_fragment_head_button_dengshanpao">@drawable/button_dengshan</item>
+        <item name="home_fragment_head_button_huwaipao">@drawable/button_huwaipao</item>
+        <item name="home_fragment_head_button_jianzou">@drawable/button_jianzou</item>
+        <item name="sport_share_background">@drawable/sport_share_white</item>
+        <item name="sport_photo_background">@drawable/sport_photo_white</item>
+
+
+        <item name="home_fragment_head_button_share">@drawable/bt_share</item>
+        <item name="analysis_fragment_button_background">@drawable/btn_sports_analysis_full</item>
+        <item name="health_reports_title_background">@drawable/health_report_title_bg</item>
+        <item name="home_fragment_button_target">@drawable/btn_target</item>
+        <item name="home_fragment_icon_left">@drawable/icon_arrow_left</item>
+        <item name="home_fragment_icon_right">@drawable/icon_arrow_right_end</item>
+        <item name="home_fragment_head_bg">@drawable/sport_checkbox_selector_bbg</item>
+        <item name="my_fragment_item_bg">@drawable/fragment_my_item_bg</item>
+        <item name="my_fragment_viewpager_bg">@drawable/fragment_my_viewpager_bg</item>
+        <item name="global_title_return_back">@drawable/icon_return_back</item>
+        <item name="global_title_finish">@drawable/nav_btn_finish_n</item>
+        <item name="global_title_add">@drawable/add_n_b</item>
+        <item name="global_title_history">@drawable/title_history</item>
+        <item name="global_title_share">@drawable/title_share</item>
+        <item name="btn_bleinput_bg">@drawable/btn_bleinput_bg_selector</item>
+        <item name="edit_bleinput_bg">@drawable/edit_bleinput_bg</item>
+
+        <item name="im_head_men">@drawable/head_men</item>
+        <item name="im_head_women">@drawable/head_women</item>
+        <item name="im_sos_itembg">@drawable/sos_xiezi</item>
+        <item name="analysis_fragment_alldata_background">@drawable/alldata_round</item>
+        <item name="analysis_fragment_alldata_data_background">@drawable/alldata_data_round</item>
+        <item name="analysis_fragment_alldata_date_background">@drawable/alldata_date_round</item>
+        <item name="analysis_fragment_alldata_selector_background">@drawable/alldata_date_selector
+        </item>
+        <item name="analysis_fragment_alldata_fullscreen_selector_background">
+            @drawable/alldata_fullscreen_selector
+        </item>
+        <item name="notice_rigiht_bg">@drawable/right_mu</item>
+
+        <item name="my_fragment_viewpager_line">@drawable/my_step_fg_bg</item>
+
+        <item name="wifi_riss_iv1">@drawable/wifi1</item>
+        <item name="wifi_riss_iv2">@drawable/wifi2</item>
+        <item name="wifi_riss_iv3">@drawable/wifi3</item>
+        <item name="wifi_riss_iv4">@drawable/wifi4</item>
+
+        <item name="wifi_risslock_iv1">@drawable/wifilock1</item>
+        <item name="wifi_risslock_iv2">@drawable/wifilock2</item>
+        <item name="wifi_risslock_iv3">@drawable/wifilock3</item>
+        <item name="wifi_risslock_iv4">@drawable/wifilock4</item>
+        <item name="healt_finish_iv">@drawable/iv_healt_emphasis</item>
+        <item name="fragment_my_setting_iv">@drawable/fragment_my_setting_bg</item>
+
+        <item name="home_run_bg">@drawable/home_run_bg</item>
+        <item name="fragment_home_run_start_bt">@drawable/fragment_home_run_start_bt</item>
+        <item name="fragment_home_history_record__bt">@drawable/fragment_home_history_record__bt
+        </item>
+        <item name="fragment_home_settings__bt">@drawable/fragment_home_settings__bt</item>
+
+        <item name="activity_outdoorrun_bg">@drawable/activity_outdoorrun_bg</item>
+        <item name="activity_outdoorrun_continue">@drawable/activity_outdoorrun_continue</item>
+        <item name="activity_outdoorrun_lockscreen">@drawable/activity_outdoorrun_lockscreen</item>
+        <item name="activity_outdoorrun_suspend">@drawable/activity_outdoorrun_suspend</item>
+        <item name="activity_outdoorrun_end">@drawable/activity_outdoorrun_end</item>
+        <item name="activity_outdoorrun_setting">@drawable/activity_outdoorrun_setting</item>
+        <item name="activity_outdoorrun_mapmode">@drawable/activity_outdoorrun_mapmode</item>
+        <item name="lockscreen">@drawable/lockscreen</item>
+        <item name="speedhead_bg">@drawable/speedhead_bg</item>
+        <item name="speedhead_logo_bg">@drawable/speedhead_logo_bg</item>
+        <item name="speedfragment_details">@drawable/speedfragment_details</item>
+        <item name="rili">@drawable/rili</item>
+
+        <item name="sportshistory_banma">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_dengshan">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_huwaipao">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_jianzou">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_quanma">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_shineipao">@drawable/sportshistory_huwaipao</item>
+        <item name="sportshistory_yueyepao">@drawable/sportshistory_huwaipao</item>
+
+        <item name="runsetting_voice_selector">@drawable/runsetting_voice_selector</item>
+        <item name="runsetting_screen_selector">@drawable/runsetting_screen_selector</item>
+        <item name="runsetting_autopause_selector">@drawable/runsetting_autopause_selector</item>
+        <item name="runsetting_autostop_selector">@drawable/runsetting_autostop_selector</item>
+        <item name="sportshistory_sync">@drawable/sportshistory_sync</item>
+
+
+        <item name="firmware_success_background">@drawable/firmware_success_black</item>
+        <item name="firmware_upload_background">@drawable/firmware_upload_black</item>
+        <item name="firmware_update_background">@drawable/firmware_update_black</item>
+        <item name="firmware_progress_color">@color/hot_blue</item>
+    </style>
+
+    <style name="KCTStyleWhite">
+        <item name="home_fragment_head_nor_text_color">@color/home_head_text_normal_white</item>
+        <item name="home_fragment_head_hot_text_color">@color/home_head_text_hot_white</item>
+        <item name="home_cent_text_color">@color/home_cent_text_normal_white</item>
+
+        <item name="global_background">@color/global_background_white</item>
+        <item name="global_bottom_background">@color/global_white</item>
+        <item name="global_text_color">@color/black</item>
+        <item name="global_background_content">@color/background_content_white</item>
+        <item name="main_bottom_text_color">@color/navigation_text_white</item>
+        <item name="home_fragment_select_time_text_color">@color/home_head_text_normal_white</item>
+        <item name="home_fragment_info_text_color">@color/global_text_white</item>
+        <item name="home_fragment_calorie_text_color">
+            @color/home_fragment_calorie_text_color_white
+        </item>
+        <item name="home_fragment_active_time_text_color">
+            @color/home_fragment_active_time_text_color_white
+        </item>
+        <item name="home_fragment_mileage_text_color">
+            @color/home_fragment_mileage_text_color_white
+        </item>
+        <item name="home_fragment_head_text_color">@color/head_text_white</item>
+        <item name="health_reports_fragment_background_color">@color/global_white</item>
+        <item name="health_reports_fragment_persional_info_title_color">
+            @color/health_sports_fragment_persional_info_title_color_white
+        </item>
+        <item name="health_reports_fragment_persional_info_text_color">
+            @color/health_sports_fragment_persional_info_text_color_white
+        </item>
+        <item name="health_reports_head_line_color">@color/health_reports_head_line_color_white
+        </item>
+        <item name="health_reports_title_text_color">@color/background_content_white</item>
+        <item name="health_reports_details_text_color">
+            @color/health_reports_details_text_color_white
+        </item>
+        <item name="health_reports_details_body_normal_color">
+            @color/health_reports_details_body_normal_color_white
+        </item>
+        <item name="health_reports_details_body_over_color">
+            @color/health_reports_details_body_over_color_whtie
+        </item>
+        <item name="health_reports_details_score_color">
+            @color/health_reports_details_score_color_white
+        </item>
+        <item name="health_reports_details_body_year_color">
+            @color/health_reports_details_body_year_color_white
+        </item>
+        <item name="health_reports_complete_color">@color/health_reports_complete_color_white</item>
+        <item name="analysis_fragment_y_text_color">@color/analysis_fragment_y_text_color_white
+        </item>
+        <item name="analysis_fragment_line_color">@color/analysis_fragment_line_color_white</item>
+        <item name="analysis_fragment_x_text_color">@color/analysis_fragment_x_text_color_white
+        </item>
+        <item name="analysis_fragment_alldata_date_text_color">@color/alldata_date_text_white</item>
+        <item name="alldata_text_color">@color/white</item>
+        <item name="alldata_data_text_color">@color/home_fragment_mileage_text_color_white</item>
+        <item name="push_item_background">@color/push_itme_bg_white</item>
+        <item name="bleinput_edit_color">@color/bleinput_edit_color_white</item>
+        <item name="popu_sportmode_color">@color/popu_sportmode_white</item>
+
+        <item name="runtext_color">@color/runtext_color_white</item>
+        <item name="runtext_gray_color">@color/detailed_item_text_top</item>
+        <item name="sportsHistory_mian_bg">@color/sportsHistory_mian_bg_white</item>
+
+
+        <item name="main_bottom_icon_analysis">@drawable/navigation_analysis_white</item>
+        <item name="main_bottom_icon_trajectory">@drawable/navigation_trajectory_white</item>
+        <item name="main_bottom_icon_home">@drawable/navigation_homepage_white</item>
+        <item name="main_bottom_icon_health">@drawable/navigation_health_white</item>
+        <item name="main_bottom_icon_setting">@drawable/navigation_setting_white</item>
+        <item name="home_fragment_head_button_synchronization">
+            @drawable/button_synchronization_white
+        </item>
+        <item name="home_fragment_head_button_sportmode">@drawable/button_sportmode_white</item>
+        <item name="home_fragment_head_button_quanma">@drawable/button_quanma_white</item>
+        <item name="home_fragment_head_button_banma">@drawable/button_banma_white</item>
+        <item name="home_fragment_head_button_shineipao">@drawable/button_shineipao_white</item>
+        <item name="home_fragment_head_button_yuyepao">@drawable/button_yuyepao_white</item>
+        <item name="home_fragment_head_button_dengshanpao">@drawable/button_dengshan_white</item>
+        <item name="home_fragment_head_button_huwaipao">@drawable/button_huwaipao_white</item>
+        <item name="home_fragment_head_button_jianzou">@drawable/button_jianzou_white</item>
+        <item name="sport_share_background">@drawable/sport_share</item>
+        <item name="sport_photo_background">@drawable/sport_photo</item>
+
+
+        <item name="home_fragment_head_button_share">@drawable/bt_share_white</item>
+        <item name="analysis_fragment_button_background">@drawable/btn_sports_analysis_full_white
+        </item>
+        <item name="health_reports_title_background">@drawable/health_report_title_bg_white</item>
+        <item name="home_fragment_button_target">@drawable/btn_target_white</item>
+        <item name="home_fragment_icon_left">@drawable/icon_arrow_left_white</item>
+        <item name="home_fragment_icon_right">@drawable/icon_arrow_right_end_white</item>
+        <item name="home_fragment_head_bg">@drawable/sport_checkbox_selector_bbg_white</item>
+        <item name="my_fragment_item_bg">@drawable/fragment_my_item_bg_white</item>
+        <item name="my_fragment_viewpager_bg">@drawable/fragment_my_viewpager_bg_white</item>
+        <item name="global_title_return_back">@drawable/icon_return_back_white</item>
+        <item name="global_title_finish">@drawable/nav_btn_finish_p_w</item>
+        <item name="global_title_add">@drawable/add_p_w</item>
+        <item name="global_title_history">@drawable/title_history</item>
+        <item name="global_title_share">@drawable/title_share</item>
+        <item name="btn_bleinput_bg">@drawable/btn_bleinput_bg_selector_white</item>
+        <item name="edit_bleinput_bg">@drawable/edit_bleinput_bg_white</item>
+        <item name="im_head_men">@drawable/head_men_white</item>
+        <item name="im_head_women">@drawable/head_women_white</item>
+        <item name="im_sos_itembg">@drawable/sos_xiezi_white</item>
+        <item name="analysis_fragment_alldata_background">@drawable/alldata_round_white</item>
+        <item name="analysis_fragment_alldata_data_background">@drawable/alldata_data_round_white
+        </item>
+        <item name="analysis_fragment_alldata_date_background">@drawable/alldata_date_round_white
+        </item>
+        <item name="analysis_fragment_alldata_selector_background">
+            @drawable/alldata_date_selector_white
+        </item>
+        <item name="analysis_fragment_alldata_fullscreen_selector_background">
+            @drawable/alldata_fullscreen_selector_white
+        </item>
+        <item name="notice_rigiht_bg">@drawable/right_mu_white</item>
+
+        <item name="my_fragment_viewpager_line">@drawable/my_step_fg_bg_white</item>
+
+        <item name="wifi_riss_iv1">@drawable/wifi1_white</item>
+        <item name="wifi_riss_iv2">@drawable/wifi2_white</item>
+        <item name="wifi_riss_iv3">@drawable/wifi3_white</item>
+        <item name="wifi_riss_iv4">@drawable/wifi4_white</item>
+
+        <item name="wifi_risslock_iv1">@drawable/wifilock1_white</item>
+        <item name="wifi_risslock_iv2">@drawable/wifilock2_white</item>
+        <item name="wifi_risslock_iv3">@drawable/wifilock3_white</item>
+        <item name="wifi_risslock_iv4">@drawable/wifilock4_white</item>
+
+        <item name="healt_finish_iv">@drawable/iv_healt_emphasis_white</item>
+        <item name="fragment_my_setting_iv">@drawable/fragment_my_setting_bg_white</item>
+
+        <item name="home_run_bg">@drawable/home_run_bg_white</item>
+        <item name="fragment_home_run_start_bt">@drawable/fragment_home_run_start_bt_white</item>
+        <item name="fragment_home_history_record__bt">
+            @drawable/fragment_home_history_record__bt_white
+        </item>
+        <item name="fragment_home_settings__bt">@drawable/fragment_home_settings__bt_white</item>
+        <item name="activity_outdoorrun_bg">@drawable/activity_outdoorrun_bg_white</item>
+
+        <item name="activity_outdoorrun_continue">@drawable/activity_outdoorrun_continue_white
+        </item>
+        <item name="activity_outdoorrun_lockscreen">@drawable/activity_outdoorrun_lockscreen_white
+        </item>
+        <item name="activity_outdoorrun_suspend">@drawable/activity_outdoorrun_suspend_white</item>
+        <item name="activity_outdoorrun_end">@drawable/activity_outdoorrun_end_white</item>
+        <item name="activity_outdoorrun_setting">@drawable/activity_outdoorrun_setting_white</item>
+        <item name="activity_outdoorrun_mapmode">@drawable/activity_outdoorrun_mapmode_white</item>
+        <item name="lockscreen">@drawable/lockscreen_white</item>
+        <item name="speedhead_bg">@drawable/speedhead_bg_white</item>
+        <item name="speedhead_logo_bg">@drawable/speedhead_logo_bg_white</item>
+        <item name="speedfragment_details">@drawable/speedfragment_details_white</item>
+        <item name="rili">@drawable/rili_white</item>
+
+        <item name="sportshistory_banma">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_dengshan">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_huwaipao">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_jianzou">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_quanma">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_shineipao">@drawable/sportshistory_huwaipao_white</item>
+        <item name="sportshistory_yueyepao">@drawable/sportshistory_huwaipao_white</item>
+
+        <item name="runsetting_voice_selector">@drawable/runsetting_voice_selector_white</item>
+        <item name="runsetting_screen_selector">@drawable/runsetting_screen_selector_white</item>
+        <item name="runsetting_autopause_selector">@drawable/runsetting_autopause_selector_white
+        </item>
+        <item name="runsetting_autostop_selector">@drawable/runsetting_autostop_selector_white
+        </item>
+        <item name="sportshistory_sync">@drawable/sportshistory_sync_white</item>
+
+
+        <item name="firmware_success_background">@drawable/firmware_success_write</item>
+        <item name="firmware_upload_background">@drawable/firmware_upload_write</item>
+        <item name="firmware_update_background">@drawable/firmware_update_write</item>
+        <item name="firmware_progress_color">@color/home_head_text_normal_white</item>
+    </style>
+
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+
+    <style name="Theme.picker" parent="android:Theme.Holo.Light">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">?attr/global_text_color</item>
+    </style>
+
+
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">30dip</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <!--1像素Activity风格 @android:color/transparent-->
+    <style name="SingleActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoDisplay">false</item>
+    </style>
+
+    <style name="dataStyle">
+        <item name="android:background">#fff</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#030</item>
+        <item name="android:textColorHint">#fff</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="dialog_activity" parent="Theme.AppCompat.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

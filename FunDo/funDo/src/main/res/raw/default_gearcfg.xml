@@ -1,0 +1,12 @@
+<appconfig>
+<category>local</category>
+<appname>Grear Clock</appname>
+<recevier_id>grearclock</recevier_id>
+<vxp num = '1'>
+	<vxpname platform = 'install'>default_gear.vxp</vxpname>
+</vxp>
+<package>null</package>
+<iconname>digitclock2</iconname>
+<download_url>null</download_url>
+<version>00005</version>
+</appconfig>

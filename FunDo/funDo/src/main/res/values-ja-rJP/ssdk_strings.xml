@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weibo_oauth_regiseter">承認</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="weibo_upload_content">共有写真</string>
+    <string name="wechat_client_inavailable">あなたのマイクロチャネルのマイクロチャネルの現在のバージョンがインストール低すぎるかではない、あなたは、マイクロ流路を使用するためにインストールする必要があります</string>
+    <string name="google_plus_client_inavailable">Google+のバージョンがインストール低すぎるかではない、あなたがGoogle+に使用するために、アップグレードまたはインストールする必要があります！</string>
+    <string name="qq_client_inavailable">QQのバージョンが低すぎるかどうかがインストールされ、アップグレードまたは使用するQQをインストールする必要があります！</string>
+    <string name="pinterest_client_inavailable">Pinterestのバージョンがインストールさが低すぎるかではない、あなたがPinterestを使用するためにアップグレードまたはインストールする必要があります！</string>
+    <string name="instagram_client_inavailable">Instagramのバージョンがインストール低すぎるかではない、あなたが使用するのInstagramをアップグレードまたはインストールする必要があります！</string>
+    <string name="yixin_client_inavailable">現在、低すぎるか、インストールされていないバージョンを思い出させるには、文字を使用するためにインストールして簡単にする必要があります</string>
+    <string name="line_client_inavailable">ラインあなたの現在のバージョンは低すぎる、またはインストールされていない、あなたがラインを使用するためにインストールする必要があります</string>
+    <string name="kakaotalk_client_inavailable">カカオトークのバージョン現在が低すぎるまたはインストールには、カカオトークを使用するためにインストールする必要があります</string>
+    <string name="kakaostory_client_inavailable">現在インストールされているバージョンのKakaoStory低いかどうか、あなたがKakaoStoryを使用するためにインストールする必要があります</string>
+    <string name="whatsapp_client_inavailable">WhatsAppは今、あなたのバージョンが低すぎる、またはインストールされていない、あなたはWhatsAppを使用するためにインストールする必要があります</string>
+    <string name="baidutieba_client_inavailable">現在、Baiduのポストバーは、あなたのバージョンが低すぎる、またはインストールされていない、あなたは、Baiduのポストバーを使用するためにインストールする必要があります</string>
+    <string name="laiwang_client_inavailable">現在お使いのバージョンが低すぎるか、インストールされていませんお問い合わせください、あなたは連絡先を使用するためにインストールする必要があります</string>
+
+	<string name="ssdk_facebookmessenger_client_inavailable">クライアントが存在しないか、バージョンが低すぎる</string>
+    
+	<string name="sinaweibo">新浪微博</string>
+	<string name="tencentweibo">Tencentのマイクロブログ</string>
+	<string name="qzone">QQスペース</string>
+	<string name="wechat">Wechatフレンズ</string>
+	<string name="wechatmoments">Wechat友達の輪</string>
+	<string name="wechatfavorite">Wechat収集</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">人人網</string>
+	<string name="kaixin">Kaixin</string>
+	<string name="email">電子メール</string>
+	<string name="shortmessage">情報</string>
+	<string name="sohumicroblog">捜狐Weibo</string>
+	<string name="sohusuishenkan">捜狐キャリールック</string>
+	<string name="neteasemicroblog">網易Weibo</string>
+	<string name="douban">オランダガラシ</string>
+	<string name="youdao">Youdaoクラウドノート</string>
+	<string name="evernote">Evernoteの</string>
+	<string name="linkedin">LinkedInの</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">盲信</string>
+	<string name="yixinmoments">友人のEasecredit円</string>
+	<string name="mingdao">明</string>
+	<string name="kakaotalk">KakaoTalk</string>
+	<string name="kakaostory">KakaoStory</string>
+	<string name="line">Line</string>
+	<string name="bluetooth">ブルートゥース</string>
+	<string name="whatsapp">WhatsApp</string>
+	<string name="pocket">Pocket</string>
+	<string name="instapaper">Instapaper</string>
+	<string name="instapaper_email">ポスト</string>
+	<string name="instapaper_pwd">パスワード</string>
+	<string name="instapaper_login">ログイン</string>
+	<string name="instapaper_logining">ログイン...</string>
+	<string name="instapager_email_or_password_incorrect">メールまたはパスワードが正しくありません。</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="baidutieba">Baiduのポストバー</string>
+    <string name="laiwang">コンタクト</string>
+    <string name="laiwangmoments">そしてダイナミックから</string>
+
+	<string name="share_to_baidutieba">Baiduのポストバーを共有します</string>
+	<string name="share_to_qzone">シェアQQスペース</string>
+	<string name="share_to_qq">シェアQQ</string>
+	<string name="mingdao_share_content">Webページを共有</string>
+	<string name="share_to_mingdao">シェア明</string>
+	<string name="share_to_qzone_default">から来ます%sシェア</string>
+	<string name="use_login_button">「ログイン」ボタンを使用してください</string>
+</resources>

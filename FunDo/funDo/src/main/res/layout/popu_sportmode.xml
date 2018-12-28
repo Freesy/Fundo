@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/popu_sportmode_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/floatingMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="3dp"
+       >
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/right_labels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_addButtonColorNormal="@color/hot_blue"
+            fab:fab_addButtonSize="normal"
+            fab:fab_addButtonStrokeVisible="false"
+            fab:fab_expandDirection="down"
+            fab:fab_stroke_visible="false" >
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_quanma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_quanma"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_banma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_banma"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_yuyepao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_yuyepao"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_dengshanpao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_dengshanpao"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_shineipao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_shineipao"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_huwaipao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_size="mini"
+                fab:fab_icon="?attr/home_fragment_head_button_huwaipao"
+                fab:fab_stroke_visible="false"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_location_jianzou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/transparent"
+                fab:fab_icon="?attr/home_fragment_head_button_jianzou"
+                fab:fab_size="mini"
+                fab:fab_stroke_visible="false"/>
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+
+
+</LinearLayout>

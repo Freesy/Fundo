@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="weibo_oauth_regiseter">Genehmigung</string>
+	<string name="website">http://www.mob.com</string>
+	<string name="weibo_upload_content">Teilen Sie Fotos</string>
+	<string name="wechat_client_inavailable">WeChat Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="google_plus_client_inavailable">Google+ Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="qq_client_inavailable">Mobile QQ Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="pinterest_client_inavailable">Pinterest Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="instagram_client_inavailable">Instagram-Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="yixin_client_inavailable">Yixin Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="line_client_inavailable">Zeilen-Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="kakaotalk_client_inavailable">Kakaotalk-Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="kakaostory_client_inavailable">KakaoStory Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="whatsapp_client_inavailable">WhatsApp Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="baidutieba_client_inavailable">Baidutieba Client nicht vorhanden ist oder die Version ist zu gering</string>
+	<string name="laiwang_client_inavailable">Laiwangs Client nicht vorhanden ist oder die Version ist zu gering</string>
+
+	<string name="ssdk_facebookmessenger_client_inavailable">facebookmessenger client nicht existiert oder die version ist zu niedrig</string>
+	
+	<string name="sinaweibo">Sina Weibo</string>
+	<string name="tencentweibo">Tencent Weibo</string>
+	<string name="qzone">QZone</string>
+	<string name="wechat">WeChat</string>
+	<string name="wechatmoments">WeChat Moments</string>
+	<string name="wechatfavorite">WeChat Lieblings</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">Renren</string>
+	<string name="kaixin">Kaixin</string>
+	<string name="email">Email</string>
+	<string name="shortmessage">Kurznachricht</string>
+	<string name="sohumicroblog">Sohu Microblog</string>
+	<string name="neteasemicroblog">Netease Microblog</string>
+	<string name="douban">Douban</string>
+	<string name="youdao">Youdao</string>
+	<string name="evernote">Evernote</string>
+	<string name="linkedin">Linked in</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="sohusuishenkan">Sohu Suishenkan</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">Yixin</string>
+	<string name="yixinmoments">Yixin Moments</string>
+	<string name="mingdao">Mingdao</string>
+	<string name="kakaotalk">Kakao talk</string>
+	<string name="kakaostory">KakaoStory</string>
+	<string name="line">Leitung</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="whatsapp">WhatsApp</string>
+	<string name="pocket">Tasche</string>
+	<string name="instapaper">Instapaper</string>
+	<string name="instapaper_email">Email</string>
+	<string name="instapaper_pwd">Passwort</string>
+	<string name="instapaper_login">Anmelden</string>
+	<string name="instapaper_logining">Anmelden…</string>
+	<string name="instapager_email_or_password_incorrect">E-Mail oder Passwort nicht korrekt</string>
+	<string name="facebookmessenger">Facebook Messenger</string>
+	<string name="baidutieba">Baidutieba</string>
+	<string name="laiwang">Laiwang</string>
+	<string name="laiwangmoments">Laiwang Moments</string>
+	
+	<string name="share_to_baidutieba">Teilen Um Baidutieba</string>
+	<string name="share_to_qzone">Teilen Um QZone</string>
+	<string name="share_to_qq">Teilen Um QQ</string>
+	<string name="mingdao_share_content">Teilen Sie die Homepage</string>
+	<string name="share_to_mingdao">Teilen Um Mingdao</string>
+	<string name="share_to_qzone_default">Von %s Gemeinschafts</string>
+	<string name="use_login_button">verwenden Sie stattdessen Login-Button</string>
+</resources>

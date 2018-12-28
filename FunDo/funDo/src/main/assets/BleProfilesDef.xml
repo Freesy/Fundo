@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ble_profiles>
+    <ble_profile id="0" extra_info="FindMe">
+        <ble_service name="ImmediateAlertService.xml" />
+    </ble_profile>
+</ble_profiles>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+
+              android:padding="10dp"
+    >
+    <LinearLayout
+        android:id="@+id/ll_listbg"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:background="?attr/speedhead_logo_bg"
+                  android:padding="10dp"
+        >
+
+
+            <TextView
+                android:id="@+id/tv_speed_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="?attr/global_text_color"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_speed_speed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="?attr/global_text_color"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/tv_speed_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="?attr/global_text_color"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

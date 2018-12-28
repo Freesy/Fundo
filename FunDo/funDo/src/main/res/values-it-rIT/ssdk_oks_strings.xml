@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">Condividere</string>
+    <string name="ssdk_oks_sharing">Operazione sta dietro le Quinte di condividere…</string>
+    <string name="ssdk_oks_share_failed">Condividere il fallimento</string>
+    <string name="ssdk_oks_share_completed">Condividere con successo</string>
+    <string name="ssdk_oks_share_canceled">Condividere è stato cancellato</string>
+    <string name="ssdk_oks_cancel">Annullare</string>
+    <string name="ssdk_oks_multi_share">Condividere le Foto</string>
+    <string name="ssdk_oks_confirm">Determinare</string>
+    <string name="ssdk_oks_contacts">Contatti</string>
+    <string name="ssdk_oks_pull_to_refresh">Aggiorna</string>
+	<string name="ssdk_oks_release_to_refresh">Allenta la aggiorna</string>
+	<string name="ssdk_oks_refreshing">Aggiorna…</string>
+</resources>

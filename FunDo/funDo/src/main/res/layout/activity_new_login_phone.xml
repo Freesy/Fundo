@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.NewRegisterPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/login_button_text"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="61dp"
+        android:layout_height="40dp">
+
+        <View
+            android:id="@+id/v_quhao"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/login_input_n"/>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:text="国家/地区 中国(＋86)"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:drawableRight="@drawable/arrow_right"
+            android:paddingRight="5dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp"
+            android:visibility="gone"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/et_phonenumber"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:hint="@string/input_phone_code"
+        android:textColorHint="#66ffffff"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_input_n"/>
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:hint="@string/input_text"
+        android:textColorHint="#66ffffff"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:longClickable="false"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_input_n"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/newlogin_bg_login1"
+        android:text="@string/login_button_text"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_register_phone"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/newlogin_bg_login1"
+            android:text="@string/phone_login"
+            android:textColor="#004F4D"
+            android:textAllCaps="false"
+            android:textSize="@dimen/login_register_18sp" />
+
+
+        <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:id="@+id/tv_toforget"
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:text="@string/forget_password_true"
+            android:textColor="@color/hot_blue"
+            android:textSize="14sp"
+            />
+        <!--<TextView
+            android:id="@+id/tv_toforget"
+            android:clickable="true"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/forget_password_true"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/hot_blue"
+            android:textSize="14sp"/>-->
+
+    </LinearLayout>
+</LinearLayout>

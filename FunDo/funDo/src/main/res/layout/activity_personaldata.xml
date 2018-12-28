@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li_myData_register"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/rectangle"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="填写个人资料"
+            android:textSize="20sp"
+            android:textColor="#d9ffffff"
+            />
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        >
+        &lt;!&ndash;android:background="?attr/global_background"&ndash;&gt;
+        <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+        &lt;!&ndash;android:textColor="?attr/global_text_color"：这里设置为黑色&ndash;&gt;
+        &lt;!&ndash;返回按钮&ndash;&gt;
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+        &lt;!&ndash;android:layout_width="45dp"&ndash;&gt;
+        &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+        &lt;!&ndash;android:layout_alignParentStart="true"&ndash;&gt;
+        &lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;
+        &lt;!&ndash;android:scaleType="centerInside"&ndash;&gt;
+        &lt;!&ndash;android:src="@drawable/icon_return_back"&ndash;&gt;
+
+    </RelativeLayout>-->
+
+
+
+    <ImageView
+        android:id="@+id/iv_my_headphoto"
+        android:layout_marginTop="47.1dp"
+        android:layout_width="67.1dp"
+        android:layout_height="67.1dp"
+        android:layout_gravity="center"
+        android:src="@drawable/head_sculpture"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="点击添加头像"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_marginTop="4.8dp"
+        />
+    <!--android:id="@+id/tv_addheadportrait"-->
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center">
+         <RadioButton
+             android:id="@+id/ib_male"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:background="@drawable/male"
+             android:scaleType="center"
+             android:layout_alignParentStart="true"
+             android:layout_marginLeft="120dp"
+             android:button="@null"
+             android:checked="true"
+             />
+         <RadioButton
+             android:id="@+id/ib_female"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:background="@drawable/female"
+             android:scaleType="center"
+             android:layout_alignParentEnd="true"
+             android:layout_marginRight="120dp"
+             android:button="@null"
+             android:checked="false"
+             />
+     </RelativeLayout>-->
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/ib_male"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/male"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:layout_marginRight="20dp"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/ib_female"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/female"
+            android:layout_gravity="center"
+            android:button="@null"
+            android:layout_marginLeft="20dp"
+            android:checked="false"
+            />
+    </RadioGroup>
+
+
+
+
+      <FrameLayout
+          android:id="@+id/fl_nickname"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/login_input_n"
+          android:layout_marginTop="40dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="昵称"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="20dp"/>
+
+          <EditText
+              android:id="@+id/tv_my_name"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:hint="买火柴的小女孩"
+              android:textColorHint="#99ffffff"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:background="@null"
+              />
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/fl_weight"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/button_confirm_persondata"
+          android:layout_marginTop="10dp">
+          <!--android:background="@drawable/login_input_n"-->
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="体重"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="20dp"/>
+
+          <TextView
+              android:id="@+id/tv_weight"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="60kg"
+              android:textColorHint="#99ffffff"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:background="@null"
+              />
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/fl_height"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/button_confirm_persondata"
+          android:layout_marginTop="10dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="身高"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="20dp"/>
+
+          <TextView
+              android:id="@+id/tv_height"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="180cm"
+              android:textColorHint="#99ffffff"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:background="@null"
+              />
+      </FrameLayout>
+
+      <FrameLayout
+          android:id="@+id/fl_birth"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center_horizontal"
+          android:background="@drawable/button_confirm_persondata"
+          android:layout_marginTop="10dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="生日"
+              android:layout_gravity="center_vertical"
+              android:gravity="center"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:layout_marginLeft="20dp"/>
+
+          <TextView
+              android:id="@+id/tv_birth"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="2006.01.01"
+              android:textColorHint="#99ffffff"
+              android:textSize="14sp"
+              android:textColor="#ffffff"
+              android:background="@null"
+              />
+          <!--android:text="2006-01-01"-->
+      </FrameLayout>
+
+      <Button
+          android:id="@+id/btn_complete"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:text="完成"
+          android:textColor="#99ffffff"
+          android:textSize="18sp"
+          android:layout_marginTop="20dp"
+          android:background="@drawable/button_confirm"/>
+    <!--login_input_n-->
+
+   <!-- <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#99ffffff"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_input_n"/>-->
+
+</LinearLayout>

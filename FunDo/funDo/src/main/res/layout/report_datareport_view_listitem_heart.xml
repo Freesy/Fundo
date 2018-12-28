@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <View
+        android:layout_width="2.4dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:background="#41464c"/>
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="38dp"
+        android:background="@drawable/round_heartrate"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="20dp"
+        android:background="?attr/analysis_fragment_alldata_data_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            android:textColor="#cccccc" />
+
+        <TextView
+            android:id="@+id/tv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff3b25"
+            android:textSize="15sp"
+            android:layout_marginStart="110dp"
+            android:layout_centerVertical="true"
+            android:text="120"/>
+
+        <!--android:layout_marginLeft="110dp"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/times_minute"
+            android:textSize="12sp"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@id/tv_heart"
+            android:layout_alignBaseline="@id/tv_heart"
+            android:textColor="#4f4f4f"/>
+
+        <TextView
+            android:id="@+id/tv_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fat_burning"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

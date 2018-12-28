@@ -1,0 +1,489 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/re_setting_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.main.SettingHelpActivity">
+
+    <include
+        layout="@layout/main_toolbar_global"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <!--标题名-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tv_my"
+            android:textColor="?attr/global_text_color"
+
+            android:textSize="@dimen/home_title_text_s" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+        <ImageButton
+            android:id="@+id/ib_setting"
+            android:layout_width="@dimen/title"
+            android:layout_height="@dimen/title"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="?attr/fragment_my_setting_iv"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginTop="10dp"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <RelativeLayout
+                android:id="@+id/tv_mydata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="?attr/global_background">
+                <!--头像-->
+                <com.szkct.map.utils.CircleImageView
+                    android:id="@+id/my_touxian"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="15dp"
+                    android:padding="15dp"
+                    android:src="@drawable/head_men" />
+
+                <Button
+                    android:id="@+id/my_qiandao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/my_qiandao_bg"
+                    android:text="签到"
+                    android:textColor="@color/my_qiandao_color"
+                    android:textSize="@dimen/global_normal_text_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/not_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/not_login"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/menu_my_item_small"
+                    android:layout_marginEnd="20dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/my_touxian"
+                    android:layout_toStartOf="@+id/not_login"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/my_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="?attr/global_text_color"
+                            android:textSize="@dimen/global_big_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_alignParentBottom="true"
+                android:background="?attr/health_reports_head_line_color" />
+
+            <!--今天的我-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp"
+                android:paddingStart="15dp"
+                android:paddingTop="9dp"
+                android:text="@string/today_me"
+                android:textColor="?attr/global_text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="?attr/my_fragment_item_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/my_step_withyesterday"
+                    android:layout_toEndOf="@+id/my_stepimage"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/my_step_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="0"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/my_today_steptv_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="@string/everyday_pace"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/menu_my_item_small" />
+                </LinearLayout>
+
+                <!--今天的步数-->
+                <ImageView
+                    android:id="@+id/my_stepimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/today_step" />
+
+                <LinearLayout
+                    android:id="@+id/my_step_withyesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+                    <!--相比昨天-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/compared_to_yesterday"
+                        android:textColor="?attr/global_text_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_step_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="3dp"
+                            android:textColor="?attr/global_text_color" />
+
+                        <ImageView
+                            android:id="@+id/iv_step"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="?attr/my_fragment_item_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/my_distance_withyesterday"
+                    android:layout_toEndOf="@+id/my_distanceimage"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/my_distance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="0"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/my_today_steptv_size" />
+                    //公里
+
+                    <TextView
+                        android:id="@+id/my_distance_tv_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="@string/kilometer"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/menu_my_item_small" />
+                </LinearLayout>
+                <!--公里对应的图片-->
+                <ImageView
+                    android:id="@+id/my_distanceimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/today_dic" />
+
+                <LinearLayout
+                    android:id="@+id/my_distance_withyesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/compared_to_yesterday"
+                        android:textColor="?attr/global_text_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_distance_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="3dp"
+                            android:textColor="?attr/global_text_color" />
+
+                        <ImageView
+                            android:id="@+id/iv_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                android:background="?attr/my_fragment_item_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/my_kal_withyesterday"
+                    android:layout_toEndOf="@+id/my_kalimage"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/my_kal_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="0"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/my_today_steptv_size" />
+                    <!--大卡-->
+                    <TextView
+                        android:id="@+id/my_kal_tv_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:text="@string/everyday_calorie"
+                        android:textColor="?attr/global_text_color"
+                        android:textSize="@dimen/menu_my_item_small" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/my_kalimage"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:padding="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/today_kal" />
+
+                <LinearLayout
+                    android:id="@+id/my_kal_withyesterday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/compared_to_yesterday"
+                        android:textColor="?attr/global_text_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_kal_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="3dp"
+                            android:textColor="?attr/global_text_color" />
+
+                        <ImageView
+                            android:id="@+id/iv_kal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:scaleType="centerInside" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_my_viewpager_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp"
+                android:paddingStart="15dp"
+                android:paddingTop="9dp"
+                android:textColor="?attr/global_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/my_fragment_viewpager_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/textl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/test_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingEnd="10dip"
+                        android:src="@drawable/my_round" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingEnd="10dip"
+                        android:src="@drawable/my_round" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:contentDescription="@string/app_name"
+                        android:paddingEnd="10dip"
+                        android:src="@drawable/my_round" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginBottom="43dp"
+                android:layout_marginTop="-33dp"
+                android:background="?attr/global_background_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

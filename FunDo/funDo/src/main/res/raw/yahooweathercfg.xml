@@ -1,0 +1,12 @@
+<appconfig>
+<category>local</category>
+<appname>Yahoo Weather</appname>
+<recevier_id>yahooweather</recevier_id>
+<vxp num = '1'>
+	<vxpname platform = 'install'>yahooweather.vxp</vxpname>
+</vxp>
+<package>com.mtk.yahooweather</package>
+<iconname>yahoo</iconname>
+<download_url>null</download_url>
+<version>00005</version>
+</appconfig>

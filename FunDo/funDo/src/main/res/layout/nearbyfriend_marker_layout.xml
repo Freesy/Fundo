@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nearby_friend_marker_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"    
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/nearby_friend_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:contentDescription="@string/app_name"
+        android:padding="5dip"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nearby_friend_head_img" />
+
+</LinearLayout>

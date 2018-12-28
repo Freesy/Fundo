@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/sportsHistory_mian_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/speedfragment_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_spped_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/speedhead_bg"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/speed_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/speed_chat_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="@string/speed_chat"
+                        android:textColor="?attr/runtext_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="?attr/speedhead_logo_bg"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/sportmode_threepage_logo_iv"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:src="@drawable/sportmode_logo_b"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_psbtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            android:text="@string/funfit_sprots"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="?attr/runtext_color"
+                            />
+
+                        <TextView
+                            android:id="@+id/speed_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"
+                            android:paddingEnd="5dp"
+                            android:textColor="?attr/runtext_color"
+                            android:textSize="12sp"
+
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/speed_head"
+                    android:background="?attr/sportsHistory_mian_bg" />
+
+                <HorizontalScrollView
+                    android:id="@+id/speedhsv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/speed_head"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="3dp"
+                    android:scrollbars="none">
+                    <com.szkct.weloopbtsmartdevice.view.Speedview
+                        android:id="@+id/testview"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        />
+                    <!--android:layout_width="wrap_content"-->
+                </HorizontalScrollView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/speedhsv"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_speed_round_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:drawableLeft="@drawable/speed_round_max"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="20dp"
+                        android:paddingEnd="20dp"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_speed_round_min"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+
+                        android:drawableLeft="@drawable/speed_round_min"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="20dp"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_speed_round_nom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+
+
+                        android:drawableLeft="@drawable/speed_round_nom"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="20dp"
+                        android:paddingStart="20dp"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:src="?attr/speedfragment_details" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_spped_head"
+                android:layout_marginTop="10dp"
+                android:background="?attr/speedhead_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/speed_run_up"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/kilometer"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="16sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/realtime_pace"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/speed_consuming"
+                        android:textColor="?attr/runtext_gray_color"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/speed_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null">
+                </ListView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

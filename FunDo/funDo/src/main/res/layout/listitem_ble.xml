@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/bangde_rt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                       <ImageView
+                         android:id="@+id/devive_imag"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerInside"
+                        android:padding="10dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone"
+                        android:src="@drawable/iconfont_jiazai" />
+
+                        <TextView android:id="@+id/device_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:paddingStart="20sp"
+                                android:textColor="?attr/global_text_color"
+                                android:gravity="center_vertical"
+                                android:textSize="24dp"
+                            android:text=""/>
+
+                    <TextView android:id="@+id/device_mac_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingStart="20sp"
+                        android:textColor="#abacad"
+                        android:gravity="center_vertical"
+                        android:textSize="18dp"
+                        android:layout_below="@id/device_name"
+                        android:text=""/>
+
+
+        <!--   <TextView android:id="@+id/device_newble"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="30dp"
+                  android:text="@string/new_devices"
+                   android:paddingStart="20sp"
+                   android:background="@color/allbg"
+                   android:gravity="center_vertical"
+                   android:textColor="#8F8F8F"
+                  android:textSize="14sp"/> -->
+    </RelativeLayout>
+</LinearLayout>

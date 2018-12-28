@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/liner_notification_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/null_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/per_ti"
+            android:background="@null"
+            android:gravity="center"
+            android:text=""
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:textSize="@dimen/discover_title_text_n"
+            />
+
+        <TextView
+            android:id="@+id/per_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sport_checkbox_selector_bbg"
+            android:gravity="center"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/personal_apps_title"
+            android:textColor="?attr/home_fragment_head_nor_text_color"
+            android:textSize="@dimen/home_title_text_s"
+
+            />
+
+        <TextView
+            android:id="@+id/sys_ti"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/per_ti"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/system_apps_title"
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:textSize="@dimen/discover_title_text_n"
+
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/right_mu"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="centerInside"
+            android:src="?attr/notice_rigiht_bg"
+            android:visibility="gone"
+            />
+       <!-- android:visibility="gone"-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_appbaohuo"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_appbaohuo"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.68"
+            android:gravity="center_vertical"
+            android:minHeight="32dp"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp"
+            android:text="@string/app_open_keepalive"
+            android:layout_marginLeft="20dp"
+            />
+
+        <ToggleButton
+            android:id="@+id/bt_allowbaohuo"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/alertsetting_box_selector"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="?attr/health_reports_head_line_color"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/package_list"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.68"
+            android:gravity="center_vertical"
+            android:minHeight="32dp"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp"
+            android:text="@string/save_selectAll"
+            android:layout_marginLeft="20dp"
+            />
+        <!--android:id="@+id/package_text"-->
+
+        <ToggleButton
+            android:id="@+id/bt_selectAll"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/alertsetting_box_selector"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false"/>
+
+
+        <ToggleButton
+            android:id="@+id/bt_selectAll2"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/alertsetting_box_selector"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn=""
+            android:checked="false"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="?attr/health_reports_head_line_color" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/applist_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content">
+
+    <include
+        android:id="@+id/heart_date_linerlayout"
+        layout="@layout/up_and_down"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"></include>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/heart_date_linerlayout">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heart_date_linerlayout"
+            android:layout_toStartOf="@+id/heart_fragment"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_bo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/bo_b" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_bo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="   "
+                android:textColor="@color/weather_grey"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/bp_b" />
+
+            <TextView
+                android:id="@+id/tv_bp_min"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:text="    "
+                android:textColor="@color/weather_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_bp_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="   "
+                android:textColor="@color/weather_grey"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/heart_weather_linerlayout"
+                layout="@layout/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/heart_fragment"
+                android:layout_width="300dp"
+                android:layout_height="260dp"
+                android:layout_below="@+id/heart_weather_linerlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/homesport_spot"
+
+                    />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/homesport_spot" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="208dp"
+                    android:background="@drawable/homesport_spot" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="208dp"
+                    android:background="@drawable/homesport_spot" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/heart_progress"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    android:textColor="#8b8b8b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heart_progress"
+                    android:layout_centerHorizontal="true"
+                    android:text="100"
+                    android:textColor="#8b8b8b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/heart_progress"
+                    android:text="150"
+                    android:textColor="#8b8b8b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/heart_progress"
+                    android:text="50"
+                    android:textColor="#8b8b8b" />
+                <!--    <com.szkct.weloopbtsmartdevice.view.HomepageCircleView
+                       android:id="@+id/sport_process_circle"
+                       android:layout_width="225dp"
+                       android:layout_height="225dp" /> -->
+                <!--
+                     <TextView
+                            android:id="@+id/todaystep_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60dp"
+                            android:text="@string/steps_to_complete_degree"
+                            android:textColor="@color/todaystep_black"
+                            android:textSize="15sp" /> -->
+
+
+                <TextView
+                    android:id="@+id/setgoalstep_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/heart_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="-10dp"
+                    android:text=""
+                    android:textColor="#6a7179"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/heart_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_centerInParent="true"
+
+                    android:text="0"
+                    android:textColor="?attr/home_cent_text_color"
+                    android:textSize="45sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/heart_time_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/heart_num"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/measuring_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerHorizontal="true"
+
+                        android:text="@string/measuring_time"
+                        android:textColor="#8b8b8b"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/measuringtime_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/analysis_fragment_y_text_color"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+
+                <com.szkct.weloopbtsmartdevice.view.Heartprogressview
+                    android:id="@+id/heart_progress"
+                    android:layout_width="210dp"
+                    android:layout_height="210dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lineryout_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_below="@id/heart_fragment">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/heart_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="@string/mean_heart"
+                        android:textColor="?attr/home_fragment_info_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/mean_heart_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="?attr/home_fragment_calorie_text_color"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/heart_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="@string/highest_heart"
+                        android:textColor="?attr/home_fragment_info_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/highest_heart_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="?attr/home_fragment_active_time_text_color"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/heart_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="@string/minimum_heart"
+                        android:textColor="?attr/home_fragment_info_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/minimum_heart_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:text="--"
+                        android:textColor="?attr/home_fragment_mileage_text_color"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

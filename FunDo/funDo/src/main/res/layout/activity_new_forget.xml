@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.NewRegisterPhoneActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/back"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_return_back"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_forget_phone"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/newlogin_bg_login1"
+        android:text="手机找回"/>
+
+    <Button
+        android:id="@+id/bt_forget_email"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#004F4D"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/newlogin_bg_login1"
+        android:text="邮箱找回"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">поделиться</string>
+    <string name="ssdk_oks_sharing">поделиться  операции  в  фоновом режиме…</string>
+    <string name="ssdk_oks_share_failed">поделиться  провал</string>
+    <string name="ssdk_oks_share_completed">Доля успеха</string>
+    <string name="ssdk_oks_share_canceled">поделиться  отменено</string>
+    <string name="ssdk_oks_cancel">отменить</string>
+    <string name="ssdk_oks_multi_share">фотохостинг</string>
+    <string name="ssdk_oks_confirm">Определения</string>
+    <string name="ssdk_oks_contacts">контакты</string>
+    <string name="ssdk_oks_pull_to_refresh">выпадающий  обновить</string>
+	<string name="ssdk_oks_release_to_refresh">ослабить  обновить</string>
+	<string name="ssdk_oks_refreshing">Обновить…</string>
+</resources>

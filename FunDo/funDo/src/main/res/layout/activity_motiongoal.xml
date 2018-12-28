@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/global_background_content"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sportshistory_moving_target"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_freerunning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="?attr/global_background">
+
+
+        <TextView
+
+            android:id="@+id/tv_freerun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/im_motiongoal_check"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="20dp"
+            android:text="@string/motionsettting_goal_freerun"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="@string/free_running"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_distancegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_distancegoal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:background="?attr/global_background"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="20dp"
+            android:text="@string/distance_target"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/img_distancegoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/im_motiongoal_check"/>
+
+    </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/tv_distancegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:background="?attr/global_background"
+        android:drawableRight="@drawable/im_motiongoal_check"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:text="@string/distance_target"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp" />-->
+
+    <View
+        android:id="@+id/line_distancegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+
+        android:background="?attr/health_reports_head_line_color"/>
+
+
+    <TextView
+        android:id="@+id/tv_distancegoal_settingvalue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+
+        android:drawableRight="@drawable/im_motiongoal_right"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="20dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_timegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_timegoal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:background="?attr/global_background"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="20dp"
+            android:text="@string/time_target"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/img_timegoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/im_motiongoal_check"/>
+    </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/tv_timegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:background="?attr/global_background"
+        android:drawableRight="@drawable/im_motiongoal_check"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:text="@string/time_target"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp" />-->
+
+    <View
+        android:id="@+id/line_timegoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+
+        android:background="?attr/health_reports_head_line_color"/>
+
+    <TextView
+        android:id="@+id/tv_timegoal_settingvalue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+
+        android:drawableRight="@drawable/im_motiongoal_right"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="20dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_kalgoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_kalgoal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title"
+            android:background="?attr/global_background"
+            android:gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="20dp"
+            android:text="@string/calorie_target"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/img_kalgoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/im_motiongoal_check"/>
+
+    </RelativeLayout>
+    <!--<TextView
+        android:id="@+id/tv_kalgoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_marginTop="10dp"
+        android:background="?attr/global_background"
+        android:drawableRight="@drawable/im_motiongoal_check"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="15dp"
+        android:text="@string/calorie_target"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp" />-->
+
+    <View
+        android:id="@+id/line_kalgoal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+
+        android:background="?attr/health_reports_head_line_color"/>
+
+
+    <TextView
+        android:id="@+id/tv_kalgoal_settingvalue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+
+        android:drawableRight="@drawable/im_motiongoal_right"
+        android:gravity="center_vertical"
+        android:paddingEnd="15dp"
+        android:paddingStart="20dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="14sp"/>
+
+
+</LinearLayout>

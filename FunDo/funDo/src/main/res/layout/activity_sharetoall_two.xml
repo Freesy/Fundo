@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34dp">
+
+       <!-- <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/sharelingying"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/sharefacebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+       <!-- <ImageView
+            android:id="@+id/shareto_weibo"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharexinlang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />-->
+        <!--android:visibility="gone"-->
+
+        <ImageView
+            android:id="@+id/shareto_whatsapp"
+            android:layout_weight="1"
+            android:src="@drawable/share_icon_platform_13_n"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/shareto_qqzone"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shareqqzrone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/shareto_twitter"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharetwtter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/shareto_down"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharexiazai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+      <!--  android:visibility="gone"-->
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/shaall_more_notshow"
+            android:layout_centerVertical="true"
+            android:src="@drawable/sharemore_hui"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</LinearLayout>

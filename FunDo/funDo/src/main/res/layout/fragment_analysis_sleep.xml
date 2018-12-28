@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clickrl"
+     >
+	<TextView
+	    android:id="@+id/tv_analysis_title"
+	    style="@style/analysis_title_style"
+        android:layout_centerHorizontal="true"
+     
+	    android:text="@string/analysis_title_sleep">
+	</TextView>
+<View 
+    android:layout_height="@dimen/fragmen_big_data_title_margin_top"
+    android:layout_width="match_parent"
+    
+    
+    />
+    <TextView
+        android:id="@+id/analysis_textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_analysis_title"
+        android:text="@string/last_seven_day"
+        android:gravity="center"
+        style="@style/analysis_sub_title_style" />
+    <ImageButton
+        android:id="@+id/analysis_change_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_analysis_title"
+        android:background="@null"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignBottom="@id/tv_analysis_title"
+        android:src="?attr/analysis_fragment_button_background"
+         />
+
+    <LinearLayout
+        android:id="@+id/analysis_text_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analysis_textView1"
+        android:paddingTop="10dp"
+       
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/analysis_average_step_text"
+				style="@style/global_middle_text_style"
+                android:text="@string/goal_achievement_sleep" 
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/analysis_average_step"
+               android:textColor="?attr/home_fragment_mileage_text_color"             
+				style="@style/analysis_number_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                 android:id="@+id/analysis_total_step_text"
+				style="@style/global_middle_text_style"
+                android:text="@string/total_time" 
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/analysis_total_step"
+            android:textColor="?attr/home_fragment_mileage_text_color"                        
+				style="@style/analysis_number_style" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+<!-- android.support.v4.view.ViewPager
+    <com.szkct.weloopbtsmartdevice.view.ColumnChartView
+        android:id="@+id/analysis_chart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/analysis_text_ll"
+        android:layout_marginBottom="120dp" /> -->
+        <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     
+       
+        android:layout_below="@id/clickrl" >
+	
+	 <com.szkct.weloopbtsmartdevice.view.ColumnChartView
+	     android:id="@+id/vp_sleep_columnchartview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/analysis_margin_horizontal"
+        android:layout_marginRight="@dimen/analysis_margin_horizontal"
+        android:layout_marginBottom="15dp"
+       
+       
+	     />
+	 
+    </RelativeLayout>
+</RelativeLayout>

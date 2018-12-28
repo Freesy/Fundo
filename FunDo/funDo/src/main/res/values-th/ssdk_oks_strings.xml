@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">หุ้น</string>
+    <string name="ssdk_oks_sharing">การทำงานร่วมกันอยู่ในเบื้องหลัง</string>
+    <string name="ssdk_oks_share_failed">การแบ่งปันล้มเหลว</string>
+    <string name="ssdk_oks_share_completed">แบ่งปันความสำเร็จ</string>  แบ่งปันความสำเร็จ
+    <string name="ssdk_oks_share_canceled">ยกเลิกการแชร์แล้ว</string>
+
+  <!--  <string name="ssdk_oks_cancel">取消</string>
+    <string name="ssdk_oks_multi_share">图文分享</string>
+    <string name="ssdk_oks_confirm">确定</string>
+    <string name="ssdk_oks_contacts">联系人</string>
+    <string name="ssdk_oks_pull_to_refresh">下拉刷新</string>
+	<string name="ssdk_oks_release_to_refresh">松开刷新</string>
+	<string name="ssdk_oks_refreshing">刷新中…</string>-->
+</resources>

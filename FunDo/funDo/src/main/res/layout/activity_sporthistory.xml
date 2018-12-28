@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="?attr/sportsHistory_mian_bg"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/global_background" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sportshistory_sports_history"
+            android:textColor="?attr/global_text_color"
+            android:textSize="18sp" />
+
+        <!--同步蓝牙数据按钮-->
+        <ImageView
+            android:id="@+id/history_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/history_rili"
+            android:layout_marginRight="19dp"
+            android:scaleType="centerInside"
+            android:src="?attr/sportshistory_sync" />
+
+        <!--日历按钮-->
+        <ImageView
+            android:id="@+id/history_rili"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="19dp"
+            android:scaleType="centerInside"
+            android:src="?attr/rili" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sport_hint"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:textColor="?attr/global_text_color"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/now_is_nulldtat"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"/>
+
+
+</LinearLayout>

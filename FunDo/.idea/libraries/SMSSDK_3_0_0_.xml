@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="SMSSDK-3.0.0-">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/726e369e839cb56eb516eaf2cd0cd35bb83df0dd/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/726e369e839cb56eb516eaf2cd0cd35bb83df0dd/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

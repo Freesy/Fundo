@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+<RelativeLayout
+    android:background="?attr/global_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <!--android:layoutDirection="ltr"-->
+
+    <!--连接手表-->
+    <ImageView
+        android:id="@+id/RecyclerView_link_ble_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/imv_helper_link" />
+
+    <!--<com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+    <TextView
+        android:id="@+id/RecyclerView_link_ble_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_toEndOf="@+id/RecyclerView_link_ble_iv"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:paddingEnd="10sp"
+        android:visibility="invisible"
+        android:text="@string/connected_watch"
+        android:textColor="?attr/global_text_color"
+        android:textSize="@dimen/text_size_medium" />
+
+   <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+    <TextView
+        android:id="@+id/CENTER_ADDDEVICE"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+                android:paddingStart="50dp"
+        android:gravity="center_vertical|center_horizontal"
+         android:layout_centerInParent="true"
+        android:text="@string/add_device"
+        android:textColor="?attr/global_text_color"
+        android:textSize="@dimen/small_menu_size" />
+
+    <ImageView
+        android:id="@+id/recy_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:paddingEnd="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/arrow_right" />
+
+   <!-- <com.szkct.weloopbtsmartdevice.view.LanTingBoldBlackTextView-->
+    <TextView
+        android:id="@+id/RecyclerView_link_blename_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_toStartOf="@id/recy_iv"
+        android:visibility="invisible"
+        android:gravity="center_vertical|right"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:text="@string/not_connected"
+        android:textColor="@color/hot_blue"
+        android:textSize="@dimen/small_menu_size"/>
+
+   <!-- android:gravity="center_vertical|right"-->
+
+   <!-- <TextView
+        android:id="@+id/firmeware_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/firmeware_rightIv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:textColor="?attr/global_text_color"
+        android:textSize="@dimen/menu_my_item_small" />-->
+
+
+
+</RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

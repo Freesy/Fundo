@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <View
+        android:layout_width="2.4dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:background="#41464c"/>
+
+    <View
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="38dp"
+        android:background="@drawable/round_bloodpressure"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="20dp"
+        android:background="?attr/analysis_fragment_alldata_data_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="13dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            android:textColor="#cccccc" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#4f4f4f"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:text="mmHg"/>
+
+        <TextView
+            android:id="@+id/tv_bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_alignBaseline="@id/tv_1"
+            android:layout_toStartOf="@id/tv_1"
+            android:text="90"
+            android:layout_marginLeft="2dp"
+            android:textColor="#d8f901"/>
+
+       <!-- android:layout_marginRight="5dp"-->
+
+        <TextView
+            android:id="@+id/tv_aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00ffd5"
+            android:textSize="15sp"
+            android:layout_alignBaseline="@id/tv_1"
+            android:layout_toStartOf="@id/tv_bb"
+            android:layout_marginEnd="10dp"
+            android:text="110"/>
+      <!--  android:layout_marginRight="10dp"-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_1"
+            android:layout_toStartOf="@id/tv_bb"
+            android:textColor="#ffffff"
+            android:text="/"/>
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_km"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#cccccc"
+            android:textSize="15sp"
+            android:layout_marginEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fat_burning"/>
+      <!--  android:layout_marginRight="15dp"-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

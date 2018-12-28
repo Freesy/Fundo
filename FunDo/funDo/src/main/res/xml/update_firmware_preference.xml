@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <Preference android:key="top_preference"
+        android:summary="@string/updating_firmware"/>
+
+    <Preference android:key="bottom_preference"
+        android:title="@string/current_state_text"/>
+
+    <Preference android:layout="@layout/imageview_preference_layout" />
+    
+</PreferenceScreen>

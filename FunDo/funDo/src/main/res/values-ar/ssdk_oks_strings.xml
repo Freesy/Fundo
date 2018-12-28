@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ssdk_oks_share">سهم</string>
+    <string name="ssdk_oks_sharing">عملية المشاركة تعمل في الخلفية ...</string>
+    <string name="ssdk_oks_share_failed">فشلت العملية</string>
+    <string name="ssdk_oks_share_completed">نجحت العملية</string>
+    <string name="ssdk_oks_share_canceled">تم إلغاء العملية</string>
+    <string name="ssdk_oks_cancel">إلغاء</string>
+    <string name="ssdk_oks_multi_share">مشاركة الصور</string>
+    <string name="ssdk_oks_confirm">أكد</string>
+    <string name="ssdk_oks_contacts">اتصالات</string>
+    <string name="ssdk_oks_pull_to_refresh">اسحب للتحديث</string>
+    <string name="ssdk_oks_release_to_refresh">الافراج عن تحديث</string>
+    <string name="ssdk_oks_refreshing">منعش ...</string>
+</resources>

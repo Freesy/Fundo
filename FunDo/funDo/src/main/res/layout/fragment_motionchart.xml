@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/sportsHistory_mian_bg"
+              android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/motionchart_sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            >
+
+            <!--速度曲线-->
+            <RelativeLayout
+                android:id="@+id/rl_spped_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="?attr/speedhead_bg"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/speed_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    >
+                    <!--速度曲线-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="@string/speed_curve"
+                        android:textColor="?attr/runtext_color"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_line_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/speed_head"
+                    android:background="?attr/sportsHistory_mian_bg"
+                    />
+
+                <com.szkct.weloopbtsmartdevice.view.MotionChartView
+                    android:id="@+id/sppedchartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/speed_head"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nodata_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/now_is_nulldtat"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <!--海拔曲线-->
+            <RelativeLayout
+                android:id="@+id/rl_altitude_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="?attr/speedhead_bg"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/altitude_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    >
+                    <!--海拔曲线-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="@string/elevation_curve"
+                        android:textColor="?attr/runtext_color"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_line_altitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/altitude_head"
+                    android:background="?attr/sportsHistory_mian_bg"
+                    />
+
+                <com.szkct.weloopbtsmartdevice.view.MotionChartView
+                    android:id="@+id/altitudechartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/altitude_head"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nodata_altitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/now_is_nulldtat"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <!--心率曲线-->
+            <RelativeLayout
+                android:id="@+id/rl_heart_rate_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:background="?attr/speedhead_bg"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/heart_rate_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    >
+                    <!--心率曲线-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="@string/Heart_rate_curve"
+                        android:textColor="?attr/runtext_color"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_line_heart_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/heart_rate_head"
+                    android:background="?attr/sportsHistory_mian_bg"
+                    />
+
+                <com.szkct.weloopbtsmartdevice.view.MotionChartView
+                    android:id="@+id/heart_ratechartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/heart_rate_head"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nodata_heart_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/now_is_nulldtat"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <!--步频曲线-->
+            <RelativeLayout
+                android:id="@+id/rl_cadence_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/speedhead_bg"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/cadence_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    >
+                    <!--步频曲线-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:text="@string/step_frequency_curve"
+                        android:textColor="?attr/runtext_color"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view_line_cadence"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_below="@+id/cadence_head"
+                    android:background="?attr/sportsHistory_mian_bg"
+                    />
+
+                <com.szkct.weloopbtsmartdevice.view.MotionChartView
+                    android:id="@+id/cadencechartview"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/cadence_head"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_nodata_cadence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/now_is_nulldtat"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

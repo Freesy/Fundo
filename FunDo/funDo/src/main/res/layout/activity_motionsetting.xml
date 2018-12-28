@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/sportshistory_motion_setting"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+       
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/ll_yuyin"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!--语音播报 现为振动设置 -->
+            <CheckBox
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cb_runsetting_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/runsetting_voice_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false"/>
+
+            <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/sportshistory_vibrator_setting"
+                android:layout_below="@+id/cb_runsetting_voice"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/sportshistory_vibrator_setting"
+                android:textColor="?attr/global_text_color"
+                />
+
+            <TextView
+                android:layout_below="@id/sportshistory_vibrator_setting"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_runsetting_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:textColor="#7e7f81" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <!--屏幕常亮-->
+            <CheckBox
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cb_runsetting_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/runsetting_screen_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false" />
+
+            <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/sportshistory_screen_always_on"
+                android:layout_below="@+id/cb_runsetting_screen"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/sportshistory_screen_always_on"
+                android:textColor="?attr/global_text_color" />
+
+            <TextView
+                android:layout_below="@id/sportshistory_screen_always_on"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_runsetting_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:textColor="#7e7f81" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center|center_horizontal"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!--自动暂停-->
+            <CheckBox
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cb_runsetting_autopause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/runsetting_autopause_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false" />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/sportshistory_automatic_pause"
+                android:layout_below="@+id/cb_runsetting_autopause"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/sportshistory_automatic_pause"
+                android:textColor="?attr/global_text_color" />
+
+            <TextView
+                android:layout_below="@id/sportshistory_automatic_pause"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/tv_runsetting_autopause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:textColor="#7e7f81" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical" >
+
+            <!--自动停止-->
+            <CheckBox
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cb_runsetting_autostop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/runsetting_autostop_selector"
+                android:button="@null"
+                android:checked="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/sportshistory_automatic_stop"
+                android:singleLine="true"
+                android:layout_below="@+id/cb_runsetting_autostop"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/sportshistory_automatic_stop"
+                android:textColor="?attr/global_text_color"
+                />
+            
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/sportshistory_automatic_stop"
+                android:id="@+id/tv_runsetting_autostop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:textColor="#7e7f81" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+         android:id="@+id/ll_motionsetting_goal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingStart="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/motionsetting_goal" />
+
+        <!--运动目标-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/small_menu"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/sportshistory_moving_target"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <TextView
+            android:id="@+id/tv_motionsetting_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="10km"
+            android:textColor="#7b7b7b"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:paddingEnd="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:id="@+id/ll_motionsetting_voice_setting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingStart="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/motionsetting_voice_setting" />
+
+        <!--语音设置-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/small_menu"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/sportshistory_voice_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <TextView
+             android:id="@+id/tv_motionsetting_voice_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="10km"
+            android:textColor="#7b7b7b"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:paddingEnd="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:id="@+id/ll_motionsetting_reciprocal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingStart="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/motionsetting_reciprocal" />
+
+        <!--倒数设置-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/small_menu"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/sportshistory_countdown_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <TextView
+             android:id="@+id/tv_motionsetting_reciprocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="10km"
+            android:textColor="#7b7b7b"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:paddingEnd="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff" />
+
+    <LinearLayout
+         android:id="@+id/ll_motionsetting_mapsetting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingStart="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/motionsetting_mapsetting" />
+
+        <!--地图设置-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="@dimen/small_menu"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="@string/sportshistory_map_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <TextView
+             android:id="@+id/tv_motionsetting_mapsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text="10km"
+            android:textColor="#7b7b7b"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:contentDescription="@null"
+            android:paddingEnd="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/arrow_right" />
+    </LinearLayout>
+
+</LinearLayout>

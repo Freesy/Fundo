@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_discover_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/pushdial_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            android:background="?attr/home_fragment_head_bg"
+            android:gravity="center"
+            android:text="@string/pushdial"
+            android:textColor="?attr/home_fragment_head_nor_text_color"
+            android:textSize="@dimen/home_title_text_s" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/watch_help_ti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pushdial_ti"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="@string/data_watch_help_s"
+            android:textColor="?attr/home_fragment_head_hot_text_color"
+            android:textSize="@dimen/discover_title_text_n" />
+
+        <TextView
+            android:id="@+id/blelink"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="@string/push_ble_not_connected"
+            android:textColor="?attr/home_fragment_head_nor_text_color"
+            android:textSize="@dimen/discover_title_text_n"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="#00000000"
+
+        android:numColumns="2"
+        android:stretchMode="columnWidth" />
+</LinearLayout>

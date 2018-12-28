@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weibo_oauth_regiseter">авторизация</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="weibo_upload_content">Доля фотографии</string>
+    <string name="wechat_client_inavailable">Вы в настоящее время слишком низкое или не установлен версия Wechat Wechat, необходимо установить, чтобы использовать Wechat</string>
+    <string name="google_plus_client_inavailable">Google+ версия является слишком низким или не установлен, необходимо обновить или установить для того, чтобы использовать Google+!</string>
+    <string name="qq_client_inavailable">QQ версия является слишком низким или не установлен, необходимо обновить или установить QQ в использовании!</string>
+    <string name="pinterest_client_inavailable">Pinterest версия является слишком низким или не установлен, необходимо обновить или установить для того, чтобы использовать Pinterest!</string>
+    <string name="instagram_client_inavailable">Instagram версия является слишком низким или не установлен, необходимо обновить или установить Instagram в использовании!</string>
+    <string name="yixin_client_inavailable">В настоящее время напомнить ваша версия является слишком низким или не установлен, вам необходимо установить и легко использовать письмо</string>
+    <string name="line_client_inavailable">Линия ваша текущая версия является слишком низким или не установлен, вам необходимо установить для того, чтобы использовать линию</string>
+    <string name="kakaotalk_client_inavailable">KakaoTalk версия в настоящее время слишком низкое или ваша установка, вы должны установить для того, чтобы использовать KakaoTalk</string>
+    <string name="kakaostory_client_inavailable">В настоящее время ваша версия KakaoStory низким или не установлен, вам необходимо установить для того, чтобы использовать KakaoStory</string>
+    <string name="whatsapp_client_inavailable">WhatsApp теперь ваша версия является слишком низким или не установлен, вам необходимо установить для того, чтобы использовать WhatsApp</string>
+    <string name="baidutieba_client_inavailable">В настоящее время Baidu Сообщение Бар ваша версия является слишком низким или не установлен, вам необходимо установить для того, чтобы использовать Baidu Сообщение Бар</string>
+    <string name="laiwang_client_inavailable">В настоящее время нами ваша версия является слишком низким или не установлен, вам необходимо установить для того, чтобы использовать контакты</string>
+
+	<string name="ssdk_facebookmessenger_client_inavailable">facebookmessenger клиент не существует или версия является слишком низким</string>
+
+	<string name="sinaweibo">Sina Weibo</string>
+	<string name="tencentweibo">Tencent микроблогов</string>
+	<string name="qzone">QQ пространство</string>
+	<string name="wechat">Wechat друзья</string>
+	<string name="wechatmoments">Wechat круг друзей</string>
+	<string name="wechatfavorite">Wechat Избранное</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">Renren</string>
+	<string name="kaixin">Kaixin</string>
+	<string name="email">почта</string>
+	<string name="shortmessage">информация</string>
+	<string name="sohumicroblog">Sohu Weibo</string>
+	<string name="sohusuishenkan">Sohu переноски взгляд</string>
+	<string name="neteasemicroblog">NetEase Weibo</string>
+	<string name="douban">кресс водяной</string>
+	<string name="youdao">Youdao Облако заметки</string>
+	<string name="evernote">Evernote</string>
+	<string name="linkedin">LinkedIn</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">доверчивость</string>
+	<string name="yixinmoments">Easecredit круг друзей</string>
+	<string name="mingdao">Мин</string>
+	<string name="kakaotalk">KakaoTalk</string>
+	<string name="kakaostory">KakaoStory</string>
+	<string name="line">Line</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="whatsapp">WhatsApp</string>
+	<string name="pocket">Pocket</string>
+	<string name="instapaper">Instapaper</string>
+	<string name="instapaper_email">почтовый ящик</string>
+	<string name="instapaper_pwd">пароль</string>
+	<string name="instapaper_login">Войти</string>
+	<string name="instapaper_logining">Войти ...</string>
+	<string name="instapager_email_or_password_incorrect">E-mail или пароль указан неверно</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="baidutieba">Baidu Сообщение Бар</string>
+    <string name="laiwang">контакт</string>
+    <string name="laiwangmoments">И от динамического</string>
+
+	<string name="share_to_baidutieba">Поделитесь Baidu Сообщение Бар</string>
+	<string name="share_to_qzone">Доля QQ пространство</string>
+	<string name="share_to_qq">Доля QQ</string>
+	<string name="mingdao_share_content">веб-страница обмена</string>
+	<string name="share_to_mingdao">Поделиться Мин</string>
+	<string name="share_to_qzone_default">Доля от% S</string>
+	<string name="use_login_button">Пожалуйста, используйте кнопку "Войти"</string>
+</resources>

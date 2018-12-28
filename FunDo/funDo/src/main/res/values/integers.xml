@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- LE profiles enable/disable-->
+    <!-- FLAG_SUPPORT_FMP_CLIENT = 1 -->
+    <!-- FLAG_SUPPORT_FMP_SERVER = 2 -->
+    <!-- FLAG_SUPPORT_PXP_CLIENT = 4 -->
+    <!-- FLAG_SUPPORT_BAS_CLIENT = 8 -->
+    <!-- FLAG_SUPPORT_TIP_SERVER = 16 -->
+    <!-- FLAG_SUPPORT_ANP_SERVER = 32 -->
+    <!-- FLAG_SUPPORT_PDMS_CLIENT = 64 -->
+    <!-- FLAG_SUPPORT_HR_CLIENT = 128 -->
+    <!-- FLAG_SUPPORT_TIME_FORMAT_SERVER = 256 -->
+    <integer name="supported_gatt_profiles">511</integer>
+</resources>

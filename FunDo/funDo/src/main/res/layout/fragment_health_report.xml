@@ -1,0 +1,672 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="?attr/global_background_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/analysis_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:background="?attr/global_background"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ib_navigation_share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:src="?attr/home_fragment_head_button_share" />
+
+
+        <TextView
+            android:id="@+id/cb_bigdata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center"
+            android:text="@string/health"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/home_title_text_s" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignBottom="@id/cb_bigdata"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+    <!-- 个人信息区 -->
+
+    <LinearLayout
+        android:id="@+id/part_personal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp" >
+
+        <LinearLayout
+             android:id="@+id/personal_info_sex_ll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.szkct.weloopbtsmartdevice.view.LanTingThinBlackView
+                android:id="@+id/body_sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/my_sex"
+                android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/health_sex_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/my_man"
+                android:textColor="?attr/health_reports_fragment_persional_info_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="?attr/health_reports_head_line_color"  />
+
+        <LinearLayout
+               android:id="@+id/personal_info_age_ll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.szkct.weloopbtsmartdevice.view.LanTingThinBlackView
+                android:id="@+id/body_age_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/my_age"
+                android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/health_age_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+              
+                android:textColor="?attr/health_reports_fragment_persional_info_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="?attr/health_reports_head_line_color"  />
+
+        <LinearLayout
+              android:id="@+id/personal_info_stature_ll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.szkct.weloopbtsmartdevice.view.LanTingThinBlackView
+                android:id="@+id/body_stature_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/my_stature"
+              android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/health_stature_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+              
+                android:textColor="?attr/health_reports_fragment_persional_info_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="?attr/health_reports_head_line_color"  />
+
+        <LinearLayout
+              android:id="@+id/personal_info_weight_ll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.szkct.weloopbtsmartdevice.view.LanTingThinBlackView
+                android:id="@+id/body_weight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/my_weight"
+               android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/health_weight_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:gravity="bottom"
+           
+               android:textColor="?attr/health_reports_fragment_persional_info_text_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 测试结果显示区 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <!-- 身体图 -->
+
+        <ImageView
+            android:id="@+id/health_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/health_body_male" />
+
+        <ImageView
+            android:id="@+id/health_body_scan_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/health_body"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/health_body_scan_line"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/health_body_scan_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/health_body_scan_box"
+            android:visibility="gone" />
+
+        <!-- 评测得分 -->
+
+        <LinearLayout
+            android:id="@+id/part_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/health_reports_title_background"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/body_evaluation_score"
+                android:textColor="?attr/health_reports_title_text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/body_you_got"
+                   android:textColor="?attr/global_text_color"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/health_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="85"
+                      android:textColor="?attr/global_text_color"
+                        android:textSize="52sp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/body_points"
+                       android:textColor="?attr/global_text_color" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 心肺功能 -->
+
+        <LinearLayout
+            android:id="@+id/part_tow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+<RelativeLayout
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                
+              
+                android:background="?attr/health_reports_title_background">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/part_tow_iv"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/body_cardiac_and_pulmonary_function"
+                android:textColor="?attr/health_reports_title_text_color"
+                    android:textSize="12sp" />
+
+            <ImageView 
+                    android:id="@+id/part_tow_iv"
+                     android:layout_width="20dp"
+                android:layout_height="20dp"
+                  android:layout_alignParentEnd="true"
+                  android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/healt_part_tow_iv" />
+</RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/heart_rate_text"
+                            android:textColor="?attr/global_text_color"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/heart_rate_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ems="3"
+                           android:textColor="?attr/global_text_color"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vital_capacity_text"
+                             android:textColor="?attr/global_text_color"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/vital_capacity_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3520"
+                             android:textColor="?attr/global_text_color"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/body_cardiopulmonary"
+                          android:textColor="?attr/global_text_color"
+                        android:textSize="10sp" />
+
+                  <!--  com.szkct.weloopbtsmartdevice.view.LanTingBoldestBlackView-->
+                    <TextView
+                        android:id="@+id/body_cardiopulmonary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="?attr/health_reports_details_body_normal_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 体型报告 -->
+
+        <LinearLayout
+            android:id="@+id/part_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="45dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                 android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/health_reports_title_background"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/body_size_report"
+                android:textColor="?attr/health_reports_title_text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bmi_text"
+                          android:textColor="?attr/global_text_color"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/bmi_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22"
+                             android:textColor="?attr/global_text_color"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/body_fat_text"
+                            android:textColor="?attr/global_text_color"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/body_fat_num_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="23.2"
+                            android:textColor="?attr/global_text_color"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/body_type"
+                       android:textColor="?attr/global_text_color"
+                        android:textSize="10sp" />
+
+                   <!-- com.szkct.weloopbtsmartdevice.view.LanTingBoldestBlackView-->
+                    <TextView
+                        android:id="@+id/body_fat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="正常"
+                        android:textColor="?attr/health_reports_details_body_normal_color"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 身体机能 -->
+
+        <LinearLayout
+            android:id="@+id/part_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="240dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+              android:background="?attr/health_reports_title_background"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/body_function"
+               android:textColor="?attr/health_reports_title_text_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/body_age_text"
+                              android:textColor="?attr/global_text_color"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/body_age_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="26"
+                                 android:textColor="?attr/global_text_color"
+                                android:textSize="52sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/state_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+       <ScrollView 
+            android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:layout_below="@+id/health_body">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/begin_test_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:paddingTop="30dp"
+                    android:text="@string/body_health_test_text"
+                    android:textColor="?attr/health_reports_complete_color" />
+
+                <RelativeLayout
+                    android:id="@+id/finish_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+
+                        android:layout_toEndOf="@+id/finish_iv"
+                        android:gravity="left"
+                        android:text="@string/health_finish_test_text1"
+                        android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+
+                        android:textSize="9sp" />
+
+                    <ImageView
+                        android:id="@+id/finish_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:scaleType="centerInside"
+                        android:src="?attr/healt_finish_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/finish_re2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+
+                        android:layout_toEndOf="@+id/finish_iv2"
+                        android:gravity="left"
+                        android:text="@string/health_finish_test_text2"
+                        android:textColor="?attr/health_reports_fragment_persional_info_title_color"
+
+                        android:textSize="9sp" />
+
+                    <ImageView
+                        android:id="@+id/finish_iv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="2dp"
+                        android:scaleType="centerInside"
+                        android:src="?attr/healt_finish_iv" />
+                </RelativeLayout>
+            </LinearLayout>
+           
+           
+       </ScrollView>
+ 
+    </RelativeLayout>
+
+</LinearLayout>

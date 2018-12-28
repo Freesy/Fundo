@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/friend_detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/frienddetail_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:background="@color/main_tab_bottom_notsel"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:id="@+id/frienddetail_title_home" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:src="@drawable/action_back_normal"
+            android:contentDescription="@string/youdao"
+            />
+        <TextView 
+            android:id="@+id/frienddetail_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/friend_details"
+            android:textSize="20sp"
+            android:textColor="@color/white"/>
+     
+            <ImageView
+                android:id="@+id/frienddetail_delete_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:src="@drawable/personal_icon"
+                android:visibility="gone"
+                android:contentDescription="@string/youdao" />
+
+            
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebebebeb"
+        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/MMListItem"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/white"
+            android:padding="20dip" >
+
+            <ImageView
+                android:id="@+id/request_photo"
+                android:layout_width="68.0dip"
+                android:layout_height="68.0dip"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/head_men" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="8.0dip"
+                android:paddingEnd="0dp"  >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="NestedWeights" >
+
+                    <TextView
+                        android:id="@+id/request_friends_name"
+                        style="@style/MMFontTitleInList"
+                        android:singleLine="true"
+                        android:text="@string/friends_name"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/request_friends_sexview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/request_friends_sex"
+                        style="@style/MMFontTitleInList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/man_img"
+                        android:contentDescription="@string/app_name" />
+
+                    <TextView
+                        android:id="@+id/request_friends_level"
+                        style="@style/MMFontTitleInList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/friends_level"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/request_friends_age"
+                        style="@style/MMFontTitleInList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="10dp"
+                        android:singleLine="true"
+                        android:text="@string/friends_age"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dip"
+                android:paddingEnd="0dp"
+                 >
+
+                <TextView
+                    style="@style/MMFontTitleInList"
+                    android:layout_width="68dip"
+                    android:singleLine="true"
+                    android:text="@string/yours_area"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/request_friends_area"
+                    style="@style/MMFontTitleInList"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:singleLine="true"
+                    android:text="@string/not_set_info"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="20dip"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    style="@style/MMFontTitleInList"
+                    android:layout_width="68dip"
+                    android:singleLine="true"
+                    android:text="@string/person_signed"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/request_friends_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginStart="8dip"
+                    android:text="@string/not_set_info"
+                    android:textColor="@color/gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#ebebeb" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/friends_verify_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:padding="10dip"
+            android:textColor="#dddddd"
+            android:visibility="gone" />
+        
+        <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:gravity="right" >
+
+        <Button
+                android:id="@+id/added_friendbtn"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"                               
+                android:layout_marginRight="10dp"				
+                android:background="#77c600"
+                android:text="@string/added_care"
+                android:textColor="@color/white"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp" />
+        </LinearLayout>  
+
+        <LinearLayout
+            android:id="@+id/friends_list_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dip"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">                
+                
+                <TextView
+                    android:id="@+id/friends_checkposition_tv"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"                  
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/look_you_position"
+                    android:textSize="14sp" />
+                
+                <View
+                android:id="@+id/xxx_view1"
+                android:layout_width="0.5dp"
+                android:layout_height="48dp"
+                android:background="#CFCFCF"                
+                android:layout_toStartOf="@id/friends_checkposition_tv"
+                android:layout_alignParentBottom="true" />
+                
+                <TextView
+                    android:id="@+id/friends_sendmessage_tv"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"                   
+                    android:layout_alignParentBottom="true"                    
+                   android:layout_toStartOf="@id/xxx_view1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/send_you_message"
+                    android:textSize="14sp" />
+
+                
+                
+                <View
+                    android:id="@+id/xxx_view2"
+                android:layout_width="0.5dp"
+                android:layout_height="48dp"
+                android:background="#CFCFCF"
+                android:layout_toEndOf="@id/friends_checkposition_tv"
+                android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/friends_reportposition_tv"
+                    android:layout_width="110dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true"                    
+                    android:layout_toEndOf="@id/xxx_view2"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="@string/send_you_position"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

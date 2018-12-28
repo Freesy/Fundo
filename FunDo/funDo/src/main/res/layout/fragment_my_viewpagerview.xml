@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    
+    >
+    <ImageView 
+        
+          android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:src="@drawable/bestme_step_imag"
+   android:layout_above="@+id/tv_step"
+   android:layout_centerHorizontal="true"
+   android:scaleType="centerInside"
+        />
+    <TextView 
+        android:id="@+id/tv_step"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="@color/beatme_step_tv"
+       android:textSize="@dimen/my_today_steptv_size"
+       android:text="0"
+       android:layout_centerInParent="true"
+        />
+     <TextView 
+         android:layout_below="@+id/tv_step"
+        android:id="@+id/tv_stepstring"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="?attr/global_text_color"
+       android:textSize="@dimen/menu_my_item_small"
+       android:text="@string/everyday_pace"
+       android:layout_centerInParent="true"
+        />
+    <TextView 
+         android:layout_below="@+id/tv_stepstring"
+        android:id="@+id/tv_step_time"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="?attr/global_text_color"
+       android:textSize="@dimen/menu_my_item_small"
+      
+       android:layout_centerInParent="true"
+       
+        />
+    
+</RelativeLayout>
+ <ImageView 
+        
+          android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   android:src="?attr/my_fragment_viewpager_line"
+  android:background="@null"
+        />
+ <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    
+    >
+    <ImageView 
+        
+          android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:src="@drawable/bestme_distance_imag"
+   android:layout_above="@+id/tv_distance"
+   android:layout_centerHorizontal="true"
+    android:scaleType="centerInside"
+        />
+    <TextView 
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="@color/beatme_distance_tv"
+       android:textSize="@dimen/my_today_steptv_size"
+       android:text="0.0"
+       android:layout_centerInParent="true"
+        />
+     <TextView
+         android:layout_below="@+id/tv_distance"
+        android:id="@+id/tv_distancestring"
+          android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="?attr/global_text_color"
+       android:textSize="@dimen/menu_my_item_small"
+       android:text="@string/kilometer"
+       android:layout_centerInParent="true"
+        />
+    <TextView 
+         android:layout_below="@+id/tv_distancestring"
+        android:id="@+id/tv_distance_time"
+      android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+       android:textColor="?attr/global_text_color"
+       android:textSize="@dimen/menu_my_item_small"
+    
+       android:layout_centerInParent="true"
+        />
+    
+</RelativeLayout>
+<ImageView 
+        
+          android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+   android:src="?attr/my_fragment_viewpager_line"
+  android:background="@null"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_kal"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/bestme_kal_imag" />
+
+        <TextView
+            android:id="@+id/tv_kal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0.0"
+            android:textColor="@color/beatme_kal_tv"
+            android:textSize="@dimen/my_today_steptv_size" />
+
+        <TextView
+            android:id="@+id/tv_kalstring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kal"
+            android:layout_centerInParent="true"
+            android:text="@string/everyday_calorie"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/menu_my_item_small" />
+
+        <TextView
+            android:id="@+id/tv_kal_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_kalstring"
+            android:layout_centerInParent="true"
+            android:textColor="?attr/global_text_color"
+
+
+            android:textSize="@dimen/menu_my_item_small" />
+
+    </RelativeLayout>
+</LinearLayout>

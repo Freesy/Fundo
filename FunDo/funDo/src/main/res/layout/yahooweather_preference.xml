@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/li_yahooweather"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.mtk.app.yahooweather.YWSettingActivity" >
+
+    <include layout="@layout/main_toolbar_global" />
+
+    <RelativeLayout
+        android:id="@+id/re_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center|start" 
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/text_titletem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_unit" 
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_titletem"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line"
+        android:background="@drawable/base_action_bar_dropdown_list_divider" />
+
+    <RelativeLayout
+        android:id="@+id/re_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center|start" 
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:id="@+id/text_titlecity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city" 
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_city" 
+            android:layout_below="@id/text_titlecity"
+             android:textSize="14sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

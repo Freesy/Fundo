@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="?attr/global_background_content" 
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+       android:background="?attr/global_background"  >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/wifi_settings"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/img_bluetooth_sesarch"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/iconfont_jiazai"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tv_pushmsg_wifi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="@null"
+            android:text="@string/pushmsg_wifi"
+            android:paddingEnd="10dp"
+            android:textColor="?attr/global_text_color"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+<!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="无线网络"
+            android:textColor="#fff"
+            android:layout_alignParentStart="true"
+             />
+    <ToggleButton
+                android:id="@+id/find_telephone_switchone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentEnd="true"
+            
+               
+                
+                android:focusable="false"
+                android:textOff="关"
+                android:textOn="开" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="#000" />
+    </RelativeLayout> -->
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/select_network"
+            android:textColor="?attr/global_text_color"
+            android:paddingStart="5dp"
+             />
+    
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+    <ListView
+                android:id="@+id/wifi_list"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+             
+                android:divider="?attr/health_reports_head_line_color"
+                android:dividerHeight="@dimen/line"
+                android:scrollbars="none" >
+            </ListView>
+</LinearLayout>

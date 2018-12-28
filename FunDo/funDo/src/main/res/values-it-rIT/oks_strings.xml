@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="finish">completo</string>
+    <string name="sharing">Condividi funzionamento è lo sfondo ...</string>
+    <string name="share_to">quota</string>
+	<string name="multi_share">Photo Sharing</string>
+	<string name="share_completed">Condividi Success</string>
+	<string name="share_canceled">Condividi è stato annullato</string>
+	<string name="select_one_plat_at_least">Si prega di selezionare una piattaforma di destinazione</string>
+	<string name="list_friends">% S amici</string>
+	<string name="share_failed">Condividi riuscita</string>
+	<string name="pull_to_refresh">aggiornamento pull-down</string>
+	<string name="release_to_refresh">Allentare Aggiorna</string>
+	<string name="refreshing">Aggiorna ...</string>
+	<string name="shake2share">Agitando il telefono cellulare!</string>
+	<string name="select_a_friend">Seleziona un amico</string>
+</resources>

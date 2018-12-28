@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+        <SwitchPreference
+            android:key="alert_set_preference"
+            android:title="@string/alert_setting" />
+    <PreferenceCategory
+        android:key="range_alert_category"
+        android:title="@string/range_category_text" >
+        <SwitchPreference
+            android:key="range_alert_check_preference"
+            android:defaultValue="true"
+            android:title="@string/range_alert_text" />
+        <ListPreference android:key="range_type_preference"
+            android:title="@string/range_type_text"
+            android:dialogTitle="@string/range_type_text"
+            android:defaultValue="@string/default_range_alert_type_value"
+            android:entries="@array/range_alert_type_text"
+            android:entryValues="@array/range_alert_type_value" />
+        <ListPreference android:key="range_size_preference"
+            android:title="@string/range_size_text"
+            android:dialogTitle="@string/range_size_text"
+            android:defaultValue="@string/default_range_alert_size_value"
+            android:entries="@array/range_alert_size_detail_text"
+            android:entryValues="@array/range_alert_size_value" />
+        <Preference
+            android:key="calibrate_preference"
+            android:title="@string/range_calibrate_text"
+            android:summary="@string/pxp_calibrate_message"
+            android:persistent="false" >
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="disconnect_alert_category"
+        android:title="@string/disconnection_text" >
+        <SwitchPreference
+            android:key="disconnect_warning_preference"
+            android:defaultValue="true"
+            android:title="@string/disconnection_waring_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="phone_alert_settings_category"
+        android:title="@string/phone_alert_settings" >
+        <SwitchPreference
+            android:key="ringtone_preference"
+            android:defaultValue="true"
+            android:title="@string/ringtone_text" />
+        <SwitchPreference
+            android:key="vibration_preference"
+            android:defaultValue="true"
+            android:title="@string/vibration_text" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

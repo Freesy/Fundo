@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_city_base_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    
+    <include 
+        layout="@layout/main_toolbar_global"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_marginEnd="8dip"
+        android:layout_marginRight="8dip"
+        android:gravity="bottom">
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:hint="@string/please_enter_the_city"
+            />
+
+        <ImageView
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/searching"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginStart="5dip"
+            android:layout_marginLeft="5dip" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_searching"
+            android:layout_marginStart="5dip"
+            android:layout_marginLeft="5dip"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:scrollingCache="false"
+        android:layout_marginStart="4dip"
+        android:layout_marginLeft="4dip"
+        android:fadingEdge="none" />
+
+
+</LinearLayout>

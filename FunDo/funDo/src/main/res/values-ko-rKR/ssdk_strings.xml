@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weibo_oauth_regiseter">권한 부여</string>
+    <string name="website">http://www.mob.com</string>
+    <string name="weibo_upload_content">공유 사진</string>
+    <string name="wechat_client_inavailable">당신의 마이크로 채널 마이크로 채널의 현재 버전이 설치된 너무 낮거나하지 않습니다, 당신은 마이크로 채널을 사용하기 위해 설치해야</string>
+    <string name="google_plus_client_inavailable">구글 버전이 너무 낮거나 설치되지, 당신은 구글을 사용하기 위해 업그레이드하거나 설치해야합니다!</string>
+    <string name="qq_client_inavailable">QQ 버전이 너무 낮거나 설치되지, 당신은 업그레이드하거나 사용하는 QQ를 설치해야합니다!</string>
+    <string name="pinterest_client_inavailable">클립 버전이 너무 낮거나 설치되지, 당신은 클립을 사용하기 위해 업그레이드하거나 설치해야합니다!</string>
+    <string name="instagram_client_inavailable">인스 타 그램 버전이 너무 낮거나 설치되지, 당신은 업그레이드하거나 사용하는 인스 타 그램을 설치해야합니다!</string>
+    <string name="yixin_client_inavailable">현재 설치해야, 당신의 버전이 너무 낮거나 설치되지 않은 생각 나게하고 쉽게 문자를 사용하는</string>
+    <string name="line_client_inavailable">현재 버전이 너무 낮거나 설치되지 않은 줄 당신은 라인을 사용하기 위해 설치해야</string>
+    <string name="kakaotalk_client_inavailable">카카오 톡 버전 현재 너무 낮거나 설치, 당신은 카카오 톡을 사용하기 위해 설치해야</string>
+    <string name="kakaostory_client_inavailable">버전이 낮거나 설치되지 않은 KakaoStory, 당신은 KakaoStory를 사용하기 위해 설치해야</string>
+    <string name="whatsapp_client_inavailable">WHATSAPP 이제 버전이 너무 낮거나 설치되지 않은, 당신은 WHATSAPP을 사용하기 위해 설치해야</string>
+    <string name="baidutieba_client_inavailable">현재 바이 포스트 바 버전이 너무 낮거나 설치되지 않은, 당신은 바이 포스트 바 사용하기 위해 설치해야</string>
+    <string name="laiwang_client_inavailable">현재 버전이 너무 낮거나 설치되지 않은 문의, 당신은 연락처를 사용하기 위해 설치해야</string>
+    
+	<string name="sinaweibo">시나 웨이 보</string>
+	<string name="tencentweibo">텐센트 마이크로 블로깅</string>
+	<string name="qzone">QQ 공간</string>
+	<string name="wechat">Wechat친구</string>
+	<string name="wechatmoments">Wechat친구의 원</string>
+	<string name="wechatfavorite">Wechat수집</string>
+	<string name="facebook">Facebook</string>
+	<string name="twitter">Twitter</string>
+	<string name="renren">런 런왕</string>
+	<string name="kaixin">Kaixin</string>
+	<string name="email">우편</string>
+	<string name="shortmessage">정보</string>
+	<string name="sohumicroblog">소후 웨이 보</string>
+	<string name="sohusuishenkan">소후 캐리보기</string>
+	<string name="neteasemicroblog">NetEase는 웨이 보</string>
+	<string name="douban">물냉이</string>
+	<string name="youdao">Youdao 클라우드 노트</string>
+	<string name="evernote">에버 노트</string>
+	<string name="linkedin">링크드 인</string>
+	<string name="googleplus">Google+</string>
+	<string name="foursquare">FourSquare</string>
+	<string name="qq">QQ</string>
+	<string name="pinterest">Pinterest</string>
+	<string name="flickr">Flickr</string>
+	<string name="tumblr">Tumblr</string>
+	<string name="dropbox">Dropbox</string>
+	<string name="vkontakte">VK</string>
+	<string name="instagram">Instagram</string>
+	<string name="yixin">망신</string>
+	<string name="yixinmoments">친구의 Easecredit 원</string>
+	<string name="mingdao">명나라</string>
+	<string name="kakaotalk">KakaoTalk</string>
+	<string name="kakaostory">KakaoStory</string>
+	<string name="line">Line</string>
+	<string name="bluetooth">블루투스</string>
+	<string name="whatsapp">WhatsApp</string>
+	<string name="pocket">Pocket</string>
+	<string name="instapaper">Instapaper</string>
+	<string name="instapaper_email">사서함</string>
+	<string name="instapaper_pwd">암호</string>
+	<string name="instapaper_login">로그인</string>
+	<string name="instapaper_logining">로그인 ...</string>
+	<string name="instapager_email_or_password_incorrect">이메일 또는 암호가 올바르지 않습니다</string>
+    <string name="facebookmessenger">Facebook Messenger</string>
+    <string name="baidutieba">바이 포스트 바</string>
+    <string name="laiwang">접촉</string>
+    <string name="laiwangmoments">그리고 동적에서</string>
+
+	<string name="share_to_baidutieba">바이 포스트 바 공유</string>
+	<string name="share_to_qzone">공유 QQ 공간</string>
+	<string name="share_to_qq">공유 QQ</string>
+	<string name="mingdao_share_content">웹 페이지의 공유</string>
+	<string name="share_to_mingdao">공유 명나라</string>
+	<string name="share_to_qzone_default">% s의 공유</string>
+	<string name="use_login_button">"로그인"버튼을 사용하십시오</string>
+
+	<string name="qr_code_error">QR 코드 파싱 오류</string>
+	<string name="not_wc_qr_code">WeChat QR 코드</string>
+	<string name="not_zfb_qr_code">Alipay가 아닌 QR 코드</string>
+	<string name="not_login">로그인</string>
+
+	<string name="helphint_str">기기가 앱에서 메시지 알림을받을 수 없습니까? \n
+다음 단계를 수행하십시오. \n
+1.Fundo 및 기기가 블루투스 연결을 유지해야합니다. \n
+2.Fundo, more - 애플리케이션 푸시 - 전송 스위치를 끈 다음 다시 엽니 다. \n
+3. Fundo에서 통화 알림 및 SMS 알림 스위치가 꺼졌다가 다시 열립니다. \n
+4. 전화 설정 - 더 많은 설정 - 접근성 (일부 휴대폰에 액세스 할 수 있음) - Fundo - Fundo 스위치 켜기 \n
+5. 전화 설정 - 권한 관리 - Fundo - 허용하는 Fundo의 모든 권한 설정 \n
+6. 전화 설정 - 알림 표시 줄 및 상태 표시 줄 - Fundo - Fundo의 알림 스위치를 모두 켜고 \n
+참고 : \n
+Android 시스템 간의 차이로 인해 특정 경로는 실제 휴대 전화의 영향을받습니다.</string>
+
+	<string name="text_leng1">문자열 길이:</string>
+	<string name="text_leng2">/60,초과 할 수 없습니다. 보낼 수 없습니다.</string>
+
+	<string name="join_str">우리와 함께하십시오.</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dlzcbjt"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.activity.NewRegisterActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/slidingmenu_login_registered_title"
+            android:textSize="@dimen/home_title_text_s" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_n"
+            android:scaleType="centerInside" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="30dp"
+        android:background="@drawable/newlogin_bg_login"
+        >
+        <TextView
+            android:id="@+id/tw_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_area"
+            android:textColor="@color/text_white"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tw_country_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/country_area"
+            android:layout_toRightOf="@id/tw_country"
+            android:textColor="@color/bleinput_btn_color"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_n"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_country"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/bleinput_btn_color"
+        android:text="@string/ssdk_instapaper_login"
+        android:background="@drawable/newlogin_bg_login"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/bleinput_btn_color"
+        android:text="@string/ssdk_instapaper_login"
+        android:background="@drawable/newlogin_bg_login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="注册账号"
+        android:textColor="@color/bleinput_btn_color"
+        android:layout_marginTop="139dp"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/bt_register_phone"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/newlogin_bg_login1"
+        android:text="手机注册"
+        android:textColor="#004F4D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/bt_register_email"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="285dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/bleinput_btn_color"
+        android:textSize="18sp"
+        android:background="@drawable/newlogin_bg_login"
+        android:text="邮箱注册"/>
+
+</LinearLayout>

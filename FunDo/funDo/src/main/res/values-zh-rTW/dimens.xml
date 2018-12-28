@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="register_get_sec_14sp">14sp</dimen>
+    <dimen name="login_register_18sp">18sp</dimen>
+
+</resources>

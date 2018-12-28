@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="detail_info_dialog_gap_grap">#222</color>
+
+    <!--历史记录颜色-->
+    <color name="his_blue">#37eeea</color>
+    <color name="his_white_30">#4cFFFFFF</color>
+    <color name="his_white_50">#88FFFFFF</color>
+    <color name="his_white_80">#CCFFFFFF</color>
+    <color name="his_green">#06D600</color>
+    <color name="his_red">#F55555</color>
+    <color name="his_black_50">#88000000</color>
+
+
+</resources>

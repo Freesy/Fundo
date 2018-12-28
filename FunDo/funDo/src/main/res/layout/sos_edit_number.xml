@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" 
+    android:id="@+id/sos_edit">
+
+     <include 
+        layout="@layout/main_toolbar_global"
+        />
+     <android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:hint="Name">
+    </EditText>
+	</android.support.design.widget.TextInputLayout>
+	<android.support.design.widget.TextInputLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:maxLength="13"
+        android:singleLine="true"
+        android:hint="Phone" >
+    </EditText>
+    </android.support.design.widget.TextInputLayout>
+</LinearLayout>

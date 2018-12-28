@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/soscall_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.szkct.weloopbtsmartdevice.main.SoscallActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/soscall"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+     
+
+        <TextView
+            android:id="@+id/sos_editok"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/done"
+            android:textColor="?attr/global_text_color"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+  
+
+           
+
+         <ScrollView 
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >    
+<LinearLayout 
+    
+   android:focusable="true"  
+   android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+   
+    android:orientation="vertical"
+   >
+                
+<TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:text="@string/emergency_contact_1"
+                android:textColor="#8F8F8F"
+                
+                android:textSize="14sp" />
+               
+          <EditText
+              android:id="@+id/sos_input_name1"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/contact_name"
+                android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:maxLength="20"
+              
+                android:textSize="14sp" />  
+   
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+            <EditText
+                  android:id="@+id/sos_input_number1"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/telephone_number"
+                 android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                 android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:singleLine="true"
+                android:textSize="14sp" />  
+                
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:background="?attr/health_reports_head_line_color" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:text="@string/emergency_contact_2"
+                android:textColor="#8F8F8F"
+                
+                android:textSize="14sp" />
+               
+          <EditText
+              android:id="@+id/sos_input_name2"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/contact_name"
+                 android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />  
+   
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+            <EditText
+                 android:id="@+id/sos_input_number2"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/telephone_number"
+                 android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                 android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:drawablePadding="10dp"
+                 android:inputType="phone"
+                 android:singleLine="true"
+                android:textSize="14sp" />  
+                
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:text="@string/emergency_contact_3"
+                android:textColor="#8F8F8F"
+                
+                android:textSize="14sp" />
+               
+          <EditText
+               android:id="@+id/sos_input_name3"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/contact_name"
+                 android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:drawablePadding="10dp"
+                android:singleLine="true"
+                android:textSize="14sp" />  
+   
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+            <EditText
+                 android:id="@+id/sos_input_number3"
+              android:background="?attr/global_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/sosactivity_margin_left"
+                android:hint="@string/telephone_number"
+                 android:textColorHint="?attr/global_text_color"
+                android:textColor="?attr/global_text_color"
+                 android:paddingTop="@dimen/sosactivity_margin_padding"
+                android:paddingBottom="@dimen/sosactivity_margin_padding"
+                android:drawableLeft="?attr/im_sos_itembg"
+                android:drawablePadding="10dp"
+                 android:inputType="phone"
+                 android:singleLine="true"
+                android:textSize="14sp" />  
+                
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+        
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

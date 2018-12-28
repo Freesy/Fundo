@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:id="@+id/li_look_bluetooth"
+    tools:context="com.szkct.weloopbtsmartdevice.main.DeviceScanActivity">
+
+    <include 
+        layout="@layout/main_toolbar_global"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/app_theme_colors" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/MyData20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/bluetooth_search_title" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/bluetooth_search_cue" 
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_bluetooth_sesarch"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/homepage_bgcircleturning"
+            android:gravity="center"
+            style="@style/Bluethoole"
+            android:text="@string/bluetooth_search_start"/>
+        
+        <LinearLayout
+            android:id="@+id/ll_bluetooth_sesarch_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" 
+            android:visibility="gone">
+
+            <com.szkct.weloopbtsmartdevice.view.SycleSearchView
+                android:id="@+id/ssv_bluetooth_sesarch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_bluetooth_sesarch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5" 
+        android:divider="@drawable/base_action_bar_dropdown_list_divider"
+        android:dividerHeight="@dimen/line"
+        android:scrollbars="none"
+        >
+    </ListView>
+
+</LinearLayout>

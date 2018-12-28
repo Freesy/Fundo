@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.szkct.weloopbtsmartdevice.main.SetGoalStepActivity">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+  <item android:id="@+id/action_step_sure"
+        android:title="@string/ok"
+        android:orderInCategory="90"
+        android:icon="@drawable/goalstep_sure_normal"
+        app:showAsAction="ifRoom" />
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+  
+</menu>

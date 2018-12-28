@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content" >
+
+    <RadioGroup
+        android:id="@+id/alldata_headstep_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="?attr/analysis_fragment_alldata_background"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <RadioButton
+            android:id="@+id/alldata_one_rb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/analysis_fragment_alldata_selector_background"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/onemonth"
+            android:textColor="?attr/analysis_fragment_alldata_date_text_color" />
+
+        <RadioButton
+            android:id="@+id/alldata_six_rb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/analysis_fragment_alldata_selector_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/sixmonth"
+            android:textColor="?attr/analysis_fragment_alldata_date_text_color" />
+
+        <RadioButton
+            android:id="@+id/alldata_all_rb"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="?attr/analysis_fragment_alldata_selector_background"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/oneyear"
+            android:textColor="?attr/analysis_fragment_alldata_date_text_color" />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/alldata_fullscreen_ib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="?attr/analysis_fragment_alldata_fullscreen_selector_background" />
+
+    <LinearLayout
+        android:id="@+id/alldata_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alldata_fullscreen_ib"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="?attr/analysis_fragment_alldata_data_background"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alldata_average_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/analysis_fragment_alldata_date_background"
+                    android:gravity="center"
+                    android:text="@string/average_step"
+                    android:textColor="?attr/alldata_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/alldata_average_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="?attr/alldata_data_text_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                      android:id="@+id/alldata_totalstep_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/analysis_fragment_alldata_date_background"
+                    android:gravity="center"
+                    android:text="@string/total_step"
+                    android:textColor="?attr/alldata_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/alldata_totalstep_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="?attr/alldata_data_text_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alldata_goal_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/analysis_fragment_alldata_date_background"
+                    android:gravity="center"
+                    android:text="@string/goal_achievement"
+                    android:textColor="?attr/alldata_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/alldata_goal_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="?attr/alldata_data_text_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/alldata_totaldis_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="?attr/analysis_fragment_alldata_date_background"
+                    android:gravity="center"
+                    android:text="@string/total_distance"
+                    android:textColor="?attr/alldata_text_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/alldata_totaldis_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="?attr/alldata_data_text_color"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.szkct.weloopbtsmartdevice.view.HorizontalChartView
+        android:id="@+id/alldata_step_chartview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/alldata_data_ll"
+        android:layout_below="@id/alldata_headstep_rg"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

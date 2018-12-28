@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="smart_preference_screen" >
+    <PreferenceCategory android:title="@string/smart_device_tittle">
+        <Preference android:key="current_version_preference"
+            android:title="@string/version_title"/>
+        
+        <Preference android:key="release_date_preference"
+            android:title="@string/release_date"/>
+        <!--  FOTA add-->
+        <Preference android:key="sn_preference"
+            android:title="@string/label_sn"/>
+    </PreferenceCategory>
+    
+    <com.mtk.app.fota.CheckNewVersionButtonPreference
+        android:key="button_preference"/>
+	
+   <!--  fota delete
+    <Preference
+        android:key="usb_preference"
+        android:summary="@string/usb_firmware_information"
+        android:title="@string/usb_firmware_note" />
+    -->
+</PreferenceScreen>

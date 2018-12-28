@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/push_edit_rlbg"
+    android:orientation="vertical"
+    android:layout_margin="30dp"
+    >
+    <TextView 
+        android:id="@+id/bleinput_textview"
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:text="@string/input_text"
+   android:padding="10dp"
+      
+        />
+    <EditText 
+        android:id="@+id/bleinput_edit"
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"   
+    android:minHeight="50dp"
+    android:background="@drawable/bleinput_editbg"
+     android:layout_marginLeft="10dp" 
+     android:layout_marginRight="10dp"
+     android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/bleinput_ly"
+        android:layout_width="match_parent"
+ 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+  android:layout_marginTop="10dp"
+    >
+   
+    <Button 
+	      android:id="@+id/bleinput_button_no"
+      android:layout_width="0dp"
+    android:layout_height="wrap_content"   
+    android:background="@drawable/push_edit_nobg"
+    android:text="@string/cancel"
+    android:textColor="@color/push_edit_notextc"
+    android:layout_margin="10dp"
+       android:layout_weight="1"
+	    />
+     <Button 
+	      android:id="@+id/bleinput_button_ok"
+      android:layout_width="0dp"
+    android:layout_height="wrap_content"   
+    android:background="@drawable/push_edit_okbg"
+    android:text="@string/str_send"
+    android:textColor="#fff"
+     android:layout_margin="10dp"
+       android:layout_weight="1"  
+	    />
+    </LinearLayout>
+	
+</LinearLayout>

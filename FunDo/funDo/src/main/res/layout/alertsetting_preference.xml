@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_alertset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/main_toolbar_global" />
+
+    <RelativeLayout
+        android:id="@+id/lin_alertsetfirst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+       
+        <RelativeLayout
+            android:id="@+id/re_alertsetfi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/box_shape" >
+
+            <TextView
+                android:id="@+id/alert_set_preference"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="@string/alert_setting"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/alertset_switchone"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/alert_set_preference"
+                android:layout_alignBottom="@+id/alert_set_preference"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/alertsetting_box_selector"
+                android:clickable="false"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/range_alert_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_alertsetfi"
+            android:gravity="center_vertical"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:paddingTop="5dp"
+            android:text="@string/range_category_text"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/viewfirst"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/range_alert_category"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#8A8A8A" />
+
+        <RelativeLayout
+            android:id="@+id/re_alertsetting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/range_alert_category"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box_shape" >
+
+            <RelativeLayout
+                android:id="@+id/re_areachange_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/range_alert_check_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10sp"
+                    android:text="@string/range_alert_text"
+                    android:textSize="18sp" />
+
+                <ToggleButton
+                    android:id="@+id/alertset_switchtwo"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/range_alert_check_preference"
+                    android:layout_alignBottom="@+id/range_alert_check_preference"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewsecond"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/re_areachange_layout"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#8A8A8A" />
+
+            <TextView
+                android:id="@+id/range_type_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewsecond"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:paddingTop="5dp"
+                android:text="@string/range_type_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/default_range_alert_type_value_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/range_type_preference"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="@string/range_alert_type_in"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewthird"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/default_range_alert_type_value_tv"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#8A8A8A" />
+
+            <TextView
+                android:id="@+id/range_size_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewthird"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:paddingTop="5dp"
+                android:text="@string/range_size_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/default_range_alert_size_value_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/range_size_preference"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="@string/range_alert_size_far"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/viewfourth"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/default_range_alert_size_value_tv"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#8A8A8A" />
+
+            <TextView
+                android:id="@+id/calibrate_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/viewfourth"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:paddingTop="5dp"
+                android:text="@string/range_calibrate_text"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pxp_calibrate_message_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calibrate_preference"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="@string/pxp_calibrate_message"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/disconnect_alert_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_alertsetting2"
+            android:gravity="center_vertical"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:paddingTop="5dp"
+            android:text="@string/disconnection_text"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/viewfifth"
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:layout_below="@id/disconnect_alert_category"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#8A8A8A" />
+
+        <RelativeLayout
+            android:id="@+id/re_outline_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/disconnect_alert_category"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box_shape" >
+
+            <TextView
+                android:id="@+id/disconnect_warning_preference"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:paddingEnd="10sp"
+                android:paddingStart="10sp"
+                android:text="@string/disconnection_waring_title"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/alertset_switchthree"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignBaseline="@+id/disconnect_warning_preference"
+                android:layout_alignBottom="@+id/disconnect_warning_preference"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/alertsetting_box_selector"
+                android:clickable="false"
+                android:focusable="false"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/phone_alert_settings_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/re_outline_layout"
+            android:gravity="center_vertical"
+            android:paddingEnd="10sp"
+            android:paddingStart="10sp"
+            android:paddingTop="5dp"
+            android:text="@string/phone_alert_settings"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/re_alertsetting4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phone_alert_settings_category"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box_shape" >
+
+            <RelativeLayout
+                android:id="@+id/re_ring_layout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/ringtone_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10sp"
+                    android:text="@string/ringtone_text"
+                    android:textSize="18sp" />
+
+                <ToggleButton
+                    android:id="@+id/alertset_switchfour"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/ringtone_preference"
+                    android:layout_alignBottom="@+id/ringtone_preference"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/viewseven"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/re_ring_layout"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#8A8A8A" />
+
+            <RelativeLayout
+                android:id="@+id/re_shock_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_below="@id/viewseven" >
+
+                <TextView
+                    android:id="@+id/vibration_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="10sp"
+                    android:paddingStart="10sp"
+                    android:text="@string/vibration_text"
+                    android:textSize="18sp" />
+
+                <ToggleButton
+                    android:id="@+id/alertset_switchfive"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:layout_alignBaseline="@+id/vibration_preference"
+                    android:layout_alignBottom="@+id/vibration_preference"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/alertsetting_box_selector"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textOff=""
+                    android:textOn="" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    
+
+</LinearLayout>

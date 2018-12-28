@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="rules-0.5">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.android/build-cache/f7bc9f7efaf12b388e320c78c6e391084875a3e4/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/f7bc9f7efaf12b388e320c78c6e391084875a3e4/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/f7bc9f7efaf12b388e320c78c6e391084875a3e4/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

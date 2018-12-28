@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:padding="10dp"
+    android:background="?attr/global_background"
+    android:gravity="center">
+	<!--#3a3b46-->
+	<!--android:background="@color/white"-->
+    <TextView
+        android:id="@+id/tv_my_data_dialog_title"
+        android:textSize="20sp"
+        android:textColor="#6FC7D5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+    <LinearLayout 
+        android:id="@+id/ll_my_data_set_weight"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:layout_marginTop="15dp"
+    	android:layout_marginBottom="15dp"
+    	android:orientation="horizontal">
+    
+    	<DatePicker
+    	    android:id="@+id/dp_my_data_set_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:minDate="1/1/1900"
+			android:datePickerMode="spinner"
+			android:theme="@style/Theme.picker"
+			android:calendarTextColor="#000000"
+            />
+	    <TextView
+	        android:id="@+id/tv_my_data_set_body_company"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginStart="10dp"
+	        android:visibility="gone"
+	        android:textSize="18sp"
+	        android:layout_weight="1" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:paddingStart="10dp"
+    	android:paddingEnd="10dp"
+    	android:orientation="horizontal">
+	    <Button 
+	        android:id="@+id/bt_my_date_set_ok"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="2dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginEnd="5dp"
+	        android:text="@string/ok"
+	        android:textColor="@color/dialog_bt"
+	        android:background="?android:attr/selectableItemBackground"
+    		android:layout_height="wrap_content"/>
+	    
+	    <Button 
+	        android:id="@+id/bt_my_data_set_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_weight="1"
+	        android:padding="2dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginStart="5dp"
+	        android:textColor="@color/dialog_bt"
+	        android:text="@string/cancel"
+	        android:background="?android:attr/selectableItemBackground"
+    		android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

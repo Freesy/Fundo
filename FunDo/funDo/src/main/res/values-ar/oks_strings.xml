@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="finish">نهاية</string>
+    <string name="sharing">عملية المشاركة تعمل في الخلفية ...</string>
+    <string name="share_to">مشاركة ل</string>
+    <string name="multi_share">مشاركة الصور</string>
+    <string name="share_completed">نجحت العملية</string>
+    <string name="share_canceled">تم إلغاء العملية</string>
+    <string name="select_one_plat_at_least">يرجى تحديد النظام الأساسي المستهدف</string>
+    <string name="list_friends">الأصدقاء في٪ s</string>
+    <string name="share_failed">فشلت العملية</string>
+    <string name="pull_to_refresh">اسحب للتحديث</string>
+    <string name="release_to_refresh">الافراج عن تحديث</string>
+    <string name="refreshing">منعش ...</string>
+    <string name="shake2share">هز هاتفك!</string>
+    <string name="select_a_friend">يرجى اختيار صديق</string>
+</resources>

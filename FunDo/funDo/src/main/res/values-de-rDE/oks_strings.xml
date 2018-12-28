@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="finish">Fertig</string>
+	<string name="sharing">Aktie Betrieb arbeitet im Hintergrund ...</string>
+	<string name="share_to">Aktie auf</string>
+	<string name="multi_share">Fotos Aktie</string>
+	<string name="share_completed">Betrieb erfolgreich</string>
+	<string name="share_canceled">Betrieb abgebrochen</string>
+	<string name="select_one_plat_at_least">Bitte wählen Sie eine Zielplattform</string>
+	<string name="list_friends">Freunde auf %s</string>
+	<string name="share_failed">Betrieb fehlgeschlagen</string>
+	<string name="pull_to_refresh">Nach unten ziehen, um zu aktualisieren</string>
+	<string name="release_to_refresh">Lassen Sie zu aktualisieren</string>
+	<string name="refreshing">Erfrischende ...</string>
+	<string name="shake2share">Schütteln Sie Ihr Handy!</string>
+	<string name="select_a_friend">Bitte wählen Sie einen Freund</string>
+</resources>

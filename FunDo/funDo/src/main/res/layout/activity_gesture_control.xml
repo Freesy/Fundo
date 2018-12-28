@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/re_alertset"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/global_background_content"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title"
+        android:layout_gravity="center"
+        android:background="?attr/global_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/gesture_control"
+            android:textColor="?attr/global_text_color"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_return_back" />
+
+        <ImageView
+            android:id="@+id/iv_ok"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="?attr/global_title_finish" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/health_reports_head_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_raise_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_menu"
+            android:layout_toEndOf="@+id/camera_switchone_iv"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10sp"
+            android:text="@string/raise_bright"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <ToggleButton
+            android:id="@+id/tb_raise_bright"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/alertsetting_box_selector"
+            android:clickable="false"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_fanwan_bright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_menu"
+            android:layout_toEndOf="@+id/camera_switchone_iv"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="10sp"
+            android:text="@string/fanwan_bright"
+            android:textColor="?attr/global_text_color"
+            android:textSize="@dimen/small_menu_size" />
+
+        <ToggleButton
+            android:id="@+id/tb_fanwan_bright"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/alertsetting_box_selector"
+            android:clickable="false"
+            android:focusable="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+</LinearLayout>

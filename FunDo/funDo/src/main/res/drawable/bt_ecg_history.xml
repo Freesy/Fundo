@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 分享按钮的按下 效果-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/title_history" />
+	<item android:drawable="@drawable/history_disable" android:state_enabled="true"/>
+</selector>

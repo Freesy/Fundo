@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/home_run_bg"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/home_run_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/home_best_record_bg"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/sporttext_jianzou"
+            android:textColor="?attr/runtext_color"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <com.szkct.weloopbtsmartdevice.view.DIN1451EF_EngNeuTypefaceTextView
+                android:id="@+id/home_distance_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="00.00"
+                android:textColor="?attr/runtext_color"
+                android:textSize="94sp" />
+
+            <TextView
+                android:id="@+id/home_distance_number_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/home_distance_number"
+                android:layout_alignBottom="@+id/home_distance_number"
+                android:layout_toEndOf="@+id/home_distance_number"
+                android:gravity="center"
+                android:text="@string/kilometer"
+                android:textColor="?attr/runtext_gray_color"
+                android:textSize="12.5sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/sports_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/sports_line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.szkct.weloopbtsmartdevice.view.DIN1451EF_EngNeuTypefaceTextView
+                    android:id="@+id/home_pace_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="00&apos;00&apos;&apos;"
+                    android:textColor="?attr/runtext_color"
+                    android:textSize="34sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_pace_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/home_pace_tv"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/home_pace_tv"
+                    android:gravity="center_vertical|right" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_pace_t_im" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_pace_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/home_pace_tv"
+                    android:layout_below="@+id/home_pace_tv"
+                    android:padding="4dp"
+                    android:text="@string/realtime_pace"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/home_pace_text_tv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/home_pace_text_tv"
+                    android:layout_toEndOf="@+id/home_pace_text_tv"
+                    android:paddingStart="5dp"
+                    android:text="@string/realtime_minutes_km"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.szkct.weloopbtsmartdevice.view.DIN1451EF_EngNeuTypefaceTextView
+                    android:id="@+id/home_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="00:00:00"
+                    android:textColor="?attr/runtext_color"
+                    android:textSize="29sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_time_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/home_time_tv"
+                    android:layout_marginRight="25dp"
+                    android:layout_toEndOf="@+id/home_time_tv"
+                    android:gravity="center_vertical|right" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_time_im" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_time_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/home_time_tv"
+                    android:layout_below="@+id/home_time_tv"
+                    android:padding="4dp"
+                    android:text="@string/realtime_time"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/home_time_text_tv"
+                    android:layout_toEndOf="@+id/home_time_text_tv"
+                    android:paddingStart="5dp"
+                    android:text="@string/realtime_hms"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/sports_line_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@color/sports_line_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_kal_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/home_kal_tv"
+                    android:layout_marginRight="10dp"
+                    android:layout_toEndOf="@+id/home_kal_tv"
+                    android:gravity="center_vertical|right" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_kal_im" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_kal_text_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/home_kal_tv"
+                    android:layout_below="@+id/home_kal_tv"
+                    android:padding="4dp"
+                    android:text="@string/realtime_consume"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/home_kal_text_tv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/home_kal_text_tv"
+                    android:layout_toEndOf="@+id/home_kal_text_tv"
+                    android:paddingStart="5dp"
+                    android:text="@string/realtime_calorie"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="10sp" />
+
+                <com.szkct.weloopbtsmartdevice.view.DIN1451EF_EngNeuTypefaceTextView
+                    android:id="@+id/home_kal_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:text="00"
+                    android:textColor="?attr/runtext_color"
+                    android:textSize="29sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <com.szkct.weloopbtsmartdevice.view.DIN1451EF_EngNeuTypefaceTextView
+                    android:id="@+id/home_altitude_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="+0"
+                    android:textColor="?attr/runtext_color"
+                    android:textSize="29sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/home_altitude_tv"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/home_altitude_tv"
+                    android:layout_marginRight="25dp"
+                    android:layout_toEndOf="@+id/home_altitude_tv"
+                    android:gravity="center_vertical|right" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/home_altitude_im" />
+                </LinearLayout>
+
+                <com.szkct.weloopbtsmartdevice.view.AlwaysMarqueeTextView
+                    android:id="@+id/home_altitude_text_tv"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/home_altitude_tv"
+                    android:layout_below="@+id/home_altitude_tv"
+                    android:padding="4dp"
+                    android:text="@string/realtime_altitude"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="12sp"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:focusableInTouchMode="true"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/home_altitude_text_tv_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/home_altitude_text_tv"
+                    android:layout_toEndOf="@+id/home_altitude_text_tv"
+                    android:paddingStart="5dp"
+                    android:text="@string/everyday_rice"
+                    android:textColor="?attr/runtext_gray_color"
+                    android:textSize="10sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp" >
+
+            <ImageButton
+                android:id="@+id/ibt_motionsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="?attr/fragment_home_settings__bt" />
+
+            <ImageButton
+                android:id="@+id/ibt_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="?attr/fragment_home_history_record__bt" />
+
+            <ImageButton
+                android:id="@+id/bt_fragment_home_run_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="?attr/fragment_home_run_start_bt" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

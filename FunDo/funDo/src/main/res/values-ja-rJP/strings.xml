@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="ok">確定</string>
+    <string name="cancel">キャンセル</string>
+    <string name="start">始め</string>
+    <string name="analysis">分析</string>
+    <string name="menu_scan">検索</string> 
+    <string name="connect_fail">接続失敗</string>
+    <string name="disconnected">接続失敗</string>
+    <string name="pls_switch_bt_on">Bluetoothを開けてください</string>
+    <string name="unknown_device">未知設備</string>
+    <string name="connect_error">接続異常</string>  
+    <string name="connected">接続済み</string> 
+    <string name="disconnect_dialog_title">切断接続</string>  
+    <string name="complete_percent">完成した：0</string>
+    <string name="active_time">活発時間</string>
+    <string name="kilometer">キロ</string>
+    <string name="active_time_cunts">0h</string>
+    <string name="highest_heart">最速心拍数</string>
+    <string name="mean_heart">平均心拍数</string>
+    <string name="minimum_heart">最遅心拍数</string>
+    <string name="device">我的设备</string>（私の設備）
+    <string name="alert_setting_find_phone">携帯電話を探して</string>
+    <string name="temp_unit">温度単位</string>   
+    <string name="celsius">摂氏度</string>
+    <string name="fahrenheit">華氏度</string>
+    <string name="about">について</string>
+    <string name="notifications">応用プッシュ</string>
+    <string name="app_store">Smart device APP store</string>
+    <string name="sms_preference_title">SMS service</string>
+    <string name="call_preference_title">Call service</string>
+    <string name="accessibility_prompt_title">補助機能を起用する</string>
+    <string name="notificationlistener_prompt_title">通知を起用する</string>
+    <string name="progress_dialog_title">アドイン</string>
+    <string name="progress_dialog_message">お待ち下さい</string>
+    <string name="save_successfully">設定成功</string>
+    <string name="personal_apps_title">個人応用</string>
+    <string name="system_apps_title">システム応用</string>
+    <string name="button_save">保存</string>
+    <string name="button_select_all">全て選択</string>
+    <string name="button_deselect_all">キャンセル全て選択</string>
+    <string name="manufacture_title">Manufacture</string>
+    <string name="check_new_version">新しいバージョンをチェック</string>
+    <string name="cancel_the_bell_ring">ベルを取り消す</string>
+    <string name="fimrware_update_redbend_fota">Firmware update(Redbend FOTA)</string>
+    <string name="firmware_update_separate_bin">Firmware update(Separate BIN)</string>
+    <string name="firmware_update_usb_otg">Firmware update(USB OTG)</string>
+    <string name="firmware_update_usb_otg_file_manager">Firmware update(FileManager)</string>
+    <string-array name="range_alert_type_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="default_range_alert_type_value">1</string> 
+
+    <string-array name="range_alert_size_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string name="default_range_alert_size_value">1</string>
+    <string name="pxp_dialog_device_name">[%s]</string>  
+    <string name="text_view">TextView</string>
+    <string name="done">完入る</string>
+    <string name="camera">写真を撮る</string>
+    <string name="call_notify">着信通知</string>
+    <string name="sms_notify">メール通知</string>
+    <string name="sit_notify">長座注意する</string>
+    <string name="drink_notify">水を飲む注意する</string>
+    <string name="notify_mode">注意モード</string>
+    <string name="notify_alarm">目覚まし時計注意する</string>
+    <string name="gesture_control">手を上げる，亮画面</string>
+    <string name="heart_check">ECG検出</string>
+    <string name="not_disturb">勿擾モード</string>
+   <string name="sit_time">長座時間（分）</string>
+    <string name="sit_threshold">長座しきい値（歩数）</string>
+    <string name="shared_success">共有成功</string>   
+    <string name="sport_text">運動</string>
+    <string name="steps_text">計歩</string>
+    <string name="heart_rate">心拍数</string>
+    <string name="data_sleep">睡眠</string>
+    <string name="share">共有</string>
+    <string name="steppercent">0.00%</string>
+    <string name="stepnumber">歩数</string>
+    <string name="allstepnumber">0歩</string>
+    <string name="allstepdone">歩</string>
+    <string name="lightsleep">淺い眠り</string>
+    <string name="deepsleep">深い眠り</string>
+    <string name="share_dialog_wx">WeChat</string>
+    <string name="share_dialog_facebook">facebook</string>
+    <string name="my_the_body_of_information">ユーザ情報</string>
+    <string name="my_set_name">ニックネームを入力して下さい</string>
+    <string name="head_Photo">アバター</string>
+    <string name="my_stature">身長</string>
+    <string name="my_weight">体重</string>
+    <string name="my_birthday">誕生日</string>
+    <string name="my_man">男</string>
+    <string name="my_age">年齢</string>
+    <string name="metric">計量単位</string>
+    <string name="metric_units">メートル法</string>
+    <string name="imperial_units">インチ法</string>
+    <string name="imperial_foot">ft</string>
+    <string name="imperial_inch">in</string>
+    <string name="imperial_pound">lbs</string>
+    <string name="centimeter">cm</string>
+    <string name="kilogram">kg</string>
+    <string name="body_you_got">お得しました</string>
+    <string name="my_woman">女</string>
+    <string name="my_sex">性別</string>
+    <string name="please_select"></string>
+    <string-array name="photograph">
+        <item>写真を撮る</item>
+        <item>アルバム</item>
+    </string-array>
+    <string name="stature_size">170cm</string>
+    <string name="weight_size">60kg</string>
+    <string name="birthday_size">1990&#8211;06&#8211;28</string>
+    <string name="detailed_data">詳細データ</string>
+    <string name="health">健康</string>
+    <string name="user_settings">ユーザ情報</string>
+    <string name="function_userhelp">ユーザーが助ける</string>
+    <string name="everyday_pace">歩</string>
+    <string name="everyday_metre">メートル</string>
+    <string name="everyday_calorie">キロカロリー</string>
+    <string name="about_privacy_policy">プライバシーポリシー</string>
+    <string name="everyday_show_unit">分</string>
+    <string name="everyday_show_h">時</string>
+    <string name="the_goalstepsetting">目標</string> 
+    <string name="quit_app">もう1度は退出応用する</string> 
+    <string name="finish_userhelp">導く完成</string> 
+    <string name="percentage">0.00%</string>
+    <string name="target_bushu">目標：500</string>
+    <string name="they_ount">歩数</string>
+    <string name="they_ount_cunts">0歩</string>
+    <string name="allfinishstep">歩</string>
+    <string name="calories">キロカロリー</string>
+    <string name="calories_cunts">0.00キロカロリー</string>
+    <string name="sleep_zhiliang">睡眠質量：</string>
+    <string name="measuring_time">測定時間：</string> 
+    <string name="sleep_no">ない</string>
+    <string name="sleep_date">0.0h</string>
+    <string name="sleephour">h</string>
+    <string name="shallow_sleep">淺い眠り</string>
+    <string name="deep_sleep">深い眠り</string>
+    <string name="total_length">時間長</string>
+    <string name="tomorrow_no">明日はまだ来ないよ！</string>
+    <string name="temperature">しばらくは天気の数値は得なかった</string>
+    <string name="no_net_noweather">ネットワークが接続しない、天気データを取得して失敗する</string>
+    <string name="no_location">天気データを取得して失敗，少々お待ち下さいリトライ</string>
+    <string name="sunday">日曜日</string>
+    <string name="monday">月曜日</string>
+    <string name="thesday">火曜日</string>
+    <string name="wednesday">水曜日</string>
+    <string name="thursday">木曜日</string>
+    <string name="friday">金曜日</string>
+    <string name="saturday">土曜日</string>
+    <string name="selectdata_month">月</string>
+      <string name="not_connected">設備未接続</string>
+    <string name="software_updates">ソフトウェア更新</string>
+    <string name="the_current_version">現在のバージョン</string>
+   <string name="is_the_latest_version">今はもう新しいバージョンです</string>
+  <string name="no_or_update">新しいバージョンを検出して，更新しているかどうか</string> 
+    <string name="userdata_synchronize">データ同期中</string>
+    <string name="userdata_synerror">同期失敗，再同期にしてください</string>
+    <string name="delete_data">削除</string>
+    <string name="sweet_warn">暖かいヒント</string>
+    <string name="gps_open">あなたの運動データを正常に記録するために、GPS測位機能を開く必要があります</string>
+    <string name="gps_sign_warn">データ記録の正確さ、もっと良いGPS信号が必要です，データをさもなくば、データは正しくないかもしれません。\豆知識：\だだっぴろい屋外運動にしてください\設置の中に移動してデータを接続する\それともだめ？ケータイを再起動してください。</string>
+    <string name="sport_trajectory">運動軌跡</string>
+    <string name="zero">0</string>
+    <string name="mobile_run_time">00:00:00</string>
+    <string name="mobile_GPS">GPS</string>
+    <string name="trajector_des">0.00</string>
+    <string name="zero_to_zero">0.0</string>
+    <string name="run_kcal">kCal</string>
+    <string name="run_km">km</string>
+    <string name="name_isToLong">ユーザー名は12文字を超えてはならない</string>
+    <string name="not_set_info">設定がない</string>
+    <string name="deletefriend_success">削除成功</string> 
+    <string name="activity_start_time">始め</string>
+    <string name="activity_end_time">終わり</string>
+    <string name="welcome_funrun">運動、健康、Fun生活</string>  
+    <string name="welcome_fun">Fun</string> 
+    <string name="last_seven_day">過去7日間</string>
+    <string name="average_step">平均歩数</string>
+    <string name="total_step">総歩数</string>
+    <string name="sit_tips">ヒント：設置から終わりまでの時間帯で，一定の長居時間（分）に満足できない長座しきい値（歩数）計算長座</string>
+    <string name="heart_tips">ヒント：開始時間、終瞭時間は、バングル執行検出機能は心拍数時間帯.週波数とはバングル規定時間範囲内週波数時間ごとに一回心拍監視測定値</string>
+    <string name="no_tips">ヒント：勿擾モードを開く後り、目覚まし時計と翻腕亮-のほか、すべての通知及び自動着信は自動亮画面が注意しない</string>
+    <string name="vibrate">振動</string>
+    <string name="bright">亮画面</string>
+    <string name="vibrate_bright">振動+亮画面</string>
+    <string name="raise_bright">手を上げる，亮画面</string>
+    <string name="fanwan_bright">翻腕，亮画面</string>
+    <string name="repeat_setting">重複設定</string>
+    <string name="frequency">頻度（分）</string>   
+    <string name="one_time_alert">一度だけ</string>
+    <string name="add_clock">目覚まし時計を新築する</string>
+    <string name="every_day">毎日</string>
+    <string name="max_clock">5組の目覚まし時計が設置されて</string> 
+    <string name="ring_type">注意方式</string>
+    <string name="ring_only">ベルが鳴る</string>
+    <string name="ring_vibrate">ベルが鳴る+振動</string>
+    <string name="alarm_clock_upper_limit_5">せいぜい5個目覚まし時計を開けて！</string>
+    <string name="open_alarm_clock_success">せいぜい5個目覚まし時計を開けて！</string>
+    <string-array name="type_mode">
+        <item>振動</item>
+        <item>ベルが鳴る</item>
+        <item>ベルが鳴る+振動</item>
+    </string-array>
+    <string-array name="day_of_week">
+        <item>日曜日</item>
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+    </string-array>
+    <string-array name="day_of_week_forx2">
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+        <item>日曜日</item>
+    </string-array>
+    <string-array name="month_of_year">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item> 
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string name="today">今日</string>
+    <string name="onemonth">1ヶ月</string>
+    <string name="sixmonth">6ヶ月</string>
+    <string name="oneyear">1年</string> 
+    <string name="body_evaluation_score">得点を評価し</string>
+    <string name="body_cardiac_and_pulmonary_function">心肺機能</string>
+    <string name="body_size_report">体型報告</string>
+    <string name="body_function">身体機能</string>
+    <string name="heart_rate_text">心拍数</string>
+    <string name="vital_capacity_text">肺活量</string>
+    <string name="bmi_text">BMI値</string>
+    <string name="body_fat_text">体脂肪率</string>
+    <string name="body_age_text">身体年齢</string>
+    <string name="body_health_finish_text">健康診断が完成する</string>
+    <string name="health_is_test_text">検査中…</string>
+    <string name="health_finish_test_text1">本テストをユーザーに提供する1つの亜健康かどうかの参考にしてください.装着が心拍モニタリングの設備を段階的に何度もテストは、高速で体をモデルとして整って数学のモデリングの向上、KCTアルゴリズムのテスト精密度。</string>
+    <string name="health_finish_test_text2">テストの情報と結果は、医師診断、運動と美食に処方された代替品としてはならない。</string>
+    <string name="health_fat_super_fat">深刻な肥満</string>
+    <string name="health_fat_very_fat">重度肥満</string>
+    <string name="health_fat_fat">肥満</string>
+    <string name="health_fat_overweight">超過</string>
+    <string name="health_fat_normal">正常</string>
+    <string name="health_fat_thin">やせい</string>
+    <string name="health_score_good">健康</string>
+    <string name="health_score_bad">悪い</string> 
+    <string name="body_points">分</string>
+    <string name="body_cardiopulmonary">あなたの心肺機能</string>
+    <string name="body_type">あなたの体型</string>
+    <string name="setting_lookfor">検索設備</string>
+    <string name="ble_not_connected">Bluetooth未接続</string>
+    <string name="watch_not_connected">設備未接続</string>
+    <string name="kctfinish">完成した:</string>
+    <string name="connected_watch">接続設備</string>
+    <string name="find_watch">検索設備</string>
+    <string name="current_link">現在設備</string>
+    <string name="new_devices">新設備</string>
+    <string name="contacts">連絡先</string>
+    <string name="nickname">ニックネーム</string>
+    <string name="analysis_title_sport">運動統計</string>
+    <string name="goal_achievement">目標達成度</string>
+    <string name="total_distance">総距離</string>
+    <string name="analysis_title_sleep">睡眠統計</string>
+    <string name="goal_achievement_sleep">平均時間</string>
+    <string name="total_time">総時間</string>
+    <string name="total_duration">総時長</string>
+    <string name="long_shallow_sleep">淺睡眠時長</string>
+    <string name="deep_sleep_length">深睡眠時長</string>
+    <string name="average_sleep">平均睡眠</string>
+    <string name="save_success">保存に成功しました</string>
+    <string name="no_facebook_in_your_phone">携帯にはFacebookがインストールされていない</string>
+    <string name="no_instagram_in_your_phone">携帯にはInstagramがインストールされていない</string>
+    <string name="no_twitter_in_your_phone">携帯にはTwitterがインストールされていない</string>
+    <string name="no_whatsapp_in_your_phone">携帯にはWhatsappkがインストールされていない</string>
+    <string name="no_linkedin_in_your_phone">携帯には取り付けがない</string>
+    <string name="no_mobileqq_in_your_phone">携帯にはQQがインストールされていない</string>
+    <string name="no_strava_in_your_phone">携帯にはstravaがインストールされていない</string>
+    <string name="strava_need_open_permission">Stravaはストレージアクセス権を読み書きする必要があります</string>
+    <string name="sleep_good_text">優</string>
+    <string name="sleep_normal_text">良</string>
+    <string name="sleep_bad_text">差</string>
+    <string name="compared_to_yesterday">昨日より</string>
+    <string name="tv_my">私の</string>
+    <string name="last_seven_days">最近7日間</string>
+    <string name="best_me">ベストな私</string>
+    <string name="today_me">今日の私</string>
+    <string name="average_me">平均の私</string>
+    <string name="week_me">先週の私</string>
+    <string name="about_findwatch">ケータイを探すについて</string>
+    <string name="fingwatch_text">アワ携帯開いて表示が浮遊窓の権限を、さもなくば設備を携帯にapp端無ヒントボックス</string>
+    <string name="gotosettings">設置</string>
+    <string name="slide_right_unlock">右にスライド，ロックを解除する</string>
+    <string name="motionsettting_open">開く</string>
+    <string name="motionsettting_close">閉める</string>
+    <string name="motionsettting_goal_freerun">1度約束のない走る</string>
+    <string name="motionsettting_standard_girl">標準女声</string>
+    <string name="motionsettting_standard_boy">標準男声</string>
+    <string name="motionsettting_reciprocal_second">秒</string>
+    <string name="motionsettting_satellite_map">人工衛星地図</string>
+    <string name="motionsettting_general_map">普通地図</string>
+    <string name="motionsettting_high_german_map">高徳地図</string>
+    <string name="motionsettting_google_map">Google地図</string>
+    <string name="motionsettting_high_german">高徳</string>
+    <string name="motionsettting_google">Google</string>
+    <string name="motionsettting_custom">カスタマイズ</string>
+    <string name="motionsettting_customtimeofzero">正確な時間を設定して下さい</string>
+   <string name="speed_matching_details">配速詳細</string>
+    <string name="motion_chart">運動図表</string>
+    <string name="realtime_km"> KM</string>（KM）
+    <string name="realtime_pace">配速</string>
+    <string name="realtime_minutes_km">分/キロ</string>
+    <string name="realtime_time">時長</string>
+    <string name="realtime_hms">時間/分/秒</string>
+    <string name="realtime_consume">消耗</string>
+    <string name="realtime_calorie">キロカロリー</string>
+    <string name="realtime_altitude">海抜変化</string>
+    <string name="report">報告</string>
+    <string name="more">もっと</string>
+    <string name="data_reporting">データ報告</string>
+    <string name="activity_report">活動報告書</string>
+    <string name="minute">分</string>
+    <string name="hour">時</string>
+    <string name="sleep_report">睡眠報告書</string>
+    <string name="heart_rate_report">心拍数報告書</string>
+    <string name="function_not_support">設備はその機能を支持しない</string>
+    <string name="now_is_nulldtat">歴史のデータがない</string>
+    <string name="sportshistory_jianzou">ウォーキング</string>
+    <string name="sportshistory_huwaipao">屋外走り</string>
+    <string name="sportshistory_dengshan">登山</string>
+    <string name="sportshistory_yueyepao">クロスカントリー</string>
+    <string name="sportshistory_shineipao">室内走</string>
+    <string name="sportshistory_banma">半マラソン</string>
+    <string name="sportshistory_quanma">全マラソン</string>
+    <string name="sportshistory_tiaosheng">縄跳び</string>
+    <string name="sportshistory_yumaoqiu">バドミントン</string>
+    <string name="sportshistory_lanqiu">バスケットボール</string>
+    <string name="sportshistory_qixing">レーシング</string>
+    <string name="sportshistory_huabing">スケート</string>
+    <string name="sportshistory_jianshen">ジム</string>
+    <string name="sportshistory_yujia">ヨガ</string>
+    <string name="sportshistory_wangqiu">テニス</string>
+    <string name="sportshistory_pingpang">ピンポン</string>
+    <string name="sportshistory_zuqiu">サッカー</string>
+    <string name="sportshistory_youyong">水泳</string>
+    <string name="sportshistory_xingai">性愛</string>   <!--对于G703-->
+    <string name="sporttext_jianzou">健歩きのベスト記録</string>
+    <string name="sporttext_huwaipao">屋外走るベスト記録</string>
+    <string name="sporttext_dengshan">登山のベスト記録</string>
+    <string name="sporttext_yueyepao">オフロード走りのベスト記録</string>
+    <string name="sporttext_shineipao">室内走りのベスト記録</string>
+    <string name="sporttext_banma">半マラソンのベスト記録</string>
+    <string name="sporttext_quanma">全マラソンのベスト記録</string>
+    <string name="sporttext_riding">レーシングのベスト記録</string>
+    <string name="speed_average">平均:</string>
+    <string name="speed_max">最も遅い:</string>
+    <string name="speed_min">最高速:</string>
+    <string name="speed_consuming">時間がかかる</string>
+    <string name="sportshistory_motion_paused">運動はもう停止した</string>
+    <string name="sportshistory_motion_setting">運動設定</string>
+    <string name="sportshistory_voice_broadcast">音声放送</string>
+    <string name="sportshistory_vibrator_setting">振動設定</string>
+    <string name="sportshistory_screen_always_on">スクリーン常亮</string>
+    <string name="sportshistory_automatic_pause">自動一時停止</string>
+    <string name="sportshistory_automatic_stop">自動停止</string>
+    <string name="sportshistory_moving_target">運動目標</string>
+    <string name="sportshistory_voice_settings">音声設定</string>
+    <string name="sportshistory_countdown_settings">逆数設定</string>
+    <string name="sportshistory_map_settings">地図設定</string>
+    <string name="sportshistory_sports_history">運動の歴史</string>
+    <string name="sportshistory_total_distance">総距離:</string>
+    <string name="sportshistory_total_duration">総時長:</string>
+    <string name="free_running">自由走り</string>
+    <string name="distance_target">距離目標</string>
+    <string name="time_target">時間目標</string>
+    <string name="calorie_target">カロリー目標</string>
+    <string name="funfit_sprots">分動運動</string>
+    <string name="speed_chat">配速表</string>
+    <string name="speed_curve">速度曲線</string>
+    <string name="elevation_curve">海抜曲線</string>
+    <string name="Heart_rate_curve">心拍数曲線</string>
+    <string name="step_frequency_curve">步频曲線</string>
+    <string name="detailed_mileage">マイレージ</string>
+    <string name="detailed_speed">速度</string>
+    <string name="detailed_kmh">キロメートル/時間</string>
+    <string name="detailed_Maximum_oxygen_uptake">最大酸素</string>
+    <string name="detailed_ml_kg_min">ミットル/キログラム/分</string>
+    <string name="detailed_training_intensity">訓練強度</string>
+    <string name="detailed_level">等级</string>
+    <string name="detailed_max_pace">最高配速</string>
+    <string name="detailed_min_pace">最低配速</string>
+    <string name="detailed_average_pace">平均配速</string>
+    <string name="detailed_cumulative_climb">累積よじ登って</string>
+    <string name="detailed_cumulative_decline">累積減少</string>
+    <string name="detailed_vertical_speed">垂直速度</string>
+    <string name="detailed_maximum_heart_rate">最大心拍数</string>
+    <string name="detailed_minimum_heart_rate">最小心拍数</string>
+    <string name="detailed_average_heart_rate">平均心拍数</string>
+    <string name="detailed_times_minute">度/分</string>
+    <string name="detailed_maximum_stride">最大歩幅</string>
+    <string name="detailed_minimum_stride">最小歩幅</string>
+    <string name="detailed_average_stride">平均歩幅</string>
+    <string name="detailed_stride_cm">センチ</string>
+    <string name="detailed_maximum_stride_frequency">最大歩频</string>
+    <string name="detailed_minimum_stride_frequency">最小歩频</string>
+    <string name="detailed_average_stride_frequency">平均歩频</string>
+    <string name="detailed_step_minute">歩/分</string>
+    <string name="detailed_actual_duration">実際時長</string>
+    <string name="detailed_pause_duration">一時停止時長</string>
+    <string name="detailed_number_of_pauses">一時停止回数</string>
+    <string name="detailed_second">度</string>
+    <string name="indoor_run">屋内走りは地図はないよ！</string>
+    <string name="sport_status">運動は始まって、しばらくはそのオプションを設定することができません！</string>
+    <string name="developed">機能が開発中…</string>
+    <string name="prompt">ヒント</string>
+    <string name="delete_history_data">歴史の運動データを削除するかどうか？</string>
+    <string name="data_refresh_success">データが更新に成功した</string>
+    <string name="goal_again_set">運動目標を再設定するかどうかは、すでに達成されています！</string>
+    <string name="saveRunData">今の運動を終わって、データを保存しますか？</string>
+    <string name="endSaveRunData">今回の運動距離は短い、データを保存することができない、運動を終えますか？</string>
+    <string name="stopRun">運動を終える</string>
+    <string name="goalTarget">運動距離目標を達成している</string>
+    <string name="calorieTarget">カロリー目標を達成している</string>
+    <string name="runTimeTarget">運動時間目標を達成している</string>
+    <string name="alert_ok">分かった</string>
+    <string name="save_selectAll">全て選択</string>
+    <string name="sync_datas">同データ同期中</string>
+    <string name="kilometre"> キロ</string>
+    <string name="watermark_tip_quanma">今回の運動は42.19キロを超えて，マイレージを使用する</string>
+    <string name="watermark_tip_banma">今回の運動は21.09キロを超えて，マイレージを使用する</string>
+    <string name="skip">スキップ</string>
+    <string name="hardware_upgrade">ファームウェアアップグレードアップ</string>
+    <string name="dfu_service_title">nRF Toolbox DFU Proxy</string>
+    <string name="firmware_upload_nor">現在のバージョン</string>
+     <string name="firmware_upload">ファームウェアをダウンロード中</string>
+    <string name="firmware_update">ファームウェアの更新中に更新していて</string>
+    <string name="firmware_update_finish">ファームウェアの更新に更新しました</string>
+    <string name="firmware_is_update">ファームウェアがアップするかどうか</string>
+    <string name="firmware_isnot_update_complete">アップグレードすることができますファームウェア、アップグレードしてください</string>
+      <string name="save_pic_success">画像は成功して保存する</string>
+    <string name="sportdata_error">今回の記録の步频、歩幅、歩数可能とあなたの実際に運動するデータ過、ご参考までに。</string>
+    <string name="device_not_support">この設備はこの機能を支持しない.</string>
+    <string name="bluetooth_call">Bluetooth通話</string>
+    <string name="bluetooth_call_notify">セット- Bluetooth検索接続（切断）Bluetooth設備</string>
+    <string name="go_to">向かう</string>
+    <string name="firmware_fair">ファームウェアのアップグレードに失敗し、再接続の設備アップグレード</string>
+    <string name="firmware_gotoupdta">接続設備中</string>
+    <string name="inCalling">着信</string>
+    <string name="Blood_oxygen_Report">酸素酸素の報告書</string>
+    <string name="Blood_pressure_Report">血圧レポート</string>
+    <string name="systolic_pressure">収縮圧</string>
+    <string name="diastolic_pressure">弛緩圧</string>
+    <string name="AVG_pressure">平均圧</string>
+    <string name="Maximum_heart_rate">最高</string>   
+    <string name="Minimum_heart_rate">最低</string>
+    <string name="AVG_heart_rate">平均</string>
+    <string name="Blood_oxygen_saturation">酸素飽和度</string>
+    <string name="Mean_saturation">平均酸素血</string>
+    <string name="Mean_saturationheght">最高酸素血</string>
+    <string name="Mean_saturationlow">最低酸素血</string>
+    <string name="Measurement_times">測定回数:</string>
+    <string name="necessary_to_open">補助サービス機能が必要、一部分の携帯電話機は情報を受信することができない</string>
+    <string name="Blood_oxygen">酸素血</string>
+    <string name="blood_pressure">血圧</string>
+    <string name="Normal_rate">正常率</string>
+    <string name="The_distance_been_completed">距離設定の目標がすでに完成している</string>
+    <string name="The_time_setting">時間設定の目標はすでに完成している</string>
+    <string name="The_calorie_setting">カロリー設定の目標はすでに完成している</string>
+    <string name="firmwareupdate_notice">注意：進級する過程の中に閉鎖しないでくださいAPPさせ、バングルと携帯を有効のBluetoothの距離で、もしアップグレードに失敗して、設備の名前DfuTargXXXになるので、再接続機器、再びアップグレード</string>
+    <string name="notification_message">消息通知サービスが実行された</string>
+<string name="bluetooth_connecting">接続中</string>
+    <string name="camera_permission">まずカメラの権限を開けて、それから設備の端で写真を撮影するようにして下さい</string>
+    <string name="Memory_Optimizer">メモリ最適化白リスト</string>
+    <string name="application_authority">応用権限を通知する</string>
+    <string name="bluetooth_call_setting">Bluetooth通話設定</string>
+    <string name="bluetooth_call_about1">あなたはまだ設備に音声伝送を支持することができます</string>
+    <string name="bluetooth_call_about2">Bluetoothの通話、Bluetooth音楽などの機能がある</string>
+    <string name="bluetooth_call_about3">わかりました、設定を開始。</string>
+    <string name="bluetooth_call_about4">後にして</string>
+    <string name="bluetooth_call_guide1">1 .にはすでに縫い付けの設備の名前を表示して、設備の名称はBluetoothの名称</string>
+    <string name="bluetooth_call_guide2">2 .接続：システム設置- Bluetooth  -検索設備，同じ名前の設備を見つけ、接続をクリックします。</string>
+    <string name="bluetooth_call_guide3">3切れでさえ：システムに入って-Bluetooth-はカップルの設備、同じ名前の設備を見つけ、「取り消しカップル」に入って、解除カップル関係。</string>
+    <string name="unbind_device">解を縛る</string>
+    <string name="unbind_success">解縛り成功</string>
+    <string name="unit_setting">単位設定</string>
+    <string name="update">更新</string>
+    <string name="update_text">更新</string>
+    <string name="temporarily_not_update">しばらく更新しない</string>
+    <string name="pull_to_refresh_footer_refreshing_label">読み込んで\u2026</string>
+    <string name="accessibility_prompt_content">分動機能は、遠隔インテリジェント設備に転送する必要があります。「確定」キー入力補助機能のページ活性化する。</string>
+    <string name="notificationlistener_prompt_content">分動機能は、遠隔インテリジェント設備に転送する必要があります。「確定」キー入り通知ページアクティブに入ります.</string>
+    <string name="add_device">+添加装置</string>
+    <string name="no_data">しばらくはデータがない</string>
+    <string name="notsupported">しばらくはこの機能を支持しない</string>
+    <string name="notnotification">応用通知欄には開かない、app使用に影響を与える可能性あり，携帯の通知センターに入り、お知らせ欄を開いてください。。</string>
+    <string name="off_thenotification_switch">携帯電話システムが特殊なため、通知スイッチをオフにして、再び開いて</string>
+     <string name="checking_new_version">バージョン検出中</string>   
+    <!--单位设置-->（単位設定）
+    <string name="unit_mi">マイル</string>
+    <string name="unit_min_mi">分/マイル</string>
+    <string name="unit_kj">キロ・ジュール</string>
+    <string name="unit_ft">フィート</string>
+    <string name="unit_in">インチ</string>
+    <string name="unit_mi_hour">マイル/時間</string>
+    <string name="issure_unbind_device">しばっ設備を解くか？</string>
+ <string name="cannot_scanble">接続の設備は検索していませんか？\あなたに見ることができる設備Bluetoothの可視性を開くかどうか\また、数秒で検索しても\システムのBluetoothを再起動しますよ</string>
+    <string name="displaysuspendedwindow_permissions">携帯電話システムのため、ペンション窓の権限を表示することを導くことができませんが、手動では、手にする必要があります</string>
+
+
+
+
+    <string name="fat_burning">脂肪を燃やす</string>
+    <string name="resting">休憩</string>
+    <string name="warm_up">アップ</string>
+    <string name="aerobic">好気性</string>
+    <string name="heart_lung">心肺</string>
+    <string name="anaerobic">嫌気性</string>
+    <string name="limit">制限</string>
+    <string name="fall_asleep_time">入睡时间</string>
+    <string name="waking_time">起きている時間</string>
+    <string name="awake_time">まじめな時間</string>
+    <string name="all_sleep">すべての日の睡眠</string>
+
+    <string name="nickname_null">ニックネームは空にできません</string>
+
+    <string name="checking_new_version_fail">バージョンの検出に失敗しました。後でやり直してください</string>
+
+    <string name="userdata_synchronize1">データの同期 1/5</string>
+    <string name="userdata_synchronize2">データの同期 2/5</string>
+    <string name="userdata_synchronize3">データの同期 3/5</string>
+    <string name="userdata_synchronize4">データの同期 4/5</string>
+    <string name="userdata_synchronize5">データの同期 5/5</string>
+    <string name="userdata_synchronize_success">データの同期が成功しました</string>
+
+    <string name="app_keepAlive">Fundoキープアライブ</string>
+    <string name="app_need">バッテリの最適化にFundoを追加する必要があります。\n\n</string>
+    <string name="app_dhkxzshi">クリックしてください『定めます』，ポップアップの[バッテリ最適化を無視]ダイアログボックス，「はい」を選択します。。</string>
+    <string name="app_sure">定めます</string>
+
+    <string name="app_setting_baimingdan">節電ホワイトリストを設定すると、FundoとデバイスのBluetoothの安定した接続を維持できます。\n\n</string>
+    <string name="app_setting_baimingdan_caozuo">『定めます』Fundoのポップアップ設定，選択する『無制限』，それから、『ポジショニングを許可する』。</string>
+    <string name="app_setting_ziqidong">開始リストから参加するにはFundoが必要。\n\n</string>
+    <string name="app_setting_ziqidongkg">クリックしてください『定めます』,ポップアップで『管理の開始以来』,対応するFundoスイッチをオンにする。</string>
+
+    <string name="app_huawei_bmd">ホワイトリストを消去するにはロック画面に追加する必要があります。\n\n</string>
+    <string name="app_huawei_bmd_setting">クリックしてください『定めます』，ポップアップで『スクリーンクリーニングのロック』リスト，対応するスイッチを設定する。</string>
+
+    <string name="app_nubiya_bmd">ロック画面のクリーンホワイトリストにFundoを追加する必要がある。\n\n</string>
+    <string name="app_nubiya_bmd_setting">"クリックしてください『定めます』，ポップアップで『電気の節約』ページ，対応するスイッチをFundoに設定する。</string>
+
+    <string name="app_oppo_bmd">Fundo節電に関連するオプションを設定する必要がある。\n\n</string>
+    <!-- <string name="app_oppo_bmd_setting"> クリックしてください『定めます』，ポップアップで『バッテリーページ』，電源保護をクリック，対応するスイッチをオフにする。</string>-->
+    <string name="app_oppo_bmd_setting"> クリックしてください『定めます』，ポップアップで『バッテリーページ』，電源保護をクリック，Fundoに対応するスイッチをオフにする。\n\n 注意を払います：電源保護の対応するスイッチの状態を繰り返し変更しないでください，スイッチのステータスを繰り返し変更すると、APPが再起動します，スイッチの状態を繰り返し変更するには，後でアプリを終了することができます,携帯電話の設定ページのバッテリー入力に設定</string>
+
+    <string name="app_vivo_htbh">Fundoをバックグラウンドで実行する必要がある。\n\n</string>
+    <string name="app_vivo_htbh_setting"> クリックしてください『定めます』，ポップアップで『背景の高い電力消費』，対応するFundoスイッチをオンにする。</string>
+    <string name="app_vivo_bmd">Fundoメモリクリアホワイトリストを設定する必要があります。\n\n</string>
+    <string name="app_vivo_bmd_setting">クリックしてください『定めます』，ポップアップで『ホワイトリストをスピードアップする』，対応するFundoスイッチをオンにする。く。</string>
+
+    <string name="app_letv_bmd">保護されたアプリケーションにFundoを追加する必要がある。\n\n</string>
+    <string name="app_letv_bmd_setting"> クリックしてください『定めます』，ポップアップで『アプリケーションの保護』，対応するFundoスイッチをオンにする。</string>
+
+    <string name="app_open_keepalive">バックグラウンド実行権限を開く</string>
+
+    <string name="app_meizu_setting">クリックしてください『定めます』，ポップアップ許可管理インターフェース，Fundo「バックグラウンド管理」オプションが「バックグラウンド実行許可」に変更されました</string>
+
+    <string name="autosave_sportdata_fail">移動距離が短すぎて自動的にデータを保存できませんでした</string>
+    <string name="autosave_sportdata_success">自動的にデータを正常に保存</string>
+
+    <string name="endtime_notreal">開始時刻は終了時刻と同じにすることはできません</string>
+
+    <string name="everyday_rice">メーター</string>
+
+    <string name="app_edit_shuiyin">透かしを編集する</string>
+    <string name="newWater_share">分かち合う</string>
+
+    <string name="app_hidconnect_tip">あなたの携帯電話は支持しないHID接続</string>
+
+
+    <!--指针校准-->
+    <string name="point_calibraion">指針キャリブレーション</string>
+    <string name="check_point">腕時計で指針キャリブレーション要求を確認してください</string>
+    <string name="hour_point">時針</string>
+    <string name="minute_point">分針</string>
+    <string name="second_point">秒針</string>
+    <string name="point_explian">ヒント：腕時計指針の現在の位置により「時針」と「分針」の時刻を設定したください。 20秒ごとに分針が一回運行する規則により「秒」の時刻を決定してください。</string>
+    <string name="pointing">時計の指針を校正中......</string>
+	<string name="take_photo_ok">写真の成功</string>
+
+    <string name="data_not_null">入力は空ではありません</string>
+    <string name="data_too_long">入力が長すぎます</string>
+
+    <string name="assist_input">アシスト入力</string>
+    <string name="pushdial">ダイアルプッシュ</string>
+    <string name="soscall">緊急ダイヤル</string>
+     <string name="user_comment_1">包囲ライオンの黒い目の袋が地面に着いた</string>
+    <string name="user_comment_2">ハンサムな弟を待っている</string>
+    <string name="user_comment_3">奨励する</string>
+    <string name="user_comment_4">それを奨励する</string>
+    <string name="user_comment_5">アプリケーションの宝物をインストールしてください</string>
+    <string name="user_comment_6">Google Playを最初にインストールしてください</string>
+
+    <!--soscall-->
+    <string name="emergency_contact_1">緊急連絡先1</string>
+    <string name="emergency_contact_2">緊急連絡先2</string>
+    <string name="emergency_contact_3">緊急連絡先3</string>
+    <string name="contact_name">連絡先の名前</string>
+    <string name="telephone_number">数字</string>
+    <!--协助输入-->
+    <string name="assist_input_tv">1、最初にFunDoと時計を接続する \n2、時計を開いたら、時計の編集ボックスにカーソルを置きます。\n3、上記の情報を入力して[送信]をクリックすると、メッセージを時計の編集ボックスに送信します。</string>
+    <string name="str_send">送信</string>
+    <string name="str_sendtocopy">クリップボードに送る</string>
+    <string name="send_firmware_date_success">データが正常に送信された！</string>
+
+    <string name="ischeck_firmver">ファームウェアバージョンの検出</string>  <!-- // 数据同步中-->
+    <string name="firmwareupdate_notice_forbk">注意：アップグレードプロセス中にブレスレットと携帯電話を有効なBluetooth距離内に保つためにAPPを閉じないでください。アップグレードが失敗した場合は、デバイスを再接続してもう一度アップグレードしてください。</string>
+
+
+    <string name="elektronik_fatura">電子請求書</string>
+    <string name="receiving_code">領収書QRコード</string>
+    <string name="weixin_code_title">WeChat QRコードをアップロード</string>
+    <string name="alipay_code_title">アリペイ領収書QRコードをアップロード</string>
+    <string name="synchronize">同期</string>
+    <string name="code_tishi">操作手順：\ nステップ1：個人用WeChat / Alipayを開き、QRコードを見つけて保存します。 \ n 2番目の手順では、レシートのQRコードイメージをブランチアプリケーションに追加して保存します。 \ n手順3：スマートウォッチレシーバーのQRコード表示の結果を確認します。</string>
+    <string name="replace_payment_code">領収書コードを変更する</string>
+    <string name="add_new_invoice_header">新しい請求書ヘッダを追加する</string>
+    <string name="company_letterhead">会社はルックアップする</string>
+    <string name="required">必須</string>
+    <string name="tip_please_company_number">請求する必要がある会社税番号を記入してください</string>
+    <string name="tax_id">納税者番号</string>
+    <string name="tip_ente_header_information">あなたの会社のヘッダー情報を入力してください</string>
+    <string name="address">住所</string>
+    <string name="tip_please_business_address">あなたの会社の住所を記入してください</string>
+    <string name="phone">コール</string>
+    <string name="tip_please_company_phone">あなたの会社の電話番号を記入してください</string>
+    <string name="bank">口座銀行</string>
+    <string name="tip_please_company_bank_name">あなたの会社の銀行名を記入してください</string>
+    <string name="bank_account">銀行口座</string>
+    <string name="tip_please_company_bank_account">あなたの会社の銀行口座番号を記入してください</string>
+    <string name="remarks">ノート</string>
+    <string name="tip__service_name">サービス名を記入することができます</string>
+    <string name="save_billing_information">請求情報を保存する</string>
+    <string name="tip_save_tv_electronic">上記の情報を完全に記入してコードをスキャンして、QRコード、Alipay QRコード、Wechat Invoice QRコードをすばやく入力してください。</string>
+    <string name="look_up">ルックアップ</string>
+    <string name="bank_name">口座名</string>
+    <string name="tip_activity_invoice_code_title">マーチャントはQRコードをスキャンし、ヘッダ情報を迅速に取得する。</string>
+    <string name="modify">変更</string>
+    <string name="tip_sure_delete_electronic_invoice">電子請求書を削除するかどうか確認する</string>
+    <string name="add">追加された</string>
+    <string name="default_invoice">デフォルトの請求書</string>
+    <string name="set_def">デフォルトとして設定</string>
+    <string name="limit_electronic_invoices">最大5つの電子請求書</string>
+    <string name="verification_code_timeout">検証コードのタイムアウト</string>
+
+    <string name="ssdk_sms_dialog_error_desc_100">サーバーエラー</string>
+    <string name="tax_id_already_exists">請求書の税番号は既に存在します</string>
+
+    <string name="dialpush_fail">ダイヤルプッシュ失敗</string>
+    <string name="dialpush_success">ダイヤルが正常にプッシュされた</string>
+    <string name="dialpush_ing">ダイアルプッシュ</string>
+    <string name="dialpush_ed">ダイヤルが正常にプッシュされました</string>
+
+    <string name="unknown_service">不明なサービス</string>
+    <string name="unknown_characteristic">未知の特性</string>
+
+    <string name="constants_load" formatted="false">同期</string>
+     <string name="sportshistory_fanhang">戻る</string>
+
+    <string name="update_remind">注意を更新する</string>
+    <string name="to_update">今すぐ更新</string>
+    <string name="The_version_is_too_low_to_be_updated_to_the_latest_version">あなたをすぐに使ってください</string>
+    <string name="notification_tip_forupdate" formatted="false">FunDoの最新バージョンをダウンロードする</string>
+
+
+    <string name="activity_guide_wx">アクティブなマイクロ信号</string>
+    <string name="fenmei">シスター</string>
+    <string name="wx_code">マイクロシグナル：fundomei001</string>
+    <string name="input_phone_code">あなたの携帯電話番号を入力してください</string>
+    <string name="phone_login">登録</string>
+    <string name="areadly_register">転送のために登録されていますか？ログインするにはここをクリック</string>
+    <string name="ssdk_sms_dialog_error_desc_106">確認コードが頻繁に送信される</string>
+    <string name="verification_code_sent">正常に送信されました</string>
+    <string name="obtain">取得する</string>
+    <string name="input_check_code">確認コードを入力してください</string>
+    <string name="passwd_lenth_tip">6〜18桁のパスワードを入力します。</string>
+    <string name="area_selection">地域の選択</string>
+    <string name="forget_password_true">パスワードを忘れた</string>
+    <string name="ssdk_sms_dialog_error_code">確認コードエラー</string>
+    <string name="please_fill_complete">ユーザー名またはパスワードは空にできません</string>
+    <string name="not_login">ログイン</string>
+    <string name="country_area">国</string>
+    <string name="user_already_register">"ユーザーは既に存在します "</string>
+  <string name="phone_is_error">電話番号は違法です</string>
+    <string name="input_text">入力パスワード</string>
+
+    <string name="qr_code_error">QRコード解析エラー</string>
+    <string name="not_wc_qr_code">WeChat QRコード</string>
+    <string name="not_zfb_qr_code">アリペイQRコード</string>
+
+    <string name="login_button_text">ログイン</string>
+    <string name="changepw">パスワードを変更する</string>
+    <string name="end_time_nosmll">終了時刻は現時点の後でなければなりません</string>
+
+    <string name="missed_callsble">不在着信</string>
+
+    <string name="youyong_zongtangshu">総ターン数</string>
+    <string name="youyong_tang">趟</string>
+    <string name="youyong_ci">タイムズ</string>
+    <string name="youyong_zonghss">総ストローク数</string>
+    <string name="youyong_yyhs">背泳ぎストローク</string>
+    <string name="youyong_wyhs">ストロークストローク</string>
+    <string name="youyong_dyhs">バタフライストローク</string>
+    <string name="youyong_zyyhs">フリースタイルストローク</string>
+    <string name="youyong_qtyzhs">その他のストローク</string>
+
+    <string name="bk_oldbanben">古いファームウェアバージョン</string>
+    <string name="bk_newbanben">新しいファームウェアのバージョン</string>
+
+    <string name="photo_success">成功した写真</string>
+    <string name="temp_check">体温試験</string>
+    <string name="heart_check_state_one">ウェアラブルデバイスの機能リストでECG検出を有効にする\n上の図に示すように、電極片に触れてください\nあなたはあなたのECGを検出することができます</string>
+    <string name="heart_check_state_two">受信したECG命令の処理\nしばらくお待ちください</string>
+    <string name="heart_check_state_three">私はあなたの心電図を検出できません\nデバイス上の電極を押してください</string>
+    <string name="heart_check_state_finish">検出が終了しました</string>
+    <string name="heart_check_result">レポートを見る</string>
+    <string name="my_height">高さ（cm）</string>
+    <string name="weight">重量（kg）</string>
+    <string name="heart">心拍数（bpm）</string>
+    <string name="speed">速度（mm / s）</string>
+    <string name="increase">ゲイン（mm / mv）</string>
+    <string name="null_value">-</string>
+    <string name="heart_info">このテストは参考用であり、医療診断証明書として使用することはできません。</string>
+    <string name="heart_unit">BPM</string>
+    <string name="temp_info">1日の複数測定は最後の測定の対象となります</string>
+    <string name="temp_test">クリックして測定する</string>
+    <string name="temp_info_tip">ウェアラブルデバイスの温度検出機能をクリックしてください\n現在の体温を5秒間維持する</string>
+    <string name="temperature_unit">°C</string>
+    <string name="temp_report">体温レポート°C</string>
+    <string name="helphint_str">デバイスは、アプリケーションからメッセージリマインダを受信できませんか？ \n
+次の手順を実行してください：\n
+1.Fundoとデバイスは、Bluetooth接続を維持する必要があります\n
+2.Fundo、more  - アプリケーションプッシュ - 転送スイッチをオフにしてから、再度開きます。\n
+3. Fundoでは、通話通知とSMS通知スイッチがオフにされ、その後再び開かれます。\n
+4.電話機の設定 - 詳細設定 - アクセシビリティ（一部の電話機にアクセス可能） -  Fundo  -  Fundoスイッチをオンにする\n
+5.電話機の設定 - 権利管理 -  Fundo  - すべてのFundoの許可を許可する\n
+6.電話の設定 - 通知バーとステータスバー -  Fundo  -  Fundoの通知スイッチをすべてオンにします。\n
+注：\n
+Androidシステムの違いにより、特定のパスは実際の携帯電話の影響を受けます。</string>
+
+
+    <string name="text_leng1">文字列の長さ:</string>
+    <string name="text_leng2">/60,送信できませんでした</string>
+
+    <string name="join_str">私たちに参加する</string>
+</resources>
